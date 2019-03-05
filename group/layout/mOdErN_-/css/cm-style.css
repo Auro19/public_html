@@ -1,0 +1,641 @@
+/* This is the css file of the mOdErN theme */
+@media screen
+  {
+/* 
+-----------------------------------------------
+  Global
+----------------------------------------------- */
+body {
+    background-color: white;
+  	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:800px;
+	height:600px;
+	color:black;
+	font:12px Verdana,Arial,Helvetica,sans-serif;
+	background-image: url('../img/mOdErN.jpg');
+	background-attachment: fixed
+}
+a:link, a:visited, A:active, A:hover  {
+	color: blue; text-decoration: none
+	}
+/* 
+-----------------------------------------------
+  Menu
+----------------------------------------------- */
+/* CROSSBROWSER CSS-HOVER MENU WITH Internet Explorer PNG OPACITY.
+// Copyright ©2003, ©2004, ©2005 by Mark Coudriet
+
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, 
+// Boston, MA 02111-1307, USA.
+
+CROSSBROWSER CSS-HOVER MENU FAQ:
+   The DOCTYPE must not be transitional, I use XHTML just to be ahead of the game.
+    ---* <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN"> *---
+    
+PNG OPACITY FAQ:
+----
+1) PAGE/JAVASCRIPT SLOWDOWN? - It has been noted that if there are very
+   many PNG images on one page, the JavaScript will become very slow.
+
+2) WHAT ABOUT OTHER BROWSERS? - CSS expressions only work for I.E.
+
+3) WHY CHECK FOR SSL? - This can be removed, only included because it has     
+   been noted that sometimes certain pages will freeze
+   when using SSL. Remove & test if using SSL.
+   
+4) WHY SET DIMENSIONS OF IMG TO 1px? - For filter to activate height & width 
+   of image must be set to greater than zero & it hides the original. 	
+   
+CODE FLOW:
+   Check if protocol is SSL, if Yes skip applying filter.
+	---* (location.protocol!="https:") && *---
+			
+   Check if img is PNG, if it is enable filter.                
+	---* /\.png$/.test(this.src.toLowerCase()) *---
+	
+   Check if filter is active, if it is set image height & width to 1px.
+	---* (this.style.filter!="")? "1px" : "" *---
+*/
+img.Coudriet_img { 
+	filter:expression( ((location.protocol!="https:") && /\.png$/.test(this.src.toLowerCase()))? "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+this.src+"')" : "" );
+	height:expression( (this.style.filter!="")? "1px" : "" );
+	width:expression( (this.style.filter!="")? "1px" : "" );
+}
+span.Coudriet_o {
+	background-color: #889296;
+	display: table-cell;
+	display: inline-block;   
+	width: 115px; 
+    text-align:center;
+    color: white; font:10px Verdana,Arial,Helvetica,sans-serif;
+    border-top: 5px dashed #3E4950;
+    border-right: 10px solid #3E4950 
+}
+  * html span.Coudriet_o
+    {
+	position: absolute; /* 4 IE */
+    width: 115px; /* 4 IE */
+    top: 0px;
+    right: 0px;
+    }
+span.Coudriet_c {
+	background-color: #889296;
+	width: 115px; 
+    text-align:center;
+    color: white; font:10px Verdana,Arial,Helvetica,sans-serif;
+    border-top: 5px dashed #3E4950;
+    border-left: 10px solid #3E4950;
+    display: none
+}
+
+span.Coudriet {
+    position: fixed; /* 4 Firefox */
+    width: 115px; /* 4 Firefox */
+    height: 15px;
+    top: 0px;
+    right: 60px;
+    font-weight:bold;
+    color:blue;
+    background-color: transparent; 
+    text-align:center;
+    }
+  * html span.Coudriet
+    {
+    position: absolute; /* 4 IE */
+    width: 115px; /* 4 IE */
+    }
+span.Coudriet_iframe {
+    text-align:left;
+    display:none
+    }
+  * html body
+    {
+    overflow-y: scroll;
+    height: 96%;
+    width: 98%
+    }
+  * html
+    {
+    overflow-y: hidden;
+    }
+.tLinks {
+    background-color: #C8FC00;
+    width:115px;
+    text-align:left
+    }
+
+/* Mainmenu settings for selected / not selected td tags */
+.notselected { padding-left:5px; padding: 2px; font-weight: bold;
+				   font-size: 10px; FONT-FAMILY: Georgia, Verdana, Arial, sans-serif;
+				   text-decoration:none }
+.notselected A:link, .notselected_top A:visited, .notselected_top img {
+	color: #666666; text-decoration:line-through
+	}
+.notselected A:active, .notselected_top A:hover {
+	color: #6666ff; text-decoration:line-through
+	}
+	
+.selected { cursor: pointer; cursor: hand;
+			font-weight: bold; font-size: 10px; FONT-FAMILY: Georgia, Verdana, Arial, sans-serif }
+.selected A:link, .selected_top A:visited, .selected_top img {
+	 color:#A66408; text-decoration:underline 
+	}
+.selected A:hover, .selected_top A:active {
+	 color:#CC3300
+	}    
+
+
+
+p.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a.cms {
+  color: #0000FF;
+  text-decoration : none;
+}
+a.cms:hover {
+  color: #FF0000;
+}
+a.cms:focus {
+  color: #FF0000;
+}
+p.titletext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.generaltext {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.setupreturn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+p.setuperror {
+  color: #FF0000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+h3.setuperror {
+  color: #FF0000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form.cms {
+  margin:0; padding:0;
+}
+td.cms {
+}
+td.footertext {
+  font-size: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h5.cms {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input.cmstext {
+      font-size: 80%;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid #000000;
+      margin : 2px 1px 1px 2px;
+  background : #CCCCCC;
+}
+textarea.cms {
+  font-size: 80%;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid #000000;
+  margin : 2px 1px 1px 2px;
+  background : #CCCCCC;
+}
+select.cms {
+  font-size: 80%;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid #000000;
+  margin : 2px 1px 1px 2px;
+  background : #CCCCCC;
+}
+.inputname  {
+  font-size: 80%;
+      font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.pseudoinput  {
+  font-size: 80%;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.checkerror {
+  color: #990000;
+  font-weight: bold;
+}
+.checkwarning {
+  color: #999900;
+  font-weight: bold;
+}
+.checkok {
+  color: #009900;
+  font-weight: bold;
+}
+.checkquestion {
+  color: #000000;
+  font-weight: bold;
+}
+tr.setupcolor1  {
+  background : #FFFFFF;
+}
+tr.setupcolor2  {
+  background : #EEEEFF;
+}
+td.config1header  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.config1body1  {
+}
+td.config1body2  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+tr.applistcolor1  {
+  background : #FFFFFF;
+}
+tr.applistcolor2  {
+  background : #EEEEFF;
+}
+td.applog1header  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.applog1body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.sec1header  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.sec1body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.ratingborder  {
+  border: 1px solid #333399;
+  background : #FFFFFF;
+}
+td.ratingbody  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+tr.commentsheader  {
+  background : #3366CC;
+}
+td.commentsheader  {
+  background : #3366CC;
+  font-size: 80%;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.commentsbody  {
+  background : #EEEEFF;
+}
+td.commentscontrol  {
+  border: 1px solid #000000;
+  background : #CCCC66;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.ratingcontrol  {
+  border: 1px solid #000000;
+  background : #9999FF;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.console1body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.console2body  {
+}
+li.reflink {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div.maincontent-disabled {
+  background : #FFFFFF;
+  padding : 2px;
+}
+td.maincontent  {
+}
+td.mainseparator  {
+}
+td.previewcontent  {
+}
+td.edit1border  {
+  background : #999999;
+}
+td.edit1body  {
+  background : #EEFFEE;
+}
+td.create1border  {
+  background : #999999;
+}
+td.create1body  {
+  background : #EEFFEE;
+}
+td.delete1body  {
+  border: 1px solid #000000;
+  background : #EEFFEE;
+}
+td.fileman1body  {
+  border: 1px solid #000000;
+  background : #EEFFEE;
+}
+td.fileman1list  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+tr.filelistcolor1  {
+  background : #FFFFFF;
+}
+tr.filelistcolor2  {
+  background : #EEEEFF;
+}
+td.dirlist1  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.dirlist2  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+td.search1body  {
+  border: 1px solid #000000;
+  background : #EEFFEE;
+}
+.searchcrumb  {
+  font-size: 90%;
+  color: #666666;
+}
+td.stat1header  {
+  background : #CCCCFF;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.stat1body  {
+   background : #FFFFFF;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.docdataborder  {
+  border: 1px solid #000000;
+  background : #EEFFEE;
+}
+td.docdatabody  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3.docdatatitle  {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
+}
+td.navborder  {
+  border: 1px solid #999999;
+  background : #EEEEFF;
+}
+td.navbody  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.doclist1border  {
+  border: 1px solid #000000;
+  background : #CCCCCC;
+}
+td.doclist1body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.doclist2border  {
+  border: 1px solid #CCCCCC;
+  background : #FFFFFF;
+}
+td.doclist2body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.doclist3border  {
+  border: 1px solid #FF0000;
+  background : #FFFF99;
+}
+td.doclist3body  {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.infomessageboxborder  {
+  border: 2px solid #6666FF;
+  background : #99CCFF;
+}
+td.infomessagebox  {
+  color : #000000;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.warningmessageboxborder  {
+  border: 2px solid #FF6666;
+  background : #FFFF99;
+}
+td.warningmessagebox  {
+  color : #000000;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.errormessageboxborder  {
+  border: 2px solid #FFFF00;
+  background : #FF0000;
+}
+td.errormessagebox  {
+  color : #FFFFFF;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.defaultmessageboxborder  {
+  border: 2px solid #CCCCCC;
+  background : #FFFFFF;
+}
+td.defaultmessagebox  {
+  color : #000000;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+td.syndhead  {
+  border: 1px solid #CCCCCC;
+  background : #CCCCCC;
+  text-align : center;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+td.syndbody  {
+  border: 1px solid #CCCCCC;
+  background : #FFFFFF;
+}
+ul.syndlist  {
+  padding-left: 0.5em;
+  margin-left : 0.5em;  
+  margin-bottom: 0px;
+}
+li.synditem  {
+  list-style-type : square;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cm_edit_prompt {
+  color: #0000FF;
+  text-decoration : none;
+  cursor : pointer;
+  cursor : hand;
+}
+div.tbedicion01 {
+  border-style: ridge;
+  border-width:thin;
+  padding: 5 5 5 5;
+  background-color: #666666;
+  cursor : default;
+}
+#edittextarea {
+  border-style:groove;
+  border-width:thin;
+  background-color:white;
+  height : 70%;
+  width : 100%;
+  overflow:scroll;
+  behavior: url(#default#userdata);
+}
+img.btngr {
+  border-style:groove;
+  border-width:2;
+  border-color:#CCCCCC;
+  padding: 2 2 2 2;
+  background-color: #666666;
+  cursor : pointer;
+  cursor : hand;
+}
+img.btngr2 {
+  border-width:0;
+  padding: 0 0 0 0;
+  background-color: #666666;
+  cursor : pointer;
+  cursor : hand;
+}
+span.btntxt {
+  border-style:groove;
+  border-width:2;
+  border-color:#CCCCCC;
+  padding: 2 10 2 10;
+  background-color: #CCCCCC;
+  cursor : pointer;
+  cursor : hand;
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for document content */
+a.gcms {
+  text-decoration : none;
+}
+a.gcms:hover {
+  text-decoration : none;
+}
+a.gcms:focus {
+  text-decoration : none;
+}
+p.gcms {
+  font-size: 90%;
+  font-family: Verdana;
+}
+li.gcms {
+  font-size: 90%;
+  font-family: Verdana;
+}
+h1.gcms {
+  font-family: Verdana;
+}
+h2.gcms {
+  font-family: Verdana;
+}
+h3.gcms {
+  font-family: Verdana;
+}
+h4.gcms {
+  font-family: Verdana;
+}
+h5.gcms {
+  font-family: Verdana;
+}
+h6.gcms {
+  font-family: Verdana;
+}
+td.gfileheader  {
+  font-size: 80%;
+  font-family: Verdana;
+  font-weight: bold;
+}
+td.gfilebody  {
+  font-size: 90%;
+  font-family: Verdana;
+}
+tr.gfilecolor1  {
+  background : #FFFFFF;
+}
+tr.gfilecolor2  {
+  background : #EEEEFF;
+}
+td.galbumbody  {
+  font-size: 90%;
+  font-family: Verdana;
+}
+.gboxedpara  {
+  border: 1px solid #CCCCCC;
+  font-size: 90%;
+  font-family: Verdana;
+  font-weight: bold;
+  padding : 10px 10px 10px 10px;
+}
+
+}

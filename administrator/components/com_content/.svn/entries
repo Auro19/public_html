@@ -1,0 +1,148 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/administrator/components/com_content
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+helper
+dir
+
+toolbar.content.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+a961e0a81f846f1b9cc71abf2dec4902
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+models
+dir
+
+config.xml
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+6ced99f73365ffb2ef0d896815dfa808
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+toolbar.content.html.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+bbcd73e53b3452728d1b85278091f4e8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+ac14344374a86e99448d46fa6c13e86e
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+admin.content.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+5825266852acab7d7ac9c830750fee80
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+content.xml
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+6442a720c352af790a4479a05bbaf12b
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+controller.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+f455cebb672a2825b0c617ee8e30a939
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+admin.content.html.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+7a22495f89dc6b724a16e77699e4679f
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+elements
+dir
+
+views
+dir
+

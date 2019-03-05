@@ -1,0 +1,129 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/templates/beez
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+templateDetails.xml
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+9bf8a8d2d7dc339765a062b694783fa6
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+params.ini
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+template_thumbnail.png
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+c5125f472e2abc54a182c1ad2b921c68
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+
+images_general
+dir
+
+html
+dir
+
+images
+dir
+
+javascript
+dir
+
+css
+dir
+
+component.php
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+9b81e59761961c3f12d3b5cc27482fe6
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.php
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+3049a35180205ba87997ef556fdad0db
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+favicon.ico
+file
+
+
+
+
+2009-03-24T18:12:39.000000Z
+63b982eddd64d44233baa25066db6bc1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+

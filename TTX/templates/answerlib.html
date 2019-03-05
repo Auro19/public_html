@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=[%CHARSET%]">
+<title>[%Answer library%]</title>
+<style type="text/css">
+<!--
+body, td, p { font-family: Verdana, Helvetica, sans-serif; font-size: 10pt;}
+.lbl { font-size: 9pt; font-weight: 700;}
+-->
+</style>
+<script language=Javascript>
+<!--
+function postanswer(jopa)
+{
+ window.opener.document.newticket.problem.value += jopa;
+ return false;
+}
+// -->
+</script>
+
+(%INITANSWERS%)
+
+<script language=Javascript>
+<!--
+function showanswer(id) {
+  for (i = 0; i < ANSWERS.length; i++) {
+    if (ANSWERS[i][0] == id) {
+      document.ansform.ananswer.value = ANSWERS[i][1];
+                        document.ctrl.aid.value = id;
+      return false;
+    }
+  }
+  ananswer.value = ' ';
+  return false;
+}
+// -->
+</script>
+<script language=Javascript>
+<!--
+function showcat(id) {
+  location.href='(%ENV_SCRIPT_NAME%)?cmd=answerlib&sid=(%INPUT_sid%)&style=(%INPUT_style%)&cat='+escape(id);
+  return false;
+}
+// -->
+</script>
+
+</head>
+<body onload="initanswers()">
+<center>
+(%ANSWERLIBERROR%)
+(%ANSWERLIBMSG%)
+<table cellpadding=0 cellspacing=0>
+        <tr>
+                <td valign=top align=left>
+                        <span class=lbl>1. [%Select%]</span><br><br class=tiny>
+
+				  <table cellpadding=1 cellspacing=1>
+					  <tr>
+						  <td>
+                      <select name=cat size=1 OnChange="return showcat(this[this.selectedIndex].value);">
+(%CATSELECTOR%)
+						</select>
+							</td>
+						</tr>
+						<tr>
+						  <td>
+                        <select name=answer size=10 OnChange="return showanswer(this[this.selectedIndex].value);">
+(%ANSWERSELECTOR%)
+                        </select>
+							</td>
+						</tr>
+					</table>
+                </td>
+                <td><nobr>&nbsp;&nbsp;&nbsp;&nbsp;</nobr></td>
+                <form name=ansform>
+                <td valign=top align=left>
+                        <span class=lbl>2. [%Preview%]</span><br><br class=tiny>
+                        <textarea readonly name=ananswer cols=50 rows=(%ROWS%)></textarea></td>
+                </form>
+        </tr>
+        <form action="(%ENV_SCRIPT_NAME%)" name=ctrl method=post>
+        <input type=hidden name=cmd value=answerlib>
+        <input type=hidden name=style value="(%INPUT_style%)">
+        <input type=hidden name=do value=1>
+        <input type=hidden name=aid value="">
+        <input type=hidden name=sid value="(%INPUT_sid%)">
+        <tr>
+                <td colspan align=left><span class=lbl><nobr>3. [%Copy%] =></nobr></span><td>
+                <td colspan align=left>
+                        <br class=tiny>
+                        <input type=submit value="[%Use%]" OnClick="return postanswer(document.ansform.ananswer.value)">
+                        (%ALIBBUTTONS%)
+                        &nbsp;&nbsp;<input type=submit value="[%Close%]" OnClick="window.close(); return false;">
+                <td>
+        </tr>
+        </form>
+</table>
+</center>
+</body>
+</html>

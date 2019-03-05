@@ -1,0 +1,79 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/modules/mod_poll
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+mod_poll.xml
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+90554dffb892ec8092f48ed425ac94a8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+59e4ae1709199f189347bce8a3db0b0d
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+mod_poll.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+79c2c5058fa3b2af2b351e7bf98407e4
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+tmpl
+dir
+

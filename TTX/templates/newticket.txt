@@ -1,0 +1,12 @@
+Dear (%UNAME%)
+
+Thank you for contacting (%COMPANYNAME%) Help Desk. This message is to confirm that we received a service request with tracking # (%TICKETID%) from you.
+
+(%MESSAGE%)
+
+You can view and update your service request here:
+(%TICKETURL%)
+
+Sincerely,
+
+(%COMPANYNAME%) Help Desk

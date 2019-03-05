@@ -1,0 +1,121 @@
+<script language="JavaScript"><!--
+function ticked(ID){ hwstring="scrollbars=yes,width=450,height=(%TICKEDHEIGHT%),resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=ticketed&tid=" + ID + "&sid=(%INPUT_sid%)", "TicketEditor", hwstring); }
+//--></script>
+<script language="JavaScript"><!--
+function showitem(ID){ hwstring="scrollbars=yes,width=650,height=350,resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=showitem&id=" + ID + "&sid=(%INPUT_sid%)&style=(%INPUT_style%)&isticket=0", "ItemInfo", hwstring); return false; }
+//--></script>
+<script language="JavaScript"><!--
+function setsort(orderby, direction)
+{
+ document.forms['hd'].qoffset.value='0';
+ document.forms['hd'].qsort.value=orderby;
+ document.forms['hd'].qsortorder.value=direction;
+ document.forms['hd'].submit();
+ return false;
+}
+//--></script>
+<script language=Javascript> <!--
+function update()
+{
+ document.forms['hd'].submit();
+ return false;
+}
+var htimeout = null;
+function setrefreshrate(tmout) {
+  if (htimeout != null) {
+    clearTimeout(htimeout);
+    htimeout = null;
+  }
+  if (tmout > 0) {
+    htimeout = setTimeout(update, tmout * 1000);
+  }
+}
+//-->
+</script>
+<script language="JavaScript"><!--
+function scroll(off, win)
+{
+ document.forms['hd'].qoffset.value=off;
+ document.forms['hd'].qwindow.value=win;
+ document.forms['hd'].submit();
+ return false;
+}
+//--></script>
+<script language="JavaScript"><!--
+function rowhl(id, inrow) {
+  var row = document.getElementById('tr'+id);
+  var odd = id % 2;
+  var c = (odd) ? '(%CONFIG_COLOR-HELPDESK-TABLE-EROW%)' : '(%CONFIG_COLOR-HELPDESK-TABLE-OROW%)';
+  row.style.backgroundColor = (inrow) ? '(%CONFIG_COLOR-HELPDESK-TABLE-CROW%)' : c;
+}
+//--></script>
+<script language="javascript"><!--
+function SelectDeselectAll(strCheck) {
+	var elements = document.forms["ticketlist"].elements;
+    for (var i = 0; i < elements.length; i++) {
+      if (elements[i].type == 'checkbox' && elements[i].name == 'mtid') {
+        elements[i].checked = strCheck;
+      }
+    }
+}
+//--></script>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0 bgcolor="(%CONFIG_COLOR-HELPDESK-FILTER%)">
+<form method=post action="(%ENV_SCRIPT_NAME%)" name=hd>
+<input type=hidden name=cmd value="(%INPUT_cmd%)">
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=do value=1>
+<input type=hidden name=emailkey value="(%INPUT_emailkey%)">
+<input type=hidden name=qsort value="(%INPUT_qsort%)">
+<input type=hidden name=qsortorder value="(%INPUT_qsortorder%)">
+<input type=hidden name=qoffset value="(%INPUT_qoffset%)">
+        <tr>
+                <td class=tiny>&nbsp</td>
+        </tr>
+        <tr>
+                <td>(%TICKETFILTER%)</td>
+        </tr>
+        <tr>
+                <td class=tiny>&nbsp</td>
+        </tr>
+</table>
+<br class=tiny>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0>
+        <tr>
+          <td align=left>
+            <span class=sm>
+            [%Show%] <input type=text size=3 class=sm name=qwindow value="(%INPUT_qwindow%)"> [%tickets per page.%]
+            [%Include abstracts%] <input type=checkbox class=sm name=abstract value=1(%CHECKABSTRACT%)>
+            &nbsp;&nbsp;[%Autorefresh rate%] <select name=autorefresh onchange="setrefreshrate(this.options[this.selectedIndex].value)">
+              <option value="0">[%never%]</option>
+              <option value="60">[%1 min%]</option>
+              <option value="180">[%3 min%]</option>
+              <option value="300">[%5 min%]</option>
+              <option value="600">[%10 min%]</option>
+            </select>
+<script type="text/javascript"><!--
+  var i;
+  var inauto = '(%INPUT_autorefresh%)';
+  if (inauto == '') {
+    inauto = '(%CONFIG_AUTOREFRESH%)';
+  }
+	for (i = 0; i < document.forms['hd'].autorefresh.options.length; i++) {
+	  if (document.forms['hd'].autorefresh.options[i].value == inauto) {
+	    document.forms['hd'].autorefresh.options[i].selected = true;
+      setrefreshrate(document.forms['hd'].autorefresh.options[i].value);
+	  }
+	}
+	//--></script>
+            </span>
+          </td>
+          <td align=right>
+            <input type=submit value="[%Search%]">&nbsp;<input type=submit name=reset value="[%Show all%]">
+          </td>
+        </tr>
+        </form>
+</table>
+<br class=tiny>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0 >
+(%TICKETLIST%)
+</table>
+<br class=tiny>

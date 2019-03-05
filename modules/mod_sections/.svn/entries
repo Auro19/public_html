@@ -1,0 +1,79 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/modules/mod_sections
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+453aabd499b61e1feacc1c02d2330ba0
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+mod_sections.xml
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+0955cac822fd3dbfe969a43af0b96775
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+tmpl
+dir
+
+mod_sections.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+ae45cdf1c0455952ca56b4499bc6ca88
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

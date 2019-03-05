@@ -1,0 +1,79 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/pattemplate
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+patErrorManager.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+4d6c9ffa84812c5fd65ea889016b0432
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+patTemplate
+dir
+
+patError.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+2012b481c4cfe3b04c588404be8d1959
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+patTemplate.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+b7f657d1cb556f2fd76919e77d257ee9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

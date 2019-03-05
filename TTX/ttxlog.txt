@@ -1,0 +1,3 @@
+1275345396|TRANSFER|miguel|2|miguel
+1275416585|TRANSFER|miguel|5|miguel
+1275433376|TRANSFER|miguel|6|miguel

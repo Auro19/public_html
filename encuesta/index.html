@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.24.custom.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+		<script>
+			$(function() {
+				$( ".fecha" ).datepicker();
+			});
+			</script>
+			<LINK REL=StyleSheet HREF="css/dgae_estilo.css" TYPE="text/css">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<title>Encuesta Depto. de Telecomunicaciones - UNAM</title>
+				<style type="text/css">
+				<!--
+				.Estilo2 {font-size: 18}
+				-->
+				</style>
+</head>
+
+<body  background="img/fondo_general.gif">
+				<center>
+<table>
+<tr>
+<td><img src="img/unam.gif" width="110" /></td>
+<td><div align="center">  <h2>Encuesta Estadística del 
+  <br>Depto. de Telecomunicaciones 
+  <br>Facultad de Ingeniería - UNAM </h2></div>
+</td>
+<td><img src="img/inge.gif" width="90" /></td>
+</tr>
+</table>
+  <table width="800">
+	<tr>
+		<td>
+ <form action="controlador.php" method="post">
+	<table>
+	<tr>
+	<th colspan="8" align="left"><p>Los datos recabados en este cuestionario solo tienen un fin estadístico y no serán usados para otro fin.</p></h2></th>
+	</tr>
+		<tr>
+			<td><label>1.-Numero de cuenta: </label></td>
+			<td><input  name="numeroCta" type="text"/></td>
+			<td><label>2.-Genero: </label></td>
+			<td><label>Masculino</label><input name="sexo" type="radio" value="1"/><label>Femenino</label><input name="sexo" type="radio" value="2"/></td>
+			
+
+		</tr>
+		</table>
+		<table>
+			<tr>
+				<td><label>3.-Edad:</label></td>
+				<td><input name="edad" type="text" /></td>
+				<td><label>4.-Correo electronico</label></td>
+				<td><label><input name="mail" type="email" /></label></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+			<td><label>5.-Año de ingreso:</label></td>
+			<td><label><input name="aIngreso" type="text"></label></td>
+			<td><label>6.-Año de egreso:</label></td>
+			<td><label><input name="aEgreso"  type="text"></label></td>
+			<td><label>7.-Promedio final</label></td>
+			<td><label><input name="promedio" type="text" /></label></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+			<td><label>8.-Titulado?</label></td>
+			<td>
+			<select name="titulado">
+			  <option value="1">Si</option>
+			  <option value="0">No</option>
+			</select>
+			</td>
+			<td>
+				<table>
+					<td><label>9.-</label></td>
+					<td><label>Fecha de examen profesional: </label></td><td><input name="fechaExamen" class="fecha" type="date"></td>
+					<td><label>Fecha probable de titulacion: </label></td><td><input name ="fechaTitulacion" class="fecha" type="date"></td>
+				</table>
+			</td>
+			</tr>
+		</table>
+		<table>
+			<td><label>10.-Actualmente:</label></td>
+			<td>
+				<select name="actualmente">
+				  <option value="1">Trabaja</option>
+				  <option value="2">Estudia</option>
+				  <option value="3">Ambos</option>
+				 </select>
+			</td>
+			<td><label>Para otro, especificar:</label></td>
+			<td><input name="otroActual" type"text" /></td> 
+		</table>
+		<table>
+			<td><label>11.-Despues de concluir su Carrera realizo o esta realizando otros estudios:</label></td>
+			<td><label>Si</label><input name="otrosEstudios" type="radio" /></td>
+			<td><label>No</label><input name="otrosEstudios" type="radio" /></td>
+		</table>
+		<table>
+			<td><label>12. + De ser asi, anote cuales y el periodo de duracion de sus estudios:</label></td>
+		</table>
+		<table border="2">
+			<th>Nombre</th>
+			<th>Escuela o institucion</th>
+			<th>Fecha de inicio</th>
+			<th>Fecha de termino</th>
+			<tr>
+				<td><input name="nombre1" type="text" /></td>
+				<td><input name="escuela1" type="text" /></td>
+				<td><input name="fechaInicio1" type="text" /></td>
+				<td><input name="fechaTermino1" type="text" /></td>
+			</tr>
+			<tr>
+				<td><input name="nombre2" type="text" /></td>
+				<td><input name="escuela2" type="text" /></td>
+				<td><input name="fechaInicio2" type="text" /></td>
+				<td><input name="fechaTermino2" type="text" /></td>
+			</tr>
+			<tr>
+				<td><input name="nombre3" type="text" /></td>
+				<td><input name="escuela3" type="text" /></td>
+				<td><input name="fechaInicio3" type="text" /></td>
+				<td><input name="fechaTermino3" type="text" /></td>
+			</tr>
+			<tr>
+				<td><input name="nombre4" type="text" /></td>
+				<td><input name="escuela4" type="text" /></td>
+				<td><input name="fechaInicio4" type="text" /></td>
+				<td><input name="fechaTermino4" type="text" /></td>
+			</tr>
+			<tr>
+				<td><input name="nombre5" type="text" /></td>
+				<td><input name="escuela5" type="text" /></td>
+				<td><input name="fechaInicio5" type="text" /></td>
+				<td><input name="fechaTermino5" type="text" /></td>
+			</tr>	
+		</table>
+		<table>
+			<td><label>13.- Si realizo estudios de Posgrado, obtuvo su grado?</label></td>
+			<td><label>Si</label><input name="posgrado" type="radio" value="1"/></td>
+			<td><label>No</label><input name="posgrado" type="radio" value="0"/></td>
+		</table>
+		<table>
+			<tr><td><label>De ser afirmativa la respuesta anterior, que grado(s) obtuvo?</label></td><td><input name="gradoObtenido1" type="text" /></td></tr>
+			<tr><td></td><td><input name="gradoObtenido2" type="text" /></td></tr>
+			<tr><td></td><td><input name="gradoObtenido3" type="text" /></td></tr>
+		</table>
+		<table>
+			<td><label>14.- Trabaja actualmente en el area de las telecomunicaciones?</label></td>
+			<td><label>Si</label><input name="trabajaTele" type="radio" value="1"/></td>
+			<td><label>No</label><input name="trabajaTele" type="radio" value="0"/></td>
+		</table>
+		<table>
+			<td><label>15.- Años de experiencia laboral en su Area:</label></td>
+			<td><input name="experiencia" type="text" /></td>
+		</table>
+		<table>
+			<td><label>16.- Despues de concluir la Carrera, cuanto tiempo tardo en conseguir su primer trabajo en el area de las Telecomunicaciones? (meses)
+		</label></td>
+			<td><input name="tiempoConsigue" type="text" /></td>
+		</table>
+		<label>17.- La empresa donde labora pertenece a: </label>
+		<table>
+			<td><label>Sector publico</label><input name="sector" type="radio"/></td>
+			<td><label>Sector privado</label><input name="sector" type="radio"/></td>
+			<td><label>Otro (especifique)</label><input name="sector" type="text"/></td>
+		</table>
+		<table>
+			<td><label>18.- Nombre de la empresa:</label></td>
+			<td><input name="nombreEmpresa" type="text" /></td>
+		</table>
+		<table>
+			<td><label>19.-Cargo en la empresa:</label></td>
+			<td><input name="cargoEmpresa" type="text" /></td>
+		</table>
+		<table>
+			<td>20.- Antiguedad en el empleo actual(meses):</td>
+			<td><input name="antiguedadEmpleo" type="text" /></td>
+			<td>21.- No. de personas a su cargo</td>
+			<td><input name="numeroACargo" type="text" /></td>
+		</table>
+		Otra (especifique)
+		<label>22.- Tipo de empresa donde labora:</label>
+		<table>
+			<tr>
+				<td>Firma consultora<input value="fc" name="tipoEmpresa" type="radio"/></td><td>Consultora de sistemas<input value="cs" name="tipoEmpresa" type="radio"/></td><td>Proveedora de servicios de ingenieria<input value="psi" name="tipoEmpresa" type="radio"/></td>
+			</tr>
+			<tr>
+				<td>Institucion Educativa<input value="ie" name="tipoEmpresa" type="radio"/></td><td>Contratista gubernamental<input value="cg" name="tipoEmpresa" type="radio"/></td><td>Organismo gubernamental
+				<input value="og" name="tipoEmpresa" type="radio"/></td>
+			</tr>
+			<tr>
+				<td>Manufactura<input value="ma" name="tipoEmpresa" type="radio"/></td><td>Contratista independiente<input value="ci"  name="tipoEmpresa" type="radio"/></td><td>Otra (especifique):
+				<input name="otroTipoEmpresa" type="texto"/></td>
+			</tr>
+		</table>
+		<label>23.- Tamaño de empresa en donde labora (atendiendo al número de empleados):</label>
+		<table>
+			<td>Pequeña (menos de 50)<input value="1" name="tamEmpresa" type="radio"/></td>
+			<td>Mediana (entre 50 y 200)<input value="2" name="tamEmpresa" type="radio"/></td>
+			<td>Grande (más de 200)<input value="3" name="tamEmpresa" type="radio"/></td>
+		</table>
+		<label>Régimen jurídico de la empresa:</label>
+		<table>
+			<td>Sector público<input value="pu" name="regJuridico" type="radio"/></td>
+			<td>Sector Privado<input value="pi" name="regJuridico" type="radio"/></td>
+			<td>Otro (especifique)<input name="regJuridico" type="text"/></td>
+		</table>
+		<label>Rango mensual que recibe:</label>
+		<select name="salario">
+				  <option value="1">Menor a $ 10,000</option>
+				  <option value="2">De $ 10,000-$15,000</option>
+				  <option value="3">De $ 15,000-$ 20,000</option>
+				  <option value="4">De $ 20,000-$ 30,000</option>
+				  <option value="5">De $ 30,000-$ 50,000</option>
+				  <option value="6">Mayor a $ 50,000</option>
+		</select>
+	</br>
+		<label>26- En su trabajo actual qué importancia considera tienen los siguientes temas.</label>
+		<table border="2">
+			<th>TEMA</th>
+			<th>Ningúna</th>
+			<th>Poca</th>
+			<th>Regular</th>
+			<th>Grande</th>
+			<th>Primordial</th>
+			<tr><td><label>Redes ópticas</label></td><td><input name="redeso" value="1" type="radio"/></td><td><input name="redeso" value="2" type="radio"/></td><td><input name="redeso" value="3" type="radio"/></td><td><input name="redeso" value="4" type="radio"/></td><td><input name="redeso" value="5" type="radio"/></td></tr>
+			<tr><td><label>Líneas de transmisión y antenas</label></td><td><input name="lineasTA" value="1" type="radio"/></td><td><input name="lineasTA" value="2" type="radio"/></td><td><input name="lineasTA" value="3" type="radio"/></td><td><input name="lineasTA" value="4" type="radio"/></td><td><input name="lineasTA" value="5" type="radio"/></td></tr>
+			<tr><td><label>Servicios y Sistemas de radiocomunicación</label></td><td><input name="ssr" value="1" type="radio"/></td><td><input name="ssr" value="2" type="radio"/></td><td><input name="ssr" value="3" type="radio"/></td><td><input name="ssr" value="4" type="radio"/></td><td><input name="ssr" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Microondas</label></td><td><input name="micro" value="1" type="radio"/></td><td><input name="micro" value="2" type="radio"/></td><td><input name="micro" value="3" type="radio"/></td><td><input name="micro" value="4" type="radio"/></td><td><input name="micro" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Redes de Datos</label></td><td><input name="rd" value="1" type="radio"/></td><td><input name="rd" value="2" type="radio"/></td><td><input name="rd" value="3" type="radio"/></td><td><input name="rd" value="4" type="radio"/></td><td><input name="rd" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Gestión de la calidad</label></td><td><input name="gc" value="1" type="radio"/></td><td><input name="gc" value="2" type="radio"/></td><td><input name="gc" value="3" type="radio"/></td><td><input name="gc" value="4" type="radio"/></td><td><input name="gc" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Análisis y Procesamiento de Señales</label></td><td><input name="aps" value="1" type="radio"/></td><td><input name="aps" value="2" type="radio"/></td><td><input name="aps" value="3" type="radio"/></td><td><input name="aps" value="4" type="radio"/></td><td><input name="aps" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Diseño de circuitos electrónicos para telecomunicaciones</label></td><td><input name="dcet" value="1" type="radio"/></td><td><input name="dcet" value="2" type="radio"/></td><td><input name="dcet" value="3" type="radio"/></td><td><input name="dcet" value="4" type="radio"/></td><td><input name="dcet" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Programación</label></td><td><input name="prog" value="1" type="radio"/></td><td><input name="prog" value="2" type="radio"/></td><td><input name="prog" value="3" type="radio"/></td><td><input name="prog" value="4" type="radio"/></td><td><input name="prog" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Estructura de datos</label></td><td><input name="ed" value="1" type="radio"/></td><td><input name="ed" value="2" type="radio"/></td><td><input name="ed" value="3" type="radio"/></td><td><input name="ed" value="4" type="radio"/></td><td><input name="ed" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Seguridad de los datos en sistemas de telecomunicaciones
+</label></td><td><input name="sdst" value="1" type="radio"/></td><td><input name="sdst" value="2" type="radio"/></td><td><input name="sdst" value="3" type="radio"/></td><td><input name="sdst" value="4" type="radio"/></td><td><input name="sdst" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Gestión de Proyectos</label></td><td><input name="gp" value="1" type="radio"/></td><td><input name="gp" value="2" type="radio"/></td><td><input name="gp" value="3" type="radio"/></td><td><input name="gp" value="4" type="radio"/></td><td><input  name="gp" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Regulación y Normatividad en telecomunicaciones</label></td><td><input name="rnt" value="1" type="radio"/></td><td><input name="rnt" value="2" type="radio"/></td><td><input name="rnt" value="3" type="radio"/></td><td><input name="rnt" value="4" type="radio"/></td><td><input name="rnt" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Transmisión Digital</label></td><td><input name="td" value="1" type="radio"/></td><td><input name="td" value="2" type="radio"/></td><td><input name="td" value="3" type="radio"/></td><td><input name="td" value="4" type="radio"/></td><td><input name="td" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Dispositivos electrónicos y semiconductores</label></td><td><input name="des" value="1" type="radio"/></td><td><input name="des" value="2" type="radio"/></td><td><input name="des" value="3" type="radio"/></td><td><input name="des" value="4" type="radio"/></td><td><input name="des" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Control de sistemas</label></td><td><input name="cs" value="1" type="radio"/></td><td><input name="cs" value="2" type="radio"/></td><td><input name="cs" value="3" type="radio"/></td><td><input name="cs" value="4" type="radio"/></td><td><input name="cs" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Comunicaciones Satelitales</label></td><td><input name="csa" value="1" type="radio"/></td><td><input name="csa" value="2" type="radio"/></td><td><input name="csa" value="3" type="radio"/></td><td><input name="csa" value="4" type="radio"/></td><td><input name="csa" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Tecnologías de la información</label></td><td><input name="ti" value="1" type="radio"/></td><td><input name="ti" value="2" type="radio"/></td><td><input name="ti" value="3" type="radio"/></td><td><input name="ti" value="4" type="radio"/></td><td><input name="ti" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Inglés</label></td><td><input name="ingles" value="1" type="radio"/></td><td><input name="ingles" value="2" type="radio"/></td><td><input name="ingles" value="3" type="radio"/></td><td><input name="ingles" value="4" type="radio"/></td><td><input name="ingles" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Compatibilidad Electromagnética</label></td><td><input name="cElec" value="1" type="radio"/></td><td><input name="cElec" value="2" type="radio"/></td><td><input name="cElec" value="3" type="radio"/></td><td><input name="cElec" value="4" type="radio"/></td><td><input  name="cElec" value="5" type="radio"/></td></tr>
+
+			<tr><td><label>Otra lengua extranjera</label></td><td><input name="otraLen" value="1" type="radio"/></td><td><input  name="otraLen" value="2" type="radio"/></td><td><input name="otraLen" value="3" type="radio"/></td><td><input  name="otraLen" value="4"type="radio"/></td><td><input  name="otraLen" value="5" type="radio"/></td></tr>
+		</table>
+	</br>
+	<p>27.- Ordene las siguientes cualidades, según la relevancia que considere tengan. Anote un número del 1 al 10, donde el número 1 corresponda a la más importante en un ingeniero en Telecomunicaciones (no repetir números).</p>
+	<table border="2">
+		<th>Cualidades</th>
+		<th>Puntos</th>
+		<tr><td><label>Conocimientos prácticos</label></td><td><input name="CP" input="text"/></td></tr>
+		<tr><td><label>Capacidad de aprendizaje y estudio</label></td><td><input name="CAE" input="text"/></td></tr>
+		<tr><td><label>Comprensión teórica y capacidad de abstracción</label></td><td><input name="CTCA" input="text"/></td></tr>
+		<tr><td><label>Habilidad para la investigación , análisis y diseño
+</label></td><td><input name="HIAD" input="text"/></td></tr>
+		<tr><td><label>Conocimientos administrativos</label></td><td><input name="CA" input="text"/></td></tr>
+		<tr><td><label>Conocimiento de técnicas de calidad total</label></td><td><input name="CTCT" input="text"/></td></tr>
+		<tr><td><label>Liderazgo</label></td><td><input name="L" input="text"/></td></tr>
+		<tr><td><label>Capacidad para trabajar en equipo</label></td><td><input name="CTE" input="text"/></td></tr>
+		<tr><td><label>Conocimiento de otro(s) idioma(s)</label></td><td><input name="COI" input="text"/></td></tr>
+		<tr><td><label>Conocimiento de Gestión de Proyectos</label></td><td><input name="CGP" input="text"/></td></tr>
+	</table>
+	<label>28.- ¿Cuáles de los temas siguientes considera que son importantes y no se atendieron en el Plan de Estudios de su Carrera?</label>
+	<table border="2">
+		<th>TEMA</th>
+		<th></th>
+		<th></th>
+		<th>TEMA</th>
+		<th></th>
+		<th></th>
+
+		<tr><td><label>Redes ópticas</label></td><td>1</td><td><input type="radio"/></td><td><label>Servicios y sistemas de telecomunicaciones</label></td><td>15</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Líneas de transmisión</label></td><td>2</td><td><input type="radio"/></td><td><label>Análisis y diseño de sistemas de comunicación
+</label></td><td>16</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Electromagnetismo aplicado</label></td><td>3</td><td><input type="radio"/></td><td><label>Diseño de circuitos electrónicos para telecomunicaciones
+</label></td><td>17</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Sistemas de Radiocomunicación</label></td><td>4</td><td><input type="radio"/></td><td><label>Seguridad de los datos en sistemas de telecomunicaciones
+</label></td><td>18</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Microondas</label></td><td>5</td><td><input type="radio"/></td><td><label>Econometría y Administración de proyectos
+</label></td><td>19</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Telefonía</label></td><td>6</td><td><input type="radio"/></td><td><label>Estándares y Normatividad en sistemas de telecomunicaciones</label></td><td>20</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Redes de Datos</label></td><td>7</td><td><input type="radio"/></td><td><label>Dispositivos electrónicos y semiconductores</label></td><td>21</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Gestión de la calidad
+</label></td><td>8</td><td><input type="radio"/></td><td><label>Redes de computadoras-protocolos, arquitecturas-
+</label></td><td>22</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Redes de teleinformática</label></td><td>9</td><td><input type="radio"/></td><td><label>Teoría de conmutación y circuitos</label></td><td>23</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Estructura de datos</label></td><td>10</td><td><input type="radio"/></td><td><label>Tecnologías de la información</label></td><td>24</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Criptografía</label></td><td>11</td><td><input type="radio"/></td><td><label>Antenas</label></td><td>25</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Transmisión Digital</label></td><td>12</td><td><input type="radio"/></td><td><label>Compatibilidad Electromagnética</label></td><td>26</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Control de sistemas</label></td><td>13</td><td><input type="radio"/></td><td><label>Análisis y Procesamiento de Señales</label></td><td>27</td><td><input type="radio"/></td></tr>
+		<tr><td><label>Sistemas no lineales</label></td><td>14</td><td><input type="radio"/></td><td><label>Lenguajes de programación</label></td><td>28</td><td><input type="radio"/></td></tr>
+	<table>
+	</br>
+	<label>29. ¿Cuáles retos considera que deberá enfrentar un ingeniero en Telecomunicaciones en los próximos cinco años en su profesión?</label></br>
+	<textarea name="p29" rows="4" cols="50"></textarea>
+	</br>
+	<label>30.- En qué medida considera Ud. que el Plan de Estudios le permitió obtener los conocimientos, habilidades, y actitudes requeridas en su desempeño profesional como egresado</label></br>
+	 <textarea name="p30" rows="4" cols="50"></textarea>
+	</br>
+	<label>31.- Del Plan de Estudios que cursó, ¿cuáles considera que son las mejores características de éste?</label></br>
+	 <textarea name="p31" rows="4" cols="50"></textarea>
+	</br>
+	<label>32.- ¿Qué características del Plan de Estudio considera que no fueron satisfactorias en su formación?</label></br>
+	 <textarea name="p32" rows="4" cols="50"></textarea>
+	</br>
+	<label>33.- ¿Qué características considera que requiere el Plan de Estudios para mejorar?</label></br>
+	 <textarea name="p33" rows="4" cols="50"></textarea>
+	</br>
+	<label>34.- Comentarios generales:</label></br>
+	 <textarea name="p34" rows="4" cols="50"></textarea>
+	</br>
+	<label>35.- Fecha de llenado de la forma:</label>
+	 <input class="fecha" type="text" />
+	</br>
+</form>
+		
+		</td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="Enviar"</td></td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

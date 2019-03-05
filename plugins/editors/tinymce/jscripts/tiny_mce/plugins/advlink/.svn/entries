@@ -1,0 +1,85 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/plugins/editors/tinymce/jscripts/tiny_mce/plugins/advlink
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+editor_plugin.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+db8939f6dc255847a7d55c9e8bb567a8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+jscripts
+dir
+
+langs
+dir
+
+link.htm
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+b0e299e0511f08085a88fac2ad91ee62
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+editor_plugin_src.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+34304d513a5fd57c49c5d6ae94caaa55
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+css
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

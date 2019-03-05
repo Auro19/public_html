@@ -1,0 +1,94 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/components/com_newsfeeds
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+metadata.xml
+file
+
+
+
+
+2009-03-24T18:12:36.000000Z
+8596f83a7f0f075e761afc19585090ec
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+models
+dir
+
+router.php
+file
+
+
+
+
+2009-03-24T18:12:36.000000Z
+9332398862ceca305958744ae37c1c8c
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+controller.php
+file
+
+
+
+
+2009-03-24T18:12:36.000000Z
+b326300aa5bf6546eaa502c2a9a4f8dd
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+newsfeeds.php
+file
+
+
+
+
+2009-03-24T18:12:36.000000Z
+9310cbd8315e394ad3ae77c5a6ea05fd
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:36.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+views
+dir
+

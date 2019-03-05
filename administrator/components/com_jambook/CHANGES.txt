@@ -1,0 +1,175 @@
+1 Oct 2008 (Olle Johansson)
+   - NEW: Updated to work with Joomla 1.5 using legacy mode.
+   
+4 Jun 2008 (Olle Johansson)
+   - NEW: Added slovakian translation sent in by Tomasko Dudik.
+
+6 Aug 2007 (Olle Johansson)
+   - FIX: Changed hidden footer text to show, and only on the list page.
+   - NEW: Updated the Chinese language files, sent in by baijianpeng
+   - NEW: Added Romanian language file sent in by nustiu
+   - Released Jambook 1.0 beta9
+
+20 May 2007 (Olle Johansson)
+   - NEW: Added Turkish translation sent in by Oguz Kaan Kilinc.
+
+17 Apr 2007 (Olle Johansson)
+   - FIX: Changed the information chapter in the documentation.
+   - FIX: Security issue reported and fixed although it couldn't be exploited.
+   - FIX: Removed all direct references to $mosConfig_absolute_path and $mosConfig_live_site in favor of $mainframe->getCfg()
+   - NEW: Added for for Paid Support Question on the control panel.
+   - FIX: Switched from text links to globe icon for Jambook Help items on the control panel.
+   - Released Jambook 1.0 beta8
+
+9 Apr 2007 (Olle Johansson)
+   - FIX: Added stripslashes to getOutput in jxtemplate to remove slashes from text.
+
+28 Mar 2007 (Olle Johansson)
+   - Added translations for Simplified Chinese and Traditional Chinese sent in by baijianpeng
+
+25 Mar 2007 (Olle Johansson)
+   - Released v1.0 beta7
+
+21 Mar 2007 (Olle Johansson)
+   - Added import from Easybook.
+
+20 Feb 2007 (Olle Johansson)
+   - Added Polish translation sent in by Tomek CeDeROM Cedro.
+
+11 Feb 2007 (Olle Johansson)
+   - Added Norwegian translation sent in by Torbein Kvil Gamst.
+
+9 Feb 2007 (Olle Johansson)
+   - Added Serbian (latin charset) translation sent in by Zoran Jekic.
+
+25 Jan 2007 (Olle Johansson)
+   - Added Portuguese translation sent in by Carlos Eduardo Rührwiem
+
+20 Dec 2006 (Olle Johansson)
+   - Added French translation sent in by Jean-François Questiaux.
+
+17 Dec 2006 (Olle Johansson)
+   - Changed the query limit to arguments to setQuery.
+
+9 Dec 2006 (Olle Johansson)
+   - Updated the German language files (sent in by Benjamin Malte Meier)
+
+4 Dec 2006 (Olle Johansson)
+   - Merged edits by b2m@gmx.de and fixed some minor issues.
+   - Changed to check for both Mambo 4.5/Joomla 1.0 as well as Joomla 1.5 when checking if files are included by Joomla.
+   - NEW: Remove html from all fields that can be entered by user except for the description if an editor is used.
+   - Released Jambook 1.0 beta6
+
+29 Nov 2006 Edit by b2m@gmx.de
+   - NEW: Super Administrators and Administrators are allowed to edit and delete entries in the frontend too.
+   - NEW: Translated german informal into german formal language.
+   - NEW: Added some more index.html in subfolders.
+   - NEW: Added some missing checks against calling files directly via url.
+   - FIX: Corrected paths for jambook-icons in install.jambook.php.
+   - FIX: New RegExp for emailcheck in template/default/edititem.tmpl.
+   - FIX: Corrected some language-definitions in german language files.
+   - FIX: Corrected some problems with captcha image.
+
+17 Nov 2006
+   - NEW: Added new logo images.
+   - NEW: Added a hidden footer on frontpage with disclaimer and link to Joomla at the Yard.
+
+9 Nov 2006
+   - FIX: Updated emailCloakingJx() to work like the new version in Joomla and made a fix to make it work in a template.
+
+4 Nov 2006
+   - NEW: Translated all new language strings in the Swedish language file.
+   - FIX: Did some changes need for component to work with Joomla 1.5.
+   - NEW: Added ability to search by phrase or any/all words in class search method.
+
+31 Oct 2006
+   - FIX: Fixed a problem with emails not being sent out.
+
+17 Oct 2006
+   - NEW: Added German informal language translation sent in by Andreas Binczyk
+   - NEW: Changed the ordering of the administrator control panel quick links.
+   - NEW: Moved configuration option descriptions into Tooltip Icon hover.
+   - NEW: Switched to radioselects for Yes/No configuration options.
+
+11 Oct 2006
+   - BUGFIX: Fixed bug when guests click the cancel button.
+   - BUGFIX: When deleting your own entry and Joomla uses SEF, page was redirected incorrectly for information message.
+   
+10 Oct 2006
+   - Added Dutch translation sent in by Vipyammer (www.vipyammer.nl)
+
+10 Oct 2006
+   - Added authoralias, information and hideurl/hideemail fields to edit post in administrator.
+   - Minor bugfixes.
+   - Packaged v1.0 beta4
+
+9 Oct 2006
+   - Updated the xml installation file.
+   - Added administration option to import entries from AkoBook.
+   - Added optional CAPTCHA image spam protection.
+   - Added more information to the notification email.
+   - Updated the readme file with detailed documentation.
+   - Reworked the configuration page to be easier to read.
+   - Added some information to the control panel page.
+   - Fixed images for all menu items.
+
+31 Oct 2005
+   - Fixed search.
+
+30 Oct 2005
+   - Updated the language files.
+
+29 Oct 2005
+   - Moved extra init editor code into the initEditorJx() function.
+
+25 Oct 2005
+   - AJAX functionality to publish/unpublish items without reloading list in administrator.
+   - Updated phpdoc documentation for functions in jambook.common.php
+   - Sorted the functions in jambook.common.php to make them easier to find.
+   - Added checkboxes to allow author to hide email and/or homepage from viewing.
+   - Partial code added to allow extra fields.
+   - Packaged 1.0 beta2
+
+24 Oct 2005
+   - Added Swedish language file, translated by Martin Ackerfors.
+
+23 Oct 2005
+   - Minor bug fixes.
+
+22 Oct 2005
+   - Commentformplacemnt config setting works.
+   - Updated the english language file to better match guestbook theme.
+   - Updated admin listing with extra fields, fixed a bug when changing item limit.
+   - Added an advanced checking that the email address seems to be valid for the mosJambook->check() method.
+   - Removed page navigation on frontend if there are less items than item limit.
+   - Fixed admin editing of comments.
+   - Wrote administrator preview script.
+   - Updated Swedish language file with all strings, although still not translated.
+   - Packaged first beta version of script and released to closed beta testers.
+
+21 Oct 2005
+   - Spam shield settings work properly.
+   - Preview page works properly.
+
+20 Oct 2005
+   - Worked on email cloaking and wysiwyg html editor problems, should hopefully work now.
+   - Tested user edit hours time check.
+   - Updated frontend html to look a bit better.
+
+19 Oct 2005
+   - Edit and delete entries from frontend should work properly.
+
+18 Oct 2005
+   - Polished the control panel code.
+   - Tested comment saving and fixed bugs.
+   - Added config option to change list of smileys to check for in spam shield.
+   - Tested the admin listing of comments.
+
+14 Oct 2005
+   - Frontpage comment code finished, with spam shield, flood protection etc.
+   - Guestbook viewing started.
+
+13 Oct 2005
+   - Started developing component.
+   - Finished configuration and information admin pages.
+   - Created a control panel start page for Jambook administrator pages.

@@ -1,0 +1,45 @@
+<script language="javascript" type="text/javascript">
+	 /**
+	  * Submit the admin form
+	  */
+	 function submitform(pressbutton){
+		 document.adminForm.task.value=pressbutton;
+		 try {
+			 document.adminForm.onsubmit();
+		 }
+		 catch(e){}
+		 document.adminForm.submit();
+	 }
+	 function submitbutton(pressbutton) {
+		var form = document.adminForm;
+  	        if (pressbutton == 'reedit') {
+				form.action = 'index.php';
+			    submitform( pressbutton );
+			    return;
+		    }
+			submitform( pressbutton );
+	}
+</script>
+<br />
+	<table cellpadding="0" cellspacing="0" border="0" width="100%" class="contentpane">
+	  <tr>
+	    <td class="contentheading" width="100%">{jxtlang=_JX_SAVEOREDIT}</td>
+	  </tr>
+          <tr class="sectiontableentry2">
+	    <td>
+<form action="index.php" method="POST" name="adminForm" enctype="multipart/form-data">
+
+{jxtvalue=hiddenvalues}
+
+  <input type="hidden" name="option" value="com_jambook" />
+  <input type="hidden" name="Itemid" value="{jxtvalue=Itemid}" />
+  <input type="hidden" name="task" value="" />
+  <input type="hidden" name="private_key" value="{jxtvalue=private_key}" />
+  <input type="hidden" name="public_key" value="{jxtvalue=public_key}" />
+  <input type="hidden" name="{jxtvalue=token}" value="1" />
+  <input type="button" name="savebtn" class="button" value="{jxtlang=_JX_SAVE_ITEM}" onclick="submitbutton( 'save' );" />
+  <input type="button" name="editbtn" class="button" value="{jxtlang=_JX_EDIT_ITEM}" onclick="submitbutton( 'reedit' );" />
+</form>
+        </td>
+      </tr>
+    </table>

@@ -1,0 +1,67 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/components/com_wrapper/views/wrapper
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+metadata.xml
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+dbb92029582286dc273916d5e39354a8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+view.php
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+a27968914f3d0f697a488bb4582c8515
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+tmpl
+dir
+

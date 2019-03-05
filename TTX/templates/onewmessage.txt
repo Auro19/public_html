@@ -1,0 +1,8 @@
+[b]Re:[/b] Ticket (%TICKETID%), (%TICKETSTATE%)
+[b]Customer:[/b] (%UNAME%) ((%UEMAIL%))
+
+Followup message:
+
+(%MESSAGE%)
+
+(%TICKETURL%)

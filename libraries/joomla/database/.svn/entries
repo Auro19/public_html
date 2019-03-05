@@ -1,0 +1,82 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/joomla/database
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+recordset.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+c0096707c9211cc01c41b585f4532b5b
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+database
+dir
+
+table
+dir
+
+database.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+154084cac6e847cfc9a61457a8d5d220
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+table.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+2d59c0e6434d7665cd8ee5083afe3c4e
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

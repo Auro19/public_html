@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>GK EasyLinks</name>
+	<type>extension</type>
+	<version>1.0</version>
+	<author>GavickPro</author>
+	<description>Interface extension to add easy way of preview and settings</description>
+	<phpclassfile>ext_easylinks.php</phpclassfile>
+</module>

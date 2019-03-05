@@ -1,0 +1,79 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/modules/mod_search
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+mod_search.xml
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+fab5aead9ae4360ac89f30fcf994729e
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+f7706f0ed97e1a70bfd4404591d97862
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+mod_search.php
+file
+
+
+
+
+2009-03-24T18:12:45.000000Z
+5369a3ad990c8c87d36904f7bd17ce0c
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+tmpl
+dir
+

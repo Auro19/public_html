@@ -1,0 +1,103 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/administrator/components/com_menus
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+assets
+dir
+
+helpers
+dir
+
+models
+dir
+
+admin.menus.php
+file
+
+
+
+
+2009-03-24T18:12:27.000000Z
+2a96f92e958c3a1e1759d88edffb3626
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+config.xml
+file
+
+
+
+
+2009-03-24T18:12:27.000000Z
+b9fadcd26730a89c711a240f77ef6c04
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+menus.xml
+file
+
+
+
+
+2009-03-24T18:12:27.000000Z
+a53550d3832eedf144899569b56ea344
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+controller.php
+file
+
+
+
+
+2009-03-24T18:12:27.000000Z
+98dda213731f247b0d20b7079f03273d
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:27.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+classes
+dir
+
+views
+dir
+

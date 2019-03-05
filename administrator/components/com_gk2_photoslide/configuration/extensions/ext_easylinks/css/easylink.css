@@ -1,0 +1,15 @@
+.edit_btn{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/edit.png');
+	float: left;
+}
+
+.preview_btn{
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('../images/preview.png');
+	float: left;	
+}

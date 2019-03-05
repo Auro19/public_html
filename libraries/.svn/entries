@@ -1,0 +1,94 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+pattemplate
+dir
+
+phpmailer
+dir
+
+joomla
+dir
+
+simplepie
+dir
+
+pear
+dir
+
+bitfolge
+dir
+
+loader.php
+file
+
+
+
+
+2009-03-24T18:12:49.000000Z
+43c49daa7607378254830c15c9775e3a
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+phputf8
+dir
+
+geshi
+dir
+
+tcpdf
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:49.000000Z
+dd5d02cc750d2855cf6f6c5bf5bea587
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+domit
+dir
+
+phpxmlrpc
+dir
+
+phpinputfilter
+dir
+
+openid
+dir
+
+phpgacl
+dir
+

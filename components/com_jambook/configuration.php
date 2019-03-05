@@ -1,0 +1,45 @@
+<?php
+if ( !defined( '_VALID_MOS' ) && !defined('_JEXEC') ) die( 'Direct Access to this location is not allowed.' );
+$comcfg['version']='1.0 RC1';
+$comcfg['deleteafterdays']='0';
+$comcfg['newdays']='7';
+$comcfg['publishinglimit']='0';
+$comcfg['sort_order']='createddesc';
+$comcfg['item_limit']='10';
+$comcfg['dateformat']='%Y-%m-%d';
+$comcfg['showusername']='1';
+$comcfg['template']='default';
+$comcfg['cloakemail']='1';
+$comcfg['commentformplacement']='linkedto';
+$comcfg['previewpage']='1';
+$comcfg['allowguestname']='1';
+$comcfg['postitems']='0';
+$comcfg['autoapprove']='1';
+$comcfg['useredithours']='1';
+$comcfg['floodprotection']='60';
+$comcfg['doublepostings']='1';
+$comcfg['striphtml']='uselist';
+$comcfg['allowedhtml']='br, b, i, p, u, pre, center, hr, blockquote, em, strong, big, small, h1, h2, h3, h4, h5, h6, q, sub, sup, tt, cite, code, address, abbr, table, tr, td, div';
+$comcfg['editor']='_jx_default';
+$comcfg['initeditor']='1';
+$comcfg['editorwidth']='400';
+$comcfg['editorheight']='200';
+$comcfg['mailfromaddress']='';
+$comcfg['mailfromname']='';
+$comcfg['adminemail']='';
+$comcfg['adminname']='';
+$comcfg['sendthankyouemail']='0';
+$comcfg['emailcommenttoadmin']='0';
+$comcfg['usecaptcha']='1';
+$comcfg['spamtreatment']='dontpublish';
+$comcfg['spam_url']='0';
+$comcfg['spam_image']='1';
+$comcfg['spam_onlysmileys']='1';
+$comcfg['spam_forbiddenwords']='';
+$comcfg['spam_bannedip']='';
+$comcfg['spam_smileylist']=':-) :-( :) :( :grin ;) 8) :p :roll :eek :upset :zzz\', :sigh :? :cry :( :x';
+$comcfg['import_published']='1';
+$comcfg['import_longurl']='100';
+$comcfg['import_removebbcode']='1';
+foreach( $comcfg as $_k => $_v ) { $comcfg[$_k] = stripslashes( $_v ); }
+?>

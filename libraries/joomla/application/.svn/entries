@@ -1,0 +1,106 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/joomla/application
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+component
+dir
+
+pathway.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+0532b45ac6009384f6e9ba852b43fe2f
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+module
+dir
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+5606417663001ffc18211581c9d5c4c1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+router.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+b1b84dbd440f8eed254dec4302949eb6
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+application.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+571da73fd4c48716c7fe782623c5128e
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+menu.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+be0b06b1779bca37bc97c4313f5eb5e8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

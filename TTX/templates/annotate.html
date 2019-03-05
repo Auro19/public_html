@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=[%CHARSET%]">
+<title>Annotate Ticket</title>
+<style type="text/css">
+<!--
+body, td, p { font-family: Verdana, Helvetica, sans-serif; font-size: 10pt;}
+-->
+</style>
+</head>
+<body>
+<center>
+<font color=red><b>(%ERROR_MESSAGE%)</b></font><font color=blue><b>(%MESSAGE%)</b></font>
+<table cellspacing=0 cellpadding=4>
+<form action="(%ENV_SCRIPT_NAME%)" method=post>
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=cmd value=print>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=key value="(%INPUT_key%)">
+		<tr>
+				<td align=right><b>[%Ticket%]</b></td>
+				<td align=left><b>(%TICKET_id%)</b></td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Email%]</b></td>
+				<td align=left>(%TICKET_email%)</td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Customer%]</b></td>
+				<td align=left>(%TICKET_name%)</td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Subject%]</b></td>
+				<td align=left>(%TICKET_subject%)</td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Comments%]</b></td>
+				<td align=left><textarea rows=5 cols=40 name=notes></textarea></td>
+		</tr>
+    <tr>
+		    <td colspan=2>
+ 						<input type=submit class=boldcontent value="[%Print%]">
+    		</td>
+				</form>
+		</tr>
+</table>
+</body>
+</html>

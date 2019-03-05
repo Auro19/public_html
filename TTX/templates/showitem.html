@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=[%CHARSET%]">
+<title>(%ITEMLABEL%) (%ITEM_TITLE%)</title>
+<style type="text/css">
+<!--
+body, td, p { font-family: Verdana, Helvetica, sans-serif; font-size: 10pt;}
+-->
+</style>
+<script language=Javascript>
+<!--
+function closeme()
+{
+ //parentisticket = (%INPUT_isticket%);
+ //if (parentisticket) {
+ //  msg = opener.newticket.problem.value;
+ //  opener.location.href = "(%ENV_SCRIPT_NAME%)?cmd=ticket&sid=(%INPUT_sid%)&key=(%TICKET_key%)&problem="+escape(msg);
+ // }
+ // else {
+ //  opener.update();
+ // }
+ window.close();
+ return false;
+}
+//-->
+</script>
+</head>
+<body>
+<center>
+<font color=red><b>(%ERROR_MESSAGE%)</b></font><font color=blue><b>(%MESSAGE%)</b></font>
+<form action="(%ENV_SCRIPT_NAME%)" method=post>
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=isticket value="(%INPUT_isticket%)">
+<input type=hidden name=cmd value=showitem>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=id value="(%INPUT_id%)">
+<input type=hidden name=do value=1>
+<table cellspacing=0 cellpadding=5>
+  <td colspan=3 align=left>
+  <b><font size="+1">(%ITEM_TITLE%)</font></b>
+  </td>
+  </tr>
+  <tr>
+  <td align=center><img src="(%ITEM_IMG%)"></td>
+  <td align=left><nobr><b>[%Status%]:</b> <img src="(%ITEM_STATUS_IMG%)"> (%STATUS_SELBOX%)</nobr></td>
+  <td align=right><input type=submit value="[%Update%]">
+  <input type=submit class=button onClick="return closeme()" value="[%Close Window%]"></td>
+  </tr>
+  <tr>
+  <td colspan=3 align=left>
+  <b>[%Notes%]</b><br>
+  (%ITEM_QNOTES%)
+  </td>
+  </tr>
+  <tr>
+  <td colspan=3 align=left>
+  <b><small>[%add notes%]</small></b><br>
+  <textarea wrap=virtual cols=70 name=notes rows=6>(%QNOTES%)</textarea>
+  </td>
+  </tr>
+  <tr>
+  <td colspan=3 align=center>
+<input type=submit value="[%Update%]">
+<input type=submit class=button onClick="return closeme()" value="[%Close Window%]">
+  </td>
+  </tr>
+</table>
+</form>
+</center>
+</body>
+</html>

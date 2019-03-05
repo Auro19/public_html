@@ -1,0 +1,134 @@
+* BUG: Highlight when hovering over entries looks weird in ja_purity template. Icon table cell gets highlighted by itself.
+
+Features planned for v1.1:
+* Switch to divs/css html.
+* Word filter.
+* Akismet spam support.
+* RSS feed of entries.
+* Create the getinfo-component to return info about latest version.
+* Config options for showing email and homepage fields.
+* Add whois IP lookup: http://www.jxdevelopment.com/component/option,com_joomlaboard/Itemid,58/func,view/catid,14/id,5000/#5000
+* Add config option to set which groups should be allowed to edit/delete others entries.
+* Add link to show own guestbook entries for registered users.
+* Add configuration option for number of characters in CAPTCHA and possible allowed characters.
+* Different access restrictions for viewing, posting, editing and deleting.
+* Profile integration with Community Builder.
+* Make use of content plugins, let admin set which ones are used.
+* Admin selectable wysiwyg editor.
+* Quick links for smileys and markup code (or port a simple editor to an editor mambot)
+* Refactoring, move email sending to own functions etc.
+* Add import function for EasyGB, Mambook, Perrys Guest Book, BookJoomla
+* Move email text into template files.
+* Configuration option to strip all but given html tags.
+* Configuration option to convert linefeeds to <br /> tags.
+* Search plugin for Joomla
+* Report entry to admin.
+* Allow admin to post replies to entries from frontend
+* Add rating field.
+* When editing an item in administrator, automatically update a preview in a tab.
+* Admin log, save all important admin actions to a log file.
+* Help information when hovering over info icons in administrator interface.
+* Special fields: Country flag, MSN, Aim, Icq, Yahoo, Gabber
+* Statistics admin module which shows total number of comments, comments in the last week, number of users who have commented, comments per day since first comment etc.
+* Censoring of words.
+* Add filter in administrator when listing guestbook entries.
+* Allow admin to override the Joomla language setting.
+* Option to hide form with javascript initially, shown when link is clicked.
+* Add option to allow entries with failed captcha-check to be entries with Author replaced to Guest.
+* Break up long lines into shorter ones.
+
+
+Features considered for v2.0:
+* Add support for com_hashcash, com_securityImages and com_bayesianNaiveFilter
+* Add settings for which fields are required.
+* Let each user have their own guestbook. Set guestbookowner to user id of that user, only show specific entries for each users' personal guestbook.
+* Integrate with Mamblog, Community Builder, Joomlaboard, myPMS (mostly links to profile pages etc).
+* Create extra guestbooks, not connected to a specific user.
+* Switch to patTemplate for better template handling.
+* Allow guestbook owners to reply to entries in their own guestbook.
+* Allow guestbook owners delete entries in their own guestbook.
+* List of users with guestbooks and all extra guestbooks.
+* Keywords/tags for guestbooks.
+* Option to automatically select flag based on IP.
+
+
+Features considered for v2.1:
+* Add extra fields via admin (text, image upload, file upload, droplists)
+* Set if fields are required, if they are shown on entries, if users can select whether it should show on entries, if users can add/remove it from their own guestbook
+
+
+Features considered for v2.2:
+* Content Comment Plugin which adds guestbooks for content items.
+
+
+Features considered for v3.0:
+* Guestbook "categories", where guestbooks can be created by anyone. E.g. a simple forum.
+* Add moderators to guestbook categories.
+* Allow users to (un)subscribe to guestbooks.
+* Spam settings, notification etc changeable for each "category".
+* Selectable whether to use internal profile or CB.
+
+
+
+Possible future feature changes:
+* Randomized field names, to fool spambots.
+* Write form field input boxes via javascript, to fool spambots.
+* Customizeable BBCode mambot, with editor-xtd trigger buttons
+* Create module with comment form to allow easy placement of it.
+* Easy installation/changing of new smiley icon sets and adding new ones.
+
+
+Prayer Request Functionality
+Allow churches to set up a page where visitors can post prayer requests, which are both shown on the page and emailed to a distribution circle.
+A separate language file would be needed.
+Also the possibility to add email addresses to send posts to, and the option to send to all registered users. 
+Maybe the possibility for users to subscribe to the guestbook as well.
+
+
+Complete list:
+X Make showHeader print the tab icons and use argument to set which is selected.
+X Add showFooter function that closes the page tab table opened in showHeader().
+X Post form
+X Public viewing of entries.
+X Admin listing of entries.
+X Admin editing of entries.
+X List/edit templates
+X Configuration
+  - Allow posting
+  - Automatic publishing of entries
+  - Activate spam shield (with extra settings, forbidden words etc)
+  - Send thank you email upon posted entry?
+  - Send email with entry to admin?
+  - Admin name
+  - Admin email
+  - Show entry form above or below list, or on separate page?
+  - Use this html editor mambot.
+  - Allow guests to enter name
+  - Allow registered users to edit their comments for this many hours.
+X Fields for entries: id, title, content, email, url, created, created_by, reply_to, published, guestbookowner, possiblespam, fromip
+X Editor mambot support
+X Flood protection (don't allow posts from same ip in X seconds)
+X Double post check, make sure post isn't already in database.
+X Use emailCloaking() when printing email address.
+X Remember to save host ip with comment.
+X Set a specific time that users are allowed to edit their own comments.
+X Add config option whether to use username or real name when showing owner of comment.
+X Add checkboxes to allow users to decide if homepage/email should be shown on page.
+X Add image input field when entering comment, if text key doesn't match the obscured image, the comment is marked as spam.
+X Add statistics info on Jambook Control Panel, with info about current version and latest stable version (which calls home to send info to my site when getting the version number)
+
+
+Spam shield settings:
+- Treat comments containing url tag as spam.
+- Treat comments containing image tag as spam
+- Treat comments as spam if they only contain smileys.
+- Treat comments containing these forbidden words as spam (textfield)
+- Treat comments with data in fields not shown on form as spam.
+
+Selection of what to do with spam comments:
+- Delete immediately.
+- Do not publish (even if automatic publishing is turned on)
+- Publish, but send information email to admin.
+
+Disallow following IP addresses to make comments.
+

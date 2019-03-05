@@ -1,0 +1,266 @@
+/* This is the css file of the mOdErN theme */
+@media screen
+  {
+/* 
+-----------------------------------------------
+  Global
+----------------------------------------------- */
+body {
+    background-color: white;
+  	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width:800px;
+	height:600px;
+	color:black;
+	font:12px Verdana,Arial,Helvetica,sans-serif;
+	background-image: url('../img/mOdErN.jpg');
+	background-attachment: fixed
+}
+/* 
+-----------------------------------------------
+  Menu
+----------------------------------------------- */
+/* CROSSBROWSER CSS-HOVER MENU WITH Internet Explorer PNG OPACITY.
+// Copyright ©2003, ©2004, ©2005 by Mark Coudriet
+
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, 
+// Boston, MA 02111-1307, USA.
+
+CROSSBROWSER CSS-HOVER MENU FAQ:
+   The DOCTYPE must not be transitional, I use XHTML just to be ahead of the game.
+    ---* <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN"> *---
+    
+PNG OPACITY FAQ:
+----
+1) PAGE/JAVASCRIPT SLOWDOWN? - It has been noted that if there are very
+   many PNG images on one page, the JavaScript will become very slow.
+
+2) WHAT ABOUT OTHER BROWSERS? - CSS expressions only work for I.E.
+
+3) WHY CHECK FOR SSL? - This can be removed, only included because it has     
+   been noted that sometimes certain pages will freeze
+   when using SSL. Remove & test if using SSL.
+   
+4) WHY SET DIMENSIONS OF IMG TO 1px? - For filter to activate height & width 
+   of image must be set to greater than zero & it hides the original. 	
+   
+CODE FLOW:
+   Check if protocol is SSL, if Yes skip applying filter.
+	---* (location.protocol!="https:") && *---
+			
+   Check if img is PNG, if it is enable filter.                
+	---* /\.png$/.test(this.src.toLowerCase()) *---
+	
+   Check if filter is active, if it is set image height & width to 1px.
+	---* (this.style.filter!="")? "1px" : "" *---
+*/
+img.Coudriet_img { 
+	filter:expression( ((location.protocol!="https:") && /\.png$/.test(this.src.toLowerCase()))? "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+this.src+"')" : "" );
+	height:expression( (this.style.filter!="")? "1px" : "" );
+	width:expression( (this.style.filter!="")? "1px" : "" );
+}
+span.Coudriet_o {
+	background-color: #79817A;
+	display: table-cell;
+	display: inline-block;   
+	width: 115px; 
+    text-align:center;
+    color: white; font:10px Verdana,Arial,Helvetica,sans-serif;
+    border-top: 5px dashed #3E4950;
+    border-right: 10px solid #3E4950
+}
+  * html span.Coudriet_o
+    {
+	position: absolute; /* 4 IE */
+    width: 115px; /* 4 IE */
+    top: 0px;
+    right: 0px;
+    }
+span.Coudriet_c {
+	background-color: #889296;
+	width: 115px; 
+    text-align:center;
+    color: white; font:10px Verdana,Arial,Helvetica,sans-serif;
+    border-top: 5px dashed #3E4950;
+    border-left: 10px solid #3E4950;
+    display: none
+}
+
+span.Coudriet {
+    position: fixed; /* 4 Firefox */
+    width: 115px; /* 4 Firefox */
+    height: 15px;
+    top: 0px;
+    right: 60px;
+    font-weight:bold;
+    color:blue;
+    background-color: transparent; 
+    text-align:center;
+    }
+  * html span.Coudriet
+    {
+    position: absolute; /* 4 IE */
+    width: 115px; /* 4 IE */
+    }
+span.Coudriet_iframe {
+    text-align:left;
+    display:none
+    }
+  * html body
+    {
+    overflow-y: scroll;
+    height: 96%;
+    width: 98%
+    }
+  * html
+    {
+    overflow-y: hidden;
+    }
+.tLinks {
+    background-color: #C8FC00;
+    width:115px;
+    text-align:left
+    }
+
+/* Mainmenu settings for selected / not selected td tags */
+.notselected { padding-left:5px; padding: 2px; font-weight: bold;
+				   font-size: 10px; FONT-FAMILY: Georgia, Verdana, Arial, sans-serif;
+				   text-decoration:none }
+.notselected A:link, .notselected_top A:visited, .notselected_top img {
+	color: #666666; text-decoration:line-through
+	}
+.notselected A:active, .notselected_top A:hover {
+	color: #6666ff; text-decoration:line-through
+	}
+	
+.selected { cursor: pointer; cursor: hand;
+			font-weight: bold; font-size: 10px; FONT-FAMILY: Georgia, Verdana, Arial, sans-serif }
+.selected A:link, .selected_top A:visited, .selected_top img {
+	 color:#A66408; text-decoration:underline 
+	}
+.selected A:hover, .selected_top A:active {
+	 color:#CC3300
+	}    
+
+    
+/* 
+-----------------------------------------------
+  Body
+----------------------------------------------- */ 
+a:link, a:visited, A:active, A:hover  {
+	color: blue; text-decoration: none
+	}
+
+li { font-size: 8pt; text-decoration:none; }
+
+TD {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-STYLE: normal;
+	FONT-FAMILY: Arial;
+}
+
+h1
+{
+   font-weight : bold;
+   font-size : 14pt;
+   font-family : Arial;
+   color : #000000;
+}
+
+
+/* 
+-----------------------------------------------
+  Forms
+----------------------------------------------- */
+/* the next styles are meant for forms */
+form { margin:0; padding:0 }
+
+input, textarea {
+	background-color: #F5F5F5;
+	font-size: 8pt;
+	border-style: solid;
+	border-width: 1;
+	background-image: url('../img/recessed.gif');
+	background-repeat: repeat-x;
+	}
+	
+select {
+	font-family: Arial, helvetica, sans-serif;
+	background-color: #F5F5F5;
+	font-size: 8pt;
+	}
+
+#checkbox  {
+	border: 0px;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	}
+
+/* 
+-----------------------------------------------
+  Calendar
+----------------------------------------------- */
+/* calendar module */
+/* used for the year view in the calendar */
+#small {
+	font-size: 8pt;
+	}
+/* used to mark the inactive days of the previous and next month in the month box of the calendar */
+#vn {
+	color:silver;
+	}
+/* Headline of the calendar datepicker */
+#cal {
+	background-color: #006699;
+	color: #cccccc;
+	font-weight: bold;
+	text-align: right;
+	}
+
+/* 
+-----------------------------------------------
+  SubMenu
+----------------------------------------------- */
+/* Module related submenu */
+/* l = low : not selected */
+#ml {
+	background-color: #8CC8F2;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	}
+/* h = highlight : selected */
+#mh {
+	background-color: #F0F0E0;
+	color: #005588;
+	font-weight: bold;
+	text-align: center;
+	}
+/* styles used in several modules */
+/* moves content of a table cell to the right = align=right */
+#ri {
+	text-align: right;
+	}
+/* special style for the default submit icon so it appears transparent */
+/* used in the help files */
+#normal {
+	font-size: 10pt;
+	}
+}

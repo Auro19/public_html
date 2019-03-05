@@ -1,0 +1,196 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/pattemplate/patTemplate
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+Modifier.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+8e5a5b7e8f256045bdf828b54ff9fb08
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Function
+dir
+
+TemplateCache.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+3397ded449e266518cc801e11d5498df
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Reader.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+16c6c02af0a818094556b47e6e3467f8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+InputFilter.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+d657245594d215f19659239ca301d410
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Dump.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+4c37caf3af6326aeb11ccfdec6d8605f
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+OutputFilter.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+3cd2d7ab81007944d2581bc5b554dfc7
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Modifier
+dir
+
+TemplateCache
+dir
+
+Compiler.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+bbb685f8080b28fe29fecca5242d0c47
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Stat.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+7e815077b7ad605aa885a64365c549e2
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Reader
+dir
+
+InputFilter
+dir
+
+Dump
+dir
+
+OutputFilter
+dir
+
+OutputCache.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+ed2bae6429954b49b901d0051d0f26a8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+dd5d02cc750d2855cf6f6c5bf5bea587
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Stat
+dir
+
+Module.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+a2cbfc4a364e62a63d76a37b5a42c372
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+Function.php
+file
+
+
+
+
+2009-03-24T18:12:46.000000Z
+1d49907f218725ec3dc0a6d3a1f511f9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

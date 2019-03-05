@@ -1,0 +1,213 @@
+/**
+ * Joomgallery CSS Style 
+ *
+ * - Common (used at all views)
+ *
+ * Please adjust the CSS to your needs in the file joom_local.css 
+ * in this directory. You can either create it yourself, or 
+ * rename joom_local.css.README.
+ *
+ * - allgemeine Einstellungen (wird von allen Ansichten benutzt)
+ * 
+ * Bitte nehmen Sie Änderungen in der Datei joom_local.css in diesem 
+ * Verzeichnis vor. Sie können diese Datei erstellen oder die 
+ * joom_local.css.README umbenennen
+ **/
+
+.gallery .sectiontableheader{  
+  padding:5px;
+  text-align:center;
+}
+
+.jg_rm, .jg_sm {
+  font-size:0.6em;
+  padding-left:5px;
+}
+
+.jg_rm {
+  color:#999;
+}
+
+.jg_sm {
+  color:#999;
+}
+
+.jg_back{
+  padding-left:5px;  
+}
+
+img.jg_photo {
+  vertical-align:bottom;
+  padding:3px;
+  margin:0px 0.3em 0.3em 0px;
+}
+
+.jg_no_script {
+  color:#999999;
+  font-size:0.8em;
+}
+
+.jg_no_access {
+  color:#777777;
+}
+
+/* Border for all images (thumbs, minis, full...) */
+img.jg_photo, .jg_minis a img {
+  border:1px solid #c0c0c0;
+  background-color:#fff;
+  background-image:none;
+}
+
+a:hover img.jg_photo, .jg_minis a:hover img {
+  border:1px solid #999;  
+}
+
+.jg_pathway{
+  padding: 2px;  
+}
+
+.jg_pathway a img{
+  vertical-align:middle;  
+}
+
+.jg_mygal{
+  text-align:left;
+  font-weight:bold;
+  padding-left:5px;
+}
+
+/* div around 'my favourites'-link */
+div.jg_my_favourites {
+  text-align:left;
+  font-weight:bold;
+  padding-left:5px;
+}
+
+.jg_txtrow, .jg_toplist, .jg_gallerystats, .jg_pagination, .jg_subcat_pagination {
+  text-align:center;
+  padding:0.5em 0;
+}
+
+.jg_hidden {
+  visibility:hidden;
+  text-align:center;
+}
+
+.jg_displaynone {
+  display:none;
+}
+
+.jg_overflowhidden {
+  padding:0.8em 0;
+  overflow:hidden !important;
+  overflow:hidden;
+}
+
+.jg_floatleft {
+  float:left;
+}
+
+/* div around searchbox */
+div.jg_search {
+  text-align:right; /* align searchbox right */
+  margin:2px;
+  padding: 0.2em 0;
+}
+
+/* searchbox */
+div.jg_search .inputbox {
+  margin: 0 0 0 5px;
+  background-image: url("../images/search_icon.gif");
+  background-position: 5px center;
+  background-repeat:  no-repeat;
+  padding: 2px 5px 2px 20px;
+}
+
+.jg_poweredby {
+  border:#666 solid 1px;
+  padding:0.2em;
+}
+
+.jg_newpic {
+  border:0 none;
+  margin:0 0 0 0.6em;
+  padding:0;
+  vertical-align:bottom;
+}
+
+img.jg_icon{
+  width:16px;
+  height:16px;
+  border:0px;
+  vertical-align:bottom;  
+}
+
+/* Tooltip-Styles::Overlib */
+.jl-tips-font {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #000000;
+}
+ 
+.jl-tips-capfont {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-weight: bold;
+color: #FFFFFF;
+padding-top:2px;
+padding-bottom:2px;
+}
+ 
+.jl-tips-closefont {
+font-family: Arial, sans-serif;
+font-size: 12px;
+font-weight: bold;
+color: #9999FF; /*#730000;*/
+text-align: right;
+}
+ 
+.jl-tips-closefont a, .jl-tips-closefont a:link, .jl-tips-closefont a:visited {
+color: #730000;
+}
+ 
+.jl-tips-closefont a:hover {
+color: #730000;
+}
+ 
+.jl-tips-fg {
+background-color: #FFFFFF; /*#CCCCFF;*/
+border: 1px solid #d0d0ca;
+padding: 2px; /*15px;*/
+}
+ 
+.jl-tips-bg {
+background:#C64934; /*#333333;*/
+/*border-left:1px solid #d0d0ca;
+border-right:1px solid #d0d0ca;
+border-top:1px solid #d0d0ca;*/
+}
+ 
+.jl-tips-button,.jl-tips-button:link,.jl-tips-button:visited,.jl-tips-hover
+{
+margin: 0px 0.5em 0.5em 0;
+padding: 0;
+white-space: nowrap;
+text-align: center;
+display: block;
+width: 8em;
+background:#333333;
+font: bold 12px Menu, Arial, Verdana, sans-serif;
+border: 1px solid #d0d0ca;
+color: #404040;
+text-decoration: none;
+padding: 2px;
+padding-left:5px;
+padding-right:8px;
+margin-top:10px;
+}
+ 
+.jl-tips-button:hover   , .jl-tips-hover:hover {
+background: #EEEEEE;
+color: #000040;
+text-decoration: none;
+}

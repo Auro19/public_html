@@ -1,0 +1,124 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/templates/rhuk_milkyway
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+templateDetails.xml
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+9b45f72625c4ef899c3505823d52aab0
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+
+params.ini
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+6e7dc038c99cecca60219d22cee5b331
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+template_thumbnail.png
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+80ee393f8d01e43d3c7d544cc5743922
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+
+html
+dir
+
+images
+dir
+
+css
+dir
+
+component.php
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+fb352f422f4a32c29790352db2cfa6aa
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.php
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+9896aab668c23399ccab1b3c4453fddd
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+favicon.ico
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+63b982eddd64d44233baa25066db6bc1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+

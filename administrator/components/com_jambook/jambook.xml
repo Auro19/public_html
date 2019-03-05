@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+  <name>Jambook</name>
+  <productName>Jambook</productName>
+  <creationDate>5 Oct 2008</creationDate>
+  <version>1.0 RC1</version>
+  <joomlaVersion>1.0.15</joomlaVersion>
+
+  <copyright>(c) 2006-2008 Olle Johansson</copyright>
+  <license>GNU GPL v2</license>
+  <licenseText>
+    This software is released under the terms and conditions of the
+    &lt;a href="http://www.gnu.org/copyleft/gpl.html"
+      target="_blank"&gt;GNU General Public License&lt;/a&gt;.
+    For more information, please see the LICENCE file accompanying
+    the installation package.
+  </licenseText>
+
+  <author>Olle Johansson</author>
+  <authorName>Olle Johansson</authorName>
+  <authorEmail>Olle@Johansson.com</authorEmail>
+  <authorUrl>http://www.jxdevelopment.com/</authorUrl>
+
+  <productPicture>images/jx_small.png</productPicture>
+  <productUrl>http://www.jxdevelopment.com/jambook</productUrl>
+  <setupUrl>http://www.jxdevelopment.com/updates/</setupUrl>
+  <trackerUrl>http://forge.joomla.org/sf/tracker/do/listArtifacts/projects.jambook/tracker.bugs</trackerUrl>
+  <description>Jambook is an open source Joomla guestbook component with spam protection and many customization options.</description>
+
+  <warning>
+  Warranty&lt;br /&gt;
+  This program is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  PARTICULAR PURPOSE.
+  </warning>
+
+  <credits>
+  </credits>
+
+  <files>
+    <filename>jambook.php</filename>
+    <filename>jambook.html.php</filename>
+    <filename>jambook.search.php</filename>
+    <filename>jambook.common.php</filename>
+    <filename>jambook.class.php</filename>
+    <filename>ocr_captcha.class.php</filename>
+    <filename>Dustismo.ttf</filename>
+    <filename>jxtemplate.php</filename>
+    <filename>index.html</filename>
+    <filename>images/index.html</filename>
+    <filename>images/jambook_medium.png</filename>
+    <filename>images/jambook_small.png</filename>
+    <filename>images/jambook_mini.png</filename>
+    <filename>images/jambook_tiny.png</filename>
+    <filename>images/controlpanel.png</filename>
+    <filename>images/editentries.png</filename>
+    <filename>images/import.png</filename>
+    <filename>images/templatemanager.png</filename>
+    <filename>images/trash.png</filename>
+    <filename>images/information.png</filename>
+    <filename>images/configuration.png</filename>
+    <filename>images/link.png</filename>
+    <filename>images/editentries_big.png</filename>
+    <filename>images/import_big.png</filename>
+    <filename>images/templatemanager_big.png</filename>
+    <filename>images/information_big.png</filename>
+    <filename>images/configuration_big.png</filename>
+    <filename>captcha/index.html</filename>
+    <filename>language/index.html</filename>
+    <filename>language/english.php</filename>
+    <filename>language/swedish.php</filename>
+    <filename>language/swedish-utf8.php</filename>
+    <filename>language/dutch.php</filename>
+    <filename>language/germani.php</filename>
+    <filename>language/germanf.php</filename>
+    <filename>language/german.php</filename>
+    <filename>language/french.php</filename>
+    <filename>language/portuguese.php</filename>
+    <filename>language/serbian_lat.php</filename>
+    <filename>language/norwegian.php</filename>
+    <filename>language/polish.php</filename>
+    <filename>language/simplified_chinese.php</filename>
+    <filename>language/traditional_chinese.php</filename>
+    <filename>language/spanish.php</filename>
+    <filename>language/russian.php</filename>
+    <filename>language/turkish.php</filename>
+    <filename>language/slovak.php</filename>
+    <filename>templates/index.html</filename>
+    <filename>templates/default/index.html</filename>
+    <filename>templates/default/show.tmpl</filename>
+    <filename>templates/default/list.tmpl</filename>
+    <filename>templates/default/listempty.tmpl</filename>
+    <filename>templates/default/listitem.tmpl</filename>
+    <filename>templates/default/thankyou.tmpl</filename>
+    <filename>templates/default/search.tmpl</filename>
+    <filename>templates/default/error.tmpl</filename>
+    <filename>templates/default/preview.tmpl</filename>
+    <filename>templates/default/edititem.tmpl</filename>
+    <filename>configuration.php</filename>
+  </files>
+  <install>
+      <queries>
+         <query>
+            CREATE TABLE IF NOT EXISTS `#__jx_jambook` (
+              `id` int(11) unsigned NOT NULL auto_increment,
+              `title` varchar(255) NOT NULL default '',
+              `content` text NOT NULL default '',
+              `email` varchar(255) NOT NULL default '',
+              `url` varchar(255) NOT NULL default '',
+              `authoralias` varchar(255) NOT NULL default '',
+              `replyto` int(11) unsigned NOT NULL default '0',
+              `spamscore` tinyint(4) NOT NULL default '0',
+              `fromip` varchar(255) NOT NULL default '',
+              `guestbook_id` int(11) unsigned NOT NULL default '0',
+              `section` varchar(255) NOT NULL default '',
+              `attribs` text NOT NULL,
+              `state` tinyint(3) NOT NULL default '0',
+              `created` datetime NOT NULL default '0000-00-00 00:00:00',
+              `created_by` int(11) unsigned NOT NULL default '0',
+              `modified` datetime NOT NULL default '0000-00-00 00:00:00',
+              `modified_by` int(11) unsigned NOT NULL default '0',
+              `checked_out` tinyint(4) NOT NULL default '0',
+              `checked_out_time` datetime NOT NULL default '0000-00-00 00:00:00',
+              `publish_up` datetime NOT NULL default '0000-00-00 00:00:00',
+              `publish_down` datetime NOT NULL default '0000-00-00 00:00:00',
+              `hits` int(11) unsigned NOT NULL default '0',
+              `version` int(11) unsigned NOT NULL default '1',
+              `access` int(11) unsigned NOT NULL default '0',
+              `ordering` tinyint(4) NOT NULL default '0',
+              PRIMARY KEY  (`id`)
+            )
+         </query>
+      </queries>
+  </install>
+  <uninstall>
+      <queries>
+      </queries>
+  </uninstall>
+  <installfile>install.jambook.php</installfile>
+  <uninstallfile>uninstall.jambook.php</uninstallfile>
+  <upgradefile>upgrade.jambook.php</upgradefile>
+  <administration>
+    <menu>Jambook</menu>
+    <submenu>
+      <menu task="cpanel">Control Panel</menu>
+      <menu task="list">Guestbook Entries</menu>
+      <menu task="listtemplates">Template Manager</menu>
+      <menu task="import">Import Entries</menu>
+      <menu task="deinstall">Deinstall</menu>
+      <menu task="info">Information</menu>
+      <menu task="conf">Configuration</menu>
+    </submenu>
+    <files>
+      <filename>index.html</filename>
+      <filename>admin.jambook.php</filename>
+      <filename>admin.jambook.html.php</filename>
+      <filename>toolbar.jambook.php</filename>
+      <filename>toolbar.jambook.html.php</filename>
+      <filename>footer.php</filename>
+      <filename>ajax.js</filename>
+      <filename>preview.php</filename>
+      <filename>readme.html</filename>
+      <filename>TODO.txt</filename>
+      <filename>CHANGES.txt</filename>
+      <filename>gnu_gpl.txt</filename>
+    </files>
+  </administration>
+
+  <params />
+
+</mosinstall>

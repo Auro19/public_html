@@ -1,0 +1,58 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/xmlrpc
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+cache
+dir
+
+client.php
+file
+
+
+
+
+2009-03-24T18:12:44.000000Z
+4023c9f867b8eac69024073997003762
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+includes
+dir
+
+index.php
+file
+
+
+
+
+2009-03-24T18:12:44.000000Z
+045bd6d4adff7be6105cb0151c4bfae9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

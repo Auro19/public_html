@@ -1,0 +1,309 @@
+<h1>Jambook</h1>
+
+<img src="../components/com_jambook/images/jambook_medium.png" alt="Jambook" title="Jambook" /><br />
+
+<p>Jambook is a feature rich open source Joomla guestbook component with spam protection, email address cloaking, flood protection, double posting checks and the ability to use Joomla wysiwyg editor, even for guests!</p>
+
+
+<h2>Requirements</h2>
+<ul>
+<li>Joomla 1.0.15 or Joomla 1.5.x (Using Legacy Mode Plugin)</li>
+<li>PHP 4.3.0 or above</li>
+<li>MySQL 3.23.x or MySQL 4.0.x</li>
+<li>TrueType support in PHP required for CAPTCHA image spam protection.</li>
+</ul>
+
+
+<h2>License</h2>
+<p>This component is released under the GNU General Public License, a copy of this license should be included in the zip file and available for reading from the administrator page once the component has been installed.</p>
+
+
+<h2>Installation</h2>
+<p>Please read the Joomla documentation for more detailed information on how to install components. Below are quick descriptions for Joomal 1.5 and Joomla 1.0.</p>
+
+<h3>Joomla 1.5</h3>
+<p>Go to the Administration page for your Joomla installation. If you haven't activated the Legacy Mode plugin, you must do so first from the Extensions -> Plugins page. Then go to the Extensions -> Install/Uninstall in the menu. Click the "Browse..." button, select the Jobline package file and click on "Upload File & Install". Go to Components -> Jobline -> Configuration and make sure you setup it up correctly. See the Jobline documentation for descriptions of all configuration options. Once you have the component set up correctly, make sure you don't forget to create a menu item for it.</p>
+
+<h3>Joomla 1.0</h3>
+<p>Go to the Administration page for your Joomla installation. Go to the Installers -> Components in the menu. Click the "Browse..." button, select the Jobline package file and click on "Upload File & Install". Go to Components -> Jobline -> Configuration and make sure you setup it up correctly. See the Jobline documentation for descriptions of all configuration options. Once you have the component set up correctly, make sure you don't forget to create a menu item for it.</p>
+
+
+<h2>Features</h2>
+<ul>
+<li>All frontend html in template files editable from administrator.</li>
+<li>Several spam shield settings to determine if entries should be considered spam.</li>
+<li>CAPTCHA image spam protection.</li>
+<li>Spoof check using Joomla token system.</li>
+<li>Possible to ban specific IP addresses from publishing entries.</li>
+<li>Compatible with Joomla 1.0.x and Joomla 1.5 (using legacy mode plugin).</li>
+<li>Email address cloaking.</li>
+<li>Flood protection and double posting checks available.</li>
+<li>AJAX enabled to make admin interface snappier.</li>
+<li>Registered users may edit their own entries within a set timeframe.</li>
+<li>Configurable whether guests should be able to enter a name for the entry.</li>
+<li>Configurable whether to show username or real name for entries made by registered users.</li>
+<li>Automatically delete entries after a set number of days.</li>
+<li>Send email to admin and/or author when entry is written.</li>
+<li>Joomla Wysiwyg html editor support, even for guests!</li>
+<li>Possibility to turn off editor even when using editor in Joomla.</li>
+<li>Configurable whether a preview page is shown before entry is saved.</li>
+<li>Available languages: English, Swedish, Dutch, German (informal), German (formal), French, Portuguese, Serbian, Norwegian, Polish, Simplified Chinese, Traditional Chinese, Spanish, Russian, Turkish, Romanian</li>
+<li>Import entries from AkoBook or Easybook.</li>
+<li>Super Administrators and Administrators are allowed to edit and delete entries in the frontend.</li>
+<li>Configurable whether all, some or no HTML should be stripped from entries entered from the frontend.</li>
+<li>Admin can define which HTML tags are allowed in entries.</li>
+<li>Both server side and client side checks that URL and Email are valid.</li>
+</ul>
+
+
+<h2>Information</h2>
+<p>Discussions about this component and my other extensions can be found on the support forums of my development site <a href="http://www.jxdevelopment.com/" target="_blank">JX Development</a>. You can also find other extensions I've created for Joomla and other systems on this site.</p>
+
+<p>Any bugs or feature requests should be reported to the trackers for the component at <a href="http://joomlacode.org/gf/project/jambook/">Joomlacode.org</a>. Bugs and feature requests sent in by any other means might easily be missed.</p>
+
+<p>This component is developed in my spare time and released for free for everyone to use. If you like this component you can encourage further development by donating a few dollars to me via PayPal:
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="Olle@Johansson.com">
+<input type="hidden" name="item_name" value="Donation for Jambook">
+<input type="hidden" name="item_number" value="jambook-0001-doc">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="cn" value="Comments">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but21.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+</p>
+
+
+<h2>Support</h2>
+<p>If you have a support question you should first look at the FAQ, read this documentation and search the support forum on my site <a href="http://www.jxdevelopment.com/" target="_blank">JX Development</a>. If you can't find an answer to your question, you can post it on the support forum where hopefully someone will have an answer for you.</p>
+
+<p>If you want personal support you can use the Paid Support Question Form available both from the admin pages of the component as well as on my site. Unfortunately I don't have time to answer support questions by email.</p>
+
+
+<h2>About the name</h2>
+<p>The name Jambook is derived from the Swahili word "jambo", which means "hello", and the English word "book".</p>
+
+
+<h2>Usage</h2>
+<p>Once installed you will have a new menu option called Jambook under the component menu in the administrator page of Joomla. From this menu you can List items, Approve new items, administer the component, read information, change the configuration etc.</p>
+
+
+<h3>Frontend Usage Information</h3>
+<p>The main page of Jambook shows a list of the guestbook entries. How this list is sorted, how many entries are shown per page, where the entry field is shown etc are all changeable in the Jambook configuration available from Joomla Administrator.</p>
+
+<h4>Search</h4>
+<p>Jambook has a built in search function to allow users to enter a text string to find all entries containing that string. If any entries are found they will show in a list similar to the normal guestbook entry list. If you want the main Joomla search page to search Jambook entries as well you will need the Jambook Searchbot, which can be downloaded separately.</p>
+
+<h4>Write guestbook entry</h4>
+<p>The guestbook entry form will either be shown above or below the guestbook entries, or on a separate page, depending on the 'Entry Form Placement' configuration option under the Posting configuration page of Jambook. The administrator can choose whether a preview page will be shown prior to saving the entry, and if a thank you email should be sent when the entry has been entered. It is also possible for the administrator to receive a notification of all entries entered.</p>
+
+
+<h3>Administrator Usage Information</h3>
+<p>When clicking on the main Jambook menu item in the Joomla Administrator Component menu a control page listing a description of each of the administration pages, as well as some information about the component. Below is a detailed description of each of these pages. This page reads the latest Jambook version from a central server on the internet.</p>
+
+<h4>Guestbook Entries</h4>
+<p>On this page all guestbook entries are listed and can be modified by the administrator. This is the page where entries can be approved by publishing them and it is also possible to edit entries and create new entries. This list works in the same way as the normal Joomla content editing list. To edit a guestbook entry, click on its title or mark the checkbox and click on the "Edit" icon. Click on the "New" icon to add a new guestbook entry. Several entries can be published, unpublished or deleted at the same time by marking the checkboxes next to them and clicking on the appropriate icon. To mark all checkboxes on the current page, click on the checkbox in the header field.</p>
+
+<h5>Add/Edit Guestbook Entries</h4>
+<p>The forms to Add and Edit a guestbook entry works in the same way, when a guestbook entry is edited all fields will be pre-filled with the values of that posting.</p>
+
+<p>The fields are the same as when writing an entry from the frontend, except that there is a tab for publishing parameters. It is possible to publish entries, set a specific time the entry will be published or unpublished, and it is also possible to change the date when the entry was posted.</p>
+
+<p>When editing a guestbook entry, it will be checked out and no other user will be able to edit it until it has been saved or the cancel icon has been clicked.</p>
+
+
+<h4>Template Manager</h4>
+<p>This shows a list of the available template files in the currently selected template set. To edit the contents of a template file, just click on the name of the item. It is not possible to add or remove template files, as they are used internally by the component.</p>
+
+<h5>Description of template files</h5>
+<dl>
+<dt><b>show</b></dt>
+<dd>The look when viewing a single guestbook entry.</dd>
+<dt><b>list</b></dt>
+<dd>How the list of entries will look.</dd>
+<dt><b>listempty</b></dt>
+<dd>What should be shown if there are no entries in the guestbook.</dd>
+<dt><b>listitem</b></dt>
+<dd>This file is called for each entry when showing the guestbook.</dd>
+<dt><b>edititem</b></dt>
+<dd>The look of the guestbook entry form.</dd>
+<dt><b>thankyou</b></dt>
+<dd>The page that is shown when an entry has been posted.</dd>
+<dt><b>search</b></dt>
+<dd>The search page.</dd>
+<dt><b>error</b></dt>
+<dd>The look of error messages.</dd>
+<dt><b>preview</b></dt>
+<dd>The preview screen when posting an entry from the frontend.</dd>
+</dl>
+
+<h4>Edit template</h4>
+<p>When clicking on a template in the template list a page with a large text field is shown where the contents of the template file can be edited. If the template file is writeable a green "Writeable" text is shown above the field, if the system won't be able to save the template a red "Unwriteable" text is shown above the field instead. If the latter is shown you need to change the file permissions on the file shown to be able to save this template file from the administrator page. Click on the 'Save' button to save the template, or 'Cancel' to discard any changes.</p>
+
+
+<h4>Configuration</h4>
+<p>These are a few simple configuration options to change the behavior of the component.</p>
+
+<h5>Settings</h5>
+<p>General viewing settings for the component, defining how entries are listed etc.</p>
+<dl>
+<dt><b>Days Kept</b></dt>
+<dd>Number of days after which guestbook entries are automatically deleted from database (be careful please! Enter 0 for not at all)</dd>
+<dt><b>Days New</b></dt>
+<dd>Number of days guestbook entries are considered new.</dd>
+<dt><b>Days Published</b></dt>
+<dd>Number of days guestbook entries are shown (enter 0 for no limit).</dd>
+<dt><b>Sort Order</b></dt>
+<dd>Sort order of entries in lists.</dd>
+<dt><b>Entries Per Page</b></dt>
+<dd>Number of guestbook entries to show on each page in lists.</dd>
+<dt><b>Date Format</b></dt>
+<dd>Date format, leave empty to use language default (uses strftime() syntax).</dd>
+<dt><b>Show Username</b></dt>
+<dd>Set to 'Yes' to show username instead of real name on entries.</dd>
+<dt><b>Selected Template</b></dt>
+<dd>Select which template set to use</dd>
+<dt><b>Cloak Email</b></dt>
+<dd>Cloak email address added to entries.</dd>
+</dl>
+
+<h5>Posting</h5>
+<p>These settings change the behavior when posting guestbook entries.</p>
+<dl>
+<dt><b>Entry Form Placement</b></dt>
+<dd>Placement of entry form on guestbook.</dd>
+<dt><b>Use Preview Page</b></dt>
+<dd>Use preview page when posting before entry is saved.</dd>
+<dt><b>Allow Guest Names</b></dt>
+<dd>Allow guests to enter a name when writing entries.</dd>
+<dt><b>Posting Restriction</b></dt>
+<dd>Restrict who can write in guestbook to this access level.</dd>
+<dt><b>Auto Approve</b></dt>
+<dd>Automatically approve posted guestbook entries.</dd>
+<dt><b>Edit Hours</b></dt>
+<dd>Registered users are allowed to edit their own entries for this many hours.</dd>
+<dt><b>Flood Protection</b></dt>
+<dd>Flood protection, enter number of seconds that must pass before another entry can be made from the same IP address.</dd>
+<dt><b>No Double Postings</b></dt>
+<dd>Disallow double posting of two entries with the same title and entry content.</dd>
+<dt><b>Strip HTML in content?</b></dt>
+<dd>Should HTML be kept, removed completely, or only remove tags not in list below? Regardless of which option is chosen, some malicious tags and their content are always removed. These are: script, head, title, style, applet, object, embed, link, meta, iframe as well as HTML comments. It is not recommended to allow any HTML tags in content, use at your own risk.</dd>
+<dt><b>Allowed HTML tags</b></dt>
+<dd>If 'Strip HTML in content' is set to 'Remove HTML not in list', only these tags will be allowed in the content of the guestbook entry. (Separate each tag with comma).</dd>
+<dt><b>Wysiwyg Editor</b></dt>
+<dd>Use the default html editor for Joomla! on frontend?.</dd>
+<dt><b>Initialize Editor</b></dt>
+<dd>Initialize WYSIWYG HTML editor for non-registered users?</dd>
+<dt><b>Editor Width</b></dt>
+<dd>Width of HTML editor window in pixels</dd>
+<dt><b>Editor Height</b></dt>
+<dd>Height of HTML editor window in pixels</dd>
+</dl>
+
+<h5>Email</h5>
+<p>Email specific configuration options.</p>
+<dl>
+<dt><b>Mail From Address</b></dt>
+<dd>Email address automatic emails should be sent from</dd>
+<dt><b>Mail From Name</b></dt>
+<dd>Name automatic emails should be sent from</dd>
+<dt><b>Admin Email Address</b></dt>
+<dd>Administrator email address to send emails to (leave empty to use super admin email).</dd>
+<dt><b>Admin Email Name</b></dt>
+<dd>Administrator name used in emails.</dd>
+<dt><b>Send Thankyou Email</b></dt>
+<dd>Send thank you email to author when guestbook entry is posted.</dd>
+<dt><b>Notify Admin</b></dt>
+<dd>Send an email to admin when entries are posted.</dd>
+</dl>
+
+<h5>Spam</h5>
+<p>Spam protection configuration options.</p>
+<dl>
+<dt><b>Use CAPTCHA</b></dt>
+<dd>Use CAPTCHA image. Show a picture with a random string of characters that the user must enter to save the guestbook entry.</dd>
+<dt><b>Spam Treatment</b></dt>
+<dd>How to treat entries marked as spam, according to the settings below.</dd>
+<dt><b>URL = Spam</b></dt>
+<dd>Treat entries containing url tag/link as spam.</dd>
+<dt><b>Image = Spam</b></dt>
+<dd>Treat entries containing image tag as spam.</dd>
+<dt><b>Only Smileys</b></dt>
+<dd>Treat entries as spam if they only contain smileys.</dd>
+<dt><b>Forbidden Words</b></dt>
+<dd>Treat entries containing these forbidden words as spam (each word should be on a line of it's own).</dd>
+<dt><b>Banned IP</b></dt>
+<dd>Treat entries from the following IP addresses as spam (each address should be on a line of it's own).</dd>
+<dt><b>Smiley List</b></dt>
+<dd>List of smileys to check for, separated by space.</dd>
+</dl>
+
+<h5>Imports</h5>
+<p>Settings for the import functionality.</p>
+<dl>
+<dt><b>Publish Entries</b></dt>
+<dd>Set to "Yes" if you want entries imported to be published in Jambook.</dd>
+<dt><b>Max URL Length</b></dt>
+<dd>Maximum length of link titles, if the title of a link is longer than this the title is shortened </dd>
+<dt><b>Convert BBCode</b></dt>
+<dd>Convert BBCode into html in entries before they are saved to the Jambook database. Since Jambook uses wysiwyg editors, the BBCode isn't necessary </dd>
+</dl>
+
+
+<h4>Jambook Information</h4>
+<p>This page shows information about the component, these usage instructions, license information etc.</p>
+
+
+<h4>Import Entries</h4>
+<p>To make the transition to Jambook easier it is possible to import entries from other guestbook components. Select the desired guestbook and click on the button to begin the import. If you want more guestbooks to be supported, contact me with information on the table structure and some sample data and I will try to write an importer for it.</p>
+
+<h5>AkoBook</h5>
+<p>This import was written for AkoBook v3.42, but should also work for AkoBook Plus.</p>
+
+<h5>Easybook</h5>
+<p>Import entries from Easybook v1.1 stable, no other versions have been tested.</p>
+
+
+
+<h2>Templates</h2>
+<p>This component includes a template system for the html output of frontend pages. Two different sets of templates are included with the component and it's possible to switch between these from the component configuration. Each template file can also be changed via the component Administration. It's only possible to edit the content of template files in the currently selected template set.</p>
+
+<p>The template files are normal HTML files, but also uses functionality similar to Joomla Mambots to make it possible to show where dynamic data should be placed.</p>
+
+<h3>Availableable Template Mambots</h3>
+<dl>
+<dt><b>{jxtvalue=XXX}</b></dt>
+<dd>Prints the content of the variable XXX. All job database fields are added as variables, as well as some other useful values. The available variables available are different for each template file.</dd>
+<dt><b>{jxtlang=XXX}</b></dt>
+<dd>Prints the language string XXX. This can be any language string available in Joomla and the component.</dd>
+<dt><b>{jxtshowif=XXX} Any content {/jxtshowif}</b></dt>
+<dd>Only shows the content between opening and closing mambots if variable XXX contains a value.</dd>
+<dt><b>{jxtshowifnot=XXX} Any content {/jxtshowifnot}</b></dt>
+<dd>Shows the content if the variable XXX <i>doesn't</i> contain a value.</dd>
+</dl>
+<p><b>N.B.</b> The jxtshowif and jxtshowifnot template mambots can't be nested, as it will only work from the opening mambot to the first occurence of closing mambot.</p>
+<p>Please look at the content of the provided template files for more information on how to use this template system.</p>
+<p>It's also possible to get configuration values, by adding "config_" in front of key name of the configuration value.</p> 
+
+
+
+<h2>About the Author</h2>
+<p>This component was initially developed by Olle Johansson.</p>
+<p>Find more Joomla components, modules and mambots on Olle Johanssons development site <a href="http://www.jxdevelopment.com/" target="_blank">Jx Development</a>.</p>
+
+
+<h2>Credits</h2>
+<p>First of all I'd like to thank all of the Joomla Core Developers for giving away so much of their time to develop the best CMS there is to be found on the net.</p>
+
+<p>Those who have contributed with code or language translations need an extra special thanks. These are: Martin Ackerfors for Swedish translation, Vipyammer (www.vipyammer.nl) for Dutch translation, Andreas Binczyk for German (informal) translation, Jean-François Questiaux for French translation, b2m@gmx.de for security fixes and german language corrections, Carlos Eduardo Rührwiem for Portuguese translation, Zoran Jekic for Serbian translation, Torbein Kvil Gamst for Norwegian translation, Tomek CeDeROM Cedro for Polish translation, Hugo Gandarillas Stuardo for Spanish translation, Ulrikhe Lukoie for Russian translation, Oguz Kaan Kilinc for Turkish translation, nustiu for Romanian translation, Tomasko Dudik for Slovakian translation.</p>
+
+<p>I'd also like to thank all of those who develop components, modules, templates etc for Joomla &em; it's great to have such a wealth of addons to choose from.</p>
+
+<p>I'm also using a CAPTCHA system created by Julien Pachet and the font Dustismo created by Dustin Norlander.</p>
+
+<p>Flag icons provided by famfamfam.com.</p>
+
+
+<h2>Disclaimer</h2>
+<p>The creator of this component, Olle Johansson, is not responsible for the security of the data saved by this component and is not responsible for anything that occurs through the use of this component. The component is used entirely at your own risk.</p>

@@ -1,0 +1,88 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/plugins/editors/tinymce/jscripts/tiny_mce/plugins/devkit
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+editor_plugin.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+af155a8d75a0430a3d29569af6baedee
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+jscripts
+dir
+
+langs
+dir
+
+images
+dir
+
+editor_plugin_src.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+71942769034e7d983155c13b1d557a84
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+css
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+devkit.htm
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+56f1ccc6075c1ba60882b22e5dfc68e9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

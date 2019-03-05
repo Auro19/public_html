@@ -1,0 +1,32 @@
+/* 
+    Document   : NuTelecom
+    Created on : Oct 29, 2010, 8:34:00 PM
+    Author     : Nameless
+    Description:
+        Estilos Extras Para Telecom
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+/*Tiulos y formato de Articulos*/
+.NuTitle {
+	font-size: larger;
+	font-family: Arial;
+	color: #EFEEE4;
+	text-align: left;
+}
+.NuParagraph{
+	font-size: medium;
+	font-family: Arial;
+	color: #FFFFD9;
+	text-align: justify;
+	}
+        body{
+            background-color: #7D0310;
+}

@@ -1,0 +1,55 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/pear
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+archive_tar
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+dd5d02cc750d2855cf6f6c5bf5bea587
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+PEAR.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+58e6acce0e76679d37481b2e43d60bc0
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

@@ -1,0 +1,133 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/administrator/components/com_contact
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+helpers
+dir
+
+toolbar.contact.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+36ebd60991d82a1b0eefb964661a2345
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+config.xml
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+ab0a8ee464323c45e3c1ec96379793b3
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+toolbar.contact.html.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+c579d1e66b0662c93e8aa103923df2b9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+admin.contact.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+0d6b637d8a1eb82b1796f26be7efdfa7
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+tables
+dir
+
+contact.xml
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+1d06956ca40e037fdd211f6ba78a5c41
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+admin.contact.html.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+ca3719313ea25c512e063e49bf51df83
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+contact_items.xml
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+cadce4afde545e308e0539c6685ca2d1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+elements
+dir
+

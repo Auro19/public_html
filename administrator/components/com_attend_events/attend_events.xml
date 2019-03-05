@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<mosinstall version="4.5.1" type="component">
+	<name>Attend_Events</name>
+	<creationDate>March 2007</creationDate>
+	<author>Peter Carr</author>
+	<copyright>(C) 2005-07</copyright>
+	<licence>http://www.gnu.org/copyleft/gpl.html GNU/GPL</licence>
+	<authorEmail>attendevents@gmail.com</authorEmail>
+	<authorUrl>developer.joomla.org</authorUrl>
+	<version>0.8.4</version>
+	<description>Component that allows user registration for sessions/events. Based on Events Sessions 0.6.0 by Tony Blair.</description>
+	<files>
+		<filename>attend_events.php</filename>
+		<filename>attend_events.html.php</filename>
+		<filename>attend_events.class.php</filename>
+		<filename>config.attend_events.php</filename>
+		<filename>language/english.php</filename>
+		<filename>language/french.php</filename>
+		<filename>language/portuguese.php</filename>
+		<filename>language/german.php</filename>
+		<filename>language/spanish.php</filename>
+		<filename>language/italian.php</filename>
+		<filename>language/swedish.php</filename>
+		<filename>language/dutch.php</filename>
+	</files>
+	<install>
+		<queries>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_sessions` (
+				`session_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`event_id` INT(12) UNSIGNED,
+				`title` VARCHAR(50),
+				`introtext` TEXT,
+				`session_up` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`session_down` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`registration_up` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`registration_down` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
+				`maxregistrations` INT UNSIGNED NOT NULL DEFAULT 0,
+				`maxallowed` INT UNSIGNED NOT NULL DEFAULT 1,
+				`availability` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
+				`checked_out` INT UNSIGNED NOT NULL DEFAULT 0,
+				`checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`published` TINYINT(1) NOT NULL DEFAULT 0,
+				`venue_id` INT UNSIGNED DEFAULT NULL,
+				`venue_name` VARCHAR(50),
+				`venue_address` TEXT,
+				`venue_city` VARCHAR(50),
+				`venue_state` VARCHAR(50),
+				`venue_postalcode` VARCHAR(50),
+				`venue_country` VARCHAR(50),
+				`venue_webaddress` VARCHAR(255),
+				`host_id` INT(11),
+				CONSTRAINT `pk_#__events_sessions` PRIMARY KEY (`session_id`),
+				INDEX `idx_#__events_sessions_event_id` (`event_id` ASC),
+				INDEX `idx_#__events_sessions_checkout` (`checked_out` ASC),
+				INDEX `idx_#__events_sessions_avail` (`availability` ASC),
+				INDEX `idx_#__events_sessions_published` (`published` ASC)
+				)TYPE=MYISAM;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_registrations` (
+				`registration_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`session_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`userid` INT UNSIGNED DEFAULT 0,
+				`fullname` VARCHAR(100),
+				`email` VARCHAR(254) NOT NULL,
+				`registration_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`cancel_date` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+				`numregistrations` INT UNSIGNED NOT NULL DEFAULT 1,
+				`viewed` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
+				`verified` CHAR(1) NOT NULL DEFAULT '',
+				`status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,
+				`comments` TEXT,
+				CONSTRAINT `pk_#__events_registrations` PRIMARY KEY (`registration_id`),
+				INDEX `idx_#__events_registrations_sessionid` (`session_id` ASC),
+				INDEX `idx_#__events_registrations_userid` (`userid` ASC),
+				INDEX `idx_#__events_registrations_name` (`fullname` ASC),
+				INDEX `idx_#__events_registrations_email` (`email` ASC),
+				INDEX `idx_#__events_registrations_rdate` (`registration_date` ASC),
+				INDEX `idx_#__events_registrations_cdate` (`cancel_date` ASC),
+				INDEX `idx_#__events_registrations_num` (`numregistrations` ASC),
+				INDEX `idx_#__events_registrations_viewed` (`viewed` ASC),
+				INDEX `idx_#__events_registrations_verify` (`verified` ASC)
+				)TYPE=MYISAM;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_registration_fields` (
+				`field_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`session_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`name` VARCHAR(100),
+				`type` VARCHAR(100),
+				`ordering` INT UNSIGNED DEFAULT 0,
+				`size` INT UNSIGNED DEFAULT 50,
+                `maxlength` INT UNSIGNED DEFAULT 100,
+                `default` VARCHAR(50),
+                `cb_integration` VARCHAR(100) DEFAULT NULL,
+                `tooltip` TEXT,
+                `rows` INT UNSIGNED DEFAULT 0,
+                `cols` INT UNSIGNED DEFAULT 0,
+				`required` TINYINT(1) NOT NULL DEFAULT 0,
+                PRIMARY KEY(field_id)
+                ) TYPE=MYISAM;
+            </query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_registration_fields_options` (
+				`option_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`field_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`session_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`name` VARCHAR(100),
+				`ordering` INT UNSIGNED DEFAULT 0,
+                PRIMARY KEY(option_id)
+                ) TYPE=MYISAM;
+            </query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_registration_fields_values` (
+			    `value_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`registration_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`field_id` INT UNSIGNED NOT NULL DEFAULT 0,
+				`value` TEXT,
+                PRIMARY KEY(value_id)
+                ) TYPE=MYISAM;
+            </query>
+			<query>CREATE TABLE IF NOT EXISTS `#__events_venues` (
+			    `venue_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+				`name` VARCHAR(100),
+				`address` VARCHAR(100),
+				`city` VARCHAR(100),
+				`state` VARCHAR(100),
+				`postalcode` VARCHAR(100),
+				`country` VARCHAR(100),
+				`webaddress` VARCHAR(100),
+				`checked_out` INT UNSIGNED NOT NULL DEFAULT 0,
+				`checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+                PRIMARY KEY(venue_id)
+                ) TYPE=MYISAM;
+            </query>
+		</queries>
+	</install>
+	<installfile>install.attend_events.php</installfile>
+	<uninstall>
+		<queries>
+		</queries>
+	</uninstall>
+	<uninstallfile>uninstall.attend_events.php</uninstallfile>
+	<administration>
+		<menu>Attend Events</menu>
+		<submenu>
+			<menu act="sessions">Sessions</menu>
+			<menu act="venues">Venues</menu>
+			<menu act="registrations">Registrations</menu>
+			<menu act="config">Configuration</menu>
+		</submenu>
+		<files>
+			<filename>admin.attend_events.php</filename>
+			<filename>admin.attend_events.html.php</filename>
+			<filename>version.attend_events.php</filename>
+			<filename>fields.attend_events.php</filename>
+			<filename>toolbar.attend_events.php</filename>
+			<filename>toolbar.attend_events.html.php</filename>
+			<filename>index.html</filename>
+			<filename>help/index.html</filename>
+			<filename>help/config.confirm.html</filename>
+			<filename>help/config.html</filename>
+			<filename>help/config.notify.html</filename>
+			<filename>help/config.options.html</filename>
+			<filename>help/config.thank.html</filename>
+			<filename>help/help.css</filename>
+			<filename>help/registrations.email.html</filename>
+			<filename>help/registrations.export.html</filename>
+			<filename>help/registrations.html</filename>
+			<filename>help/registrations.view.html</filename>
+			<filename>help/sessions.edit.html</filename>
+			<filename>help/sessions.html</filename>
+			<filename>help/sessions.new.html</filename>
+			<filename>help/venues.edit.html</filename>
+			<filename>help/venues.html</filename>
+			<filename>help/venues.new.html</filename>
+		</files>
+	</administration>
+</mosinstall>

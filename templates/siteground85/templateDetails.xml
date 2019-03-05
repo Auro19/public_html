@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.0">
+  <name>siteground85</name>
+  <creationDate>05/2008</creationDate>
+  <author>SiteGround.com</author>
+  <copyright>SG TOS</copyright>
+  <authorEmail>templates@siteground.com</authorEmail>
+  <authorUrl>www.siteground.com</authorUrl>
+  <version>1.0</version>
+  <description>
+This Joomla Template is designed by SiteGround.com and can be used free of charge. The template is suitable for personal and business Joomla sites. It can be used with many popular modules and components for Joomla. At www.siteground.com you can find more great looking free Joomla templates.
+  </description>
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templates.php</filename>
+		<filename>menu.php</filename>
+	</files>
+	<images>
+		<filename>images/banner_01.jpg</filename>
+		<filename>images/banner_02.jpg</filename>
+		<filename>images/bg.jpg</filename>
+		<filename>images/column_bottom.jpg</filename>
+		<filename>images/column_top.jpg</filename>
+		<filename>images/content.jpg</filename>
+		<filename>images/content_bottom.jpg</filename>
+		<filename>images/h3.jpg</filename>
+		<filename>images/header.jpg</filename>
+		<filename>images/menu.jpg</filename>
+		<filename>images/menu_li.jpg</filename>
+		<filename>images/menu_li_a_hover.jpg</filename>
+		<filename>images/menu_row.jpg</filename>
+		<filename>images/submenu_row.jpg</filename>
+		<filename>images/undermenu.jpg</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/indent1.png</filename>
+
+		</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

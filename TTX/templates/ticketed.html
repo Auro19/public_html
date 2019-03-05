@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=[%CHARSET%]">
+<title>[%Ticket Editor%]</title>
+<style type="text/css">
+<!--
+body, td, p { font-family: Verdana, Helvetica, sans-serif; font-size: 10pt;}
+-->
+</style>
+(%CFLOOKUP%)
+<script language=Javascript>
+<!--
+function closeme()
+{
+ parentisticket = (%INPUT_isticket%);
+ if (parentisticket) {
+   msg = window.opener.document.newticket.problem.value;
+   opener.location.href = "(%ENV_SCRIPT_NAME%)?cmd=ticket&sid=(%INPUT_sid%)&key=(%TICKET_key%)&problem="+escape(msg);
+ } else {
+   opener.update();
+ }
+ window.close();
+ return false;
+}
+//-->
+</script>
+</head>
+<body>
+<center>
+<font color=red><b>(%ERROR_MESSAGE%)</b></font><font color=blue><b>(%MESSAGE%)</b></font>
+<table cellspacing=0 cellpadding=4>
+<form action="(%ENV_SCRIPT_NAME%)" method=post name=ticked id=ticked>
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=isticket value="(%INPUT_isticket%)">
+<input type=hidden name=cmd value=ticketed>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=tid value="(%INPUT_tid%)">
+<input type=hidden name=do value=1>
+		<tr>
+				<td align=right><b>[%Ticket ID%]</b></td>
+				<td align=left><b>(%INPUT_tid%)</b></td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Email%]</b></td>
+				<td align=left><input type=text name=email size=30 value="(%TICKET_email%)"></td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Name%]</b></td>
+				<td align=left><input type=text name=name size=30 value="(%TICKET_name%)"></td>
+		</tr>
+		<tr>
+				<td align=right><b>[%Subject%]</b></td>
+				<td align=left><input type=text name=subject size=30 value="(%TICKET_subject%)"></td>
+		</tr>
+		<tr>
+				<td align=right><b>[%(%GROUPSELLBL%)%]</b></td>
+				<td align=left>(%GROUPSEL%)</td>
+		</tr>
+		(%CUSTOMFIELDS%)
+    <tr>
+		    <td colspan=2>
+ 			    <table width="100%">
+    				<tr>
+    					<td width="50%" align=center>
+    						<input type=submit class=boldcontent value="[%Update Ticket%]">
+    					</td>
+    					</form>
+    					<td width="50%" align=center>
+    						<input type=submit class=button onClick="return closeme()" value="[%Close Window%]">
+    					</td>
+    				</tr>
+    		  </table>
+			 </td>
+		</tr>
+</table>
+</body>
+</html>
+

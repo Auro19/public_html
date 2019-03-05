@@ -1,0 +1,53 @@
+/**
+ * Joomgallery CSS Style
+ * 
+ * - Common2 (used in category, gallery and special view)
+ *
+ * Please adjust the CSS to your needs in the file joom_local.css 
+ * in this directory. You can either create it yourself, or 
+ * rename joom_local.css.README.
+ * 
+ * - allgemeine Einstellungen 2 (benutzt in Galerie-, Kategorie- und 
+ *   Toplistenansicht)
+ *
+ * Bitte nehmen Sie Änderungen in der Datei joom_local.css in diesem 
+ * Verzeichnis vor. Sie können diese Datei erstellen oder die 
+ * joom_local.css.README umbenennen
+ **/
+
+.jg_row {
+  overflow:hidden;
+  height:auto;
+  padding:0.8em 0;
+}
+
+.jg_element_gal, .jg_element_gal_r {
+  height:100%;  
+}
+
+.jg_photo_container_r{
+  float:right;
+  padding-left: 0.5em;
+}
+
+.jg_element_img{
+  text-align:center;
+}
+
+.jg_element_txt_r{
+  text-align:right !important;
+}
+
+.jg_element_txt ul,.jg_element_txt_r ul{
+  margin:0 !important;
+  padding:0 0.5em !important;
+}
+
+.jg_element_txt li,.jg_element_txt_r li{
+  background-image:none;
+  list-style-type:none;
+  list-style-image:none;
+  margin:0 !important;
+  padding:0 !important;
+  line-height:115% !important;
+}

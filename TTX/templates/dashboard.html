@@ -1,0 +1,56 @@
+<script language="JavaScript"><!--
+function showitem(ID){ hwstring="scrollbars=yes,width=650,height=350,resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=showitem&id=" + ID + "&sid=(%INPUT_sid%)&style=(%INPUT_style%)&update=1", "ItemInfo", hwstring); return false; }
+//--></script>
+<script language="JavaScript"><!--
+function rowhl(id, inrow) {
+  var row = document.getElementById('tr'+id);
+  var odd = id % 2;
+  var c = (odd) ? '#EEEEEE' : '#CCCCCC';
+  row.style.backgroundColor = (inrow) ? '#FFFFD9' : c;
+}
+//--></script>
+<style type="text/css">
+td.top   {
+border-style:solid;
+border-color: #CCC;
+border-bottom-width:0px;
+border-right-width:0px;
+border-left-width:0px;
+border-top-width:1px;
+}
+td.topr   {
+border-style:solid;
+border-color: #CCC;
+border-bottom-width:0px;
+border-right-width:1px;
+border-left-width:0px;
+border-top-width:1px;
+}
+td.topl   {
+border-style:solid;
+border-color: #CCC;
+border-bottom-width:0px;
+border-right-width:0px;
+border-left-width:1px;
+border-top-width:1px;
+}
+td.r   {
+border-style:solid;
+border-color: #CCC;
+border-bottom-width:0px;
+border-right-width:1px;
+border-left-width:0px;
+border-top-width:0px;
+}
+td.btmrl   {
+border-style:solid;
+border-color: #CCC;
+border-bottom-width:1px;
+border-right-width:1px;
+border-left-width:1px;
+border-top-width:0px;
+}
+</style>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=5>
+(%ITEMLIST%)
+</table>

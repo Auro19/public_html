@@ -1,0 +1,143 @@
+<?php
+
+$con = mysql_connect("localhost","xibalbad_encu","/*encuesta*/");
+mysql_select_db("xibalbad_encuesta", $con);
+
+
+
+$no_cuenta = $_POST["numeroCta"];
+$genero_idgenero = $_POST["sexo"];
+$edad = $_POST["edad"];
+$email = $_POST["mail"];
+$anio_ingreso = $_POST["aIngreso"];
+$anio_egreso = $_POST["aEgreso"];
+$promedio = $_POST["promedio"];
+$titulado = $_POST["titulado"];
+$fecha_ex_prof = $_POST["fechaExamen"];
+$fecha_probable_ex = $_POST["fechaTitulacion"];
+$idtrabaja = $_POST["actualmente"];
+$otro_trabaja = $_POST["otroActual" ];
+$otro_estudio = $_POST["otrosEstudios"];
+$postgrado = $_POST["posgrado"];
+$trabaja_telecom = $_POST["trabajaTele"];
+$anios_area = $_POST["experiencia"];
+$tiempo_primer_empleo = $_POST["tiempoConsigue"];
+$sector_empresa = $_POST["sector"];
+$nombre_empresa= $_POST["nombreEmpresa"];
+$cargo = $_POST["cargoEmpresa"];
+$antiguedad = $_POST["antiguedadEmpleo"];
+$personal_cargo = $_POST["numeroACargo"];
+$tipo_empresa = $_POST["tipoEmpresa"];
+$idtamanio = $_POST["tamEmpresa"];
+$regimen_empresa = $_POST["regJuridico"];
+$idsueldo = $_POST["salario"];
+//$num_trabajo_ant = $_POST[];
+$redes_opticas = $_POST["redeso"];
+$linea_trans_antena = $_POST["lineasTA"];
+$radiocom = $_POST["ssr"];
+$microonda = $_POST["micro"];
+$redes_datos = $_POST["rd"];
+$gestion_calidad = $_POST["gc"];
+$analisis_proce_senial = $_POST["aps"];
+$disenio_circ = $_POST["dcet"];
+$programacion = $_POST["prog"];
+$estructura_datos = $_POST["ed"];
+$seguridad_datos = $_POST["sdst" ];
+$gestion_proy = $_POST["gp"];
+$reg_norm = $_POST["rnt"];
+$trans_dig = $_POST["td"];
+$disp_elec_semicon = $_POST["des"];
+$control_sist = $_POST["cs"];
+$comun_satel = $_POST["csa"];
+$t_i = $_POST["ti"];
+$compat_electr = $_POST["cElec"];
+$ingles = $_POST["ingles"];
+$otra_lengua_extr = $_POST["otraLen"];
+
+$cono_practico = $_POST["CP"];
+$cap_apr_est = $_POST["CAE"];
+$comp_teo_cap_abs = $_POST["CTCA"];
+$hab_inv_ana_dis = $_POST["HIAD"];
+$cono_admin = $_POST["CA"];
+$cono_tec_call = $_POST["CTCT"];
+$liderazgo = $_POST["L"];
+$cap_trab_eq = $_POST["CTE"];
+$cono_otro_idioma = $_POST["COI"];
+$cono_gestion_proy = $_POST["CGP"];
+
+mysql_query("INSERT INTO encuesta (no_cuenta, genero_idgenero, edad, email, anio_ingreso, anio_egreso, 
+	promedio, titulado, fecha_ex_prof, fecha_probable_ex, idtrabaja, otro_trabaja, otro_estudio,
+	 postgrado, trabaja_telecom, anios_area, tiempo_primer_empleo, sector_empresa, nombre_empresa, 
+	 cargo, antiguedad, personal_cargo, tipo_empresa, idtamanio, regimen_empresa, idsueldo , num_trabajo_ant, redes_opticas, 
+	 linea_trans_antena, radiocom, microonda, redes_datos, gestion_calidad, analisis_proce_senial, 
+	 disenio_circ, programacion, estructura_datos, seguridad_datos, gestion_proy, reg_norm, trans_dig,
+	  disp_elec_semicon, control_sist, comun_satel, t_i, compat_electr, ingles, otra_lengua_extr,cono_practico, 
+	  cap_apr_est, comp_teo_cap_abs, hab_inv_ana_dis, cono_admin, cono_tec_cali, liderazgo, cap_trab_eq,
+	   cono_otro_idioma, cono_gestion_proy)
+VALUES ('$no_cuenta',
+'$genero_idgenero',
+'$edad',
+'$email',
+'$anio_ingreso',
+'$anio_egreso',
+'$promedio',
+'$titulado',
+'$fecha_ex_prof',
+'$fecha_probable_ex',
+'$idtrabaja',
+'$otro_trabaja',
+'$otro_estudio',
+'$postgrado',
+'$trabaja_telecom',
+'$anios_area',
+'$tiempo_primer_empleo',
+'$sector_empresa',
+'$nombre_empresa',
+'$cargo',
+'$antiguedad',
+'$personal_cargo',
+'$tipo_empresa',
+'$idtamanio',
+'$regimen_empresa',
+'$idsueldo',
+'$num_trabajo_ant',
+'$redes_opticas',
+'$linea_trans_antena',
+'$radiocom',
+'$microonda',
+'$redes_datos',
+'$gestion_calidad',
+'$analisis_proce_senial',
+'$disenio_circ',
+'$programacion',
+'$estructura_datos',
+'$seguridad_datos',
+'$gestion_proy',
+'$reg_norm',
+'$trans_dig', 
+'$disp_elec_semicon',
+'$control_sist',
+'$comun_satel',
+'$t_i', 
+'$compat_electr',
+'$ingles',
+'$otra_lengua_extr',
+'$cono_practico', 
+'$cap_apr_est', 
+'$comp_teo_cap_abs',
+'$hab_inv_ana_dis', 
+'$cono_admin', 
+'$cono_tec_call',
+'$liderazgo', 
+'$cap_trab_eq', 
+'$cono_otro_idioma',
+'$cono_gestion_proy')");
+
+
+mysql_close($con);
+
+
+
+header ("Location: gracias.html");
+
+?> 

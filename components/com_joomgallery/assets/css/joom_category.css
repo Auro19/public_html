@@ -1,0 +1,42 @@
+/**
+ * Joomgallery CSS Style 
+ * - Category view -
+ *
+ * Please adjust the CSS to your needs in the file joom_local.css 
+ * in this directory. You can either create it yourself, or 
+ * rename joom_local.css.README.
+ *
+ * - Kategorieansicht -
+ *
+ * Bitte nehmen Sie Änderungen in der Datei joom_local.css in diesem 
+ * Verzeichnis vor. Sie können diese Datei erstellen oder die 
+ * joom_local.css.README umbenennen
+ **/
+
+/* 
+description of category under header 
+Kategoriebeschreibung unterhalb des Header
+*/
+.jg_catdescr{
+  text-align:center;
+  padding: 5px;
+}
+
+.jg_catelem_txt{
+  clear:both;
+  margin-left:0.3em;
+  margin-right:0.3em;
+}
+
+.jg_catelem_txt ul, .jg_subcatelem_txt ul{
+  margin:0;
+  padding:0 0.5em;
+}
+
+.jg_catelem_txt li, .jg_subcatelem_txt li{
+  background-image:none;
+  list-style-type:none;
+  list-style-image:none;
+  margin:0;
+  padding:0;
+}

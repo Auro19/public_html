@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<mosinstall type="component">
+  <name>joomgallery</name>
+  <creationDate>2009/15/03</creationDate>
+  <author>JoomGallery::ProjectTeam</author>
+  <copyright>This component is released under the GNU/GPL License</copyright>
+  <authorEmail>mab@joomgallery.net</authorEmail>
+  <authorUrl>http://www.joomgallery.net</authorUrl>
+  <version>1.0.1</version>
+  <description>JoomGallery is a Joomla! gallery component</description>
+  <files>
+    <filename>assets/css/index.html</filename>
+    <filename>assets/css/joom_category.css</filename>
+    <filename>assets/css/joom_common.css</filename>
+    <filename>assets/css/joom_common2.css</filename>
+    <filename>assets/css/joom_detail.css</filename>
+    <filename>assets/css/joom_favourites.css</filename>
+    <filename>assets/css/joom_special.css</filename>
+    <filename>assets/css/joom_user.css</filename>
+    <filename>assets/css/joom_settings.css</filename>
+    <filename>assets/css/joom_local.css.README</filename>
+    <filename>assets/images/index.html</filename>
+    <filename>assets/images/smilies/blue/index.html</filename>
+    <filename>assets/images/smilies/grey/index.html</filename>
+    <filename>assets/images/smilies/index.html</filename>
+    <filename>assets/images/smilies/orange/index.html</filename>
+    <filename>assets/images/smilies/yellow/index.html</filename>
+    <filename>assets/index.html</filename>
+    <filename>assets/js/index.html</filename>
+    <filename>assets/js/joomscript.js</filename>
+    <filename>assets/js/accordion/index.html</filename>
+    <filename>assets/js/accordion/js/accordion.js</filename>
+    <filename>assets/js/accordion/js/index.html</filename>        
+    <filename>assets/js/lightbox/css/index.html</filename>
+    <filename>assets/js/lightbox/css/lightbox.css.php</filename>
+    <filename>assets/js/lightbox/css/lightbox.css</filename>
+    <filename>assets/js/lightbox/images/index.html</filename>
+    <filename>assets/js/lightbox/index.html</filename>
+    <filename>assets/js/lightbox/js/index.html</filename>
+    <filename>assets/js/lightbox/js/effects.js</filename>
+    <filename>assets/js/lightbox/js/lightbox.js</filename>
+    <filename>assets/js/lightbox/js/lightningload.js</filename>
+    <filename>assets/js/lightbox/js/prototype.js</filename>
+    <filename>assets/js/lightbox/js/scriptaculous.js</filename>
+    <filename>assets/js/motiongallery/index.html</filename>
+    <filename>assets/js/motiongallery/js/index.html</filename>
+    <filename>assets/js/motiongallery/js/joom_motiongallery.js</filename>
+    <filename>assets/js/pngbehavior.htc</filename>
+    <filename>assets/js/slimbox/css/index.html</filename>
+    <filename>assets/js/slimbox/css/slimbox.css</filename>
+    <filename>assets/js/slimbox/images/index.html</filename>
+    <filename>assets/js/slimbox/index.html</filename>
+    <filename>assets/js/slimbox/js/index.html</filename>
+    <filename>assets/js/slimbox/js/mootools111.js</filename>
+    <filename>assets/js/slimbox/js/slimbox.js</filename>
+    <filename>assets/js/thickbox3/index.html</filename>
+    <filename>assets/js/thickbox3/css/index.html</filename>
+    <filename>assets/js/thickbox3/css/thickbox.css</filename>
+    <filename>assets/js/thickbox3/images/index.html</filename>
+    <filename>assets/js/thickbox3/js/index.html</filename>
+    <filename>assets/js/thickbox3/js/jquery-latest.js</filename>
+    <filename>assets/js/thickbox3/js/jquery-latest.pack.js</filename>
+    <filename>assets/js/thickbox3/js/thickbox-compressed.js</filename>
+    <filename>assets/js/thickbox3/js/thickbox.js</filename>
+    <filename>assets/js/wz_dragdrop/index.html</filename>
+    <filename>assets/js/wz_dragdrop/js/index.html</filename>
+    <filename>assets/js/wz_dragdrop/js/wz_dragdrop.js</filename>
+    <filename>bridge/bridge.css.php</filename>
+    <filename>bridge/config.bridge.php</filename>
+    <filename>bridge/index.html</filename>
+    <filename>bridge/language.bridge.php</filename>
+    <filename>classes/index.html</filename>
+    <filename>classes/modules.class.php</filename>
+    <filename>classes/interface.class.php</filename>
+    <filename>classes/upload.class.php</filename>    
+    <filename>classes/cooliris.class.php</filename>    
+    <filename>ftp_upload/index.html</filename>
+    <filename>img_originals/index.html</filename>
+    <filename>img_pictures/index.html</filename>
+    <filename>img_thumbnails/index.html</filename>
+    <filename>includes/index.html</filename>
+    <filename>includes/joom.bridge.php</filename>
+    <filename>includes/joom.comments.php</filename>
+    <filename>includes/joom.favourites.php</filename>
+    <filename>includes/joom.javascript.php</filename>
+    <filename>includes/joom.nameshields.php</filename>
+    <filename>includes/joom.slideshow.php</filename>
+    <filename>includes/joom.specialimages.php</filename>
+    <filename>includes/joom.userpanel.php</filename>
+    <filename>includes/joom.viewcategory.php</filename>
+    <filename>includes/joom.viewdetails.php</filename>
+    <filename>includes/joom.viewspecial.php</filename>
+    <filename>includes/joom.votepic.php</filename>
+    <filename>includes/exif/index.html</filename>
+    <filename>includes/exif/joom.exifdata.php</filename>
+    <filename>includes/exif/exiflanguage/index.html</filename>
+    <filename>includes/exif/exiflanguage/exif.english.php</filename>
+    <filename>includes/exif/html/index.html</filename>
+    <filename>includes/exif/html/joom.exifdata.html.php</filename>
+    <filename>includes/iptc/index.html</filename>
+    <filename>includes/iptc/joom.iptcdata.php</filename>
+    <filename>includes/iptc/iptclanguage/index.html</filename>
+    <filename>includes/iptc/iptclanguage/iptc.english.php</filename>
+    <filename>includes/iptc/html/index.html</filename>
+    <filename>includes/iptc/html/joom.iptcdata.html.php</filename>
+    <filename>includes/html/joom.comments.html.php</filename>
+    <filename>includes/html/joom.favourites.html.php</filename>
+    <filename>includes/html/joom.userpanel.html.php</filename>
+    <filename>includes/html/joom.viewcategory.html.php</filename>
+    <filename>includes/html/joom.viewdetails.html.php</filename>
+    <filename>includes/html/joom.viewspecial.html.php</filename>
+    <filename>index.html</filename>
+    <filename>joomgallery.css.php</filename>
+    <filename>joomgallery.html.php</filename>
+    <filename>joomgallery.php</filename>
+    <filename>language/english.php</filename>
+    <filename>language/index.html</filename>
+  </files>
+  <images>
+    <filename>assets/images/arrow_down.png</filename>
+    <filename>assets/images/arrow_left.png</filename>
+    <filename>assets/images/arrow_right.png</filename>
+    <filename>assets/images/arrow_up.png</filename>
+    <filename>assets/images/basket.png</filename>
+    <filename>assets/images/basket_go.png</filename>
+    <filename>assets/images/basket_go_gr.png</filename>
+    <filename>assets/images/basket_gr.png</filename>
+    <filename>assets/images/basket_put.png</filename>
+    <filename>assets/images/basket_put_gr.png</filename>
+    <filename>assets/images/basket_remove.png</filename>
+    <filename>assets/images/basket_remove_gr.png</filename>
+    <filename>assets/images/close.png</filename>
+    <filename>assets/images/control_pause.png</filename>
+    <filename>assets/images/control_play.png</filename>
+    <filename>assets/images/control_stop.png</filename>
+    <filename>assets/images/cross.png</filename>
+    <filename>assets/images/del.gif</filename>
+    <filename>assets/images/disk.png</filename>
+    <filename>assets/images/download.png</filename>
+    <filename>assets/images/download_gr.png</filename>
+    <filename>assets/images/edit.png</filename>
+    <filename>assets/images/edit_trash.png</filename>
+    <filename>assets/images/home.png</filename>
+    <filename>assets/images/information.png</filename>
+    <filename>assets/images/ip.gif</filename>
+    <filename>assets/images/new.png</filename>
+    <filename>assets/images/package_go.png</filename>
+    <filename>assets/images/package_go_gr.png</filename>
+    <filename>assets/images/powered_by.gif</filename>
+    <filename>assets/images/search_icon.gif</filename>
+    <filename>assets/images/star.png</filename>
+    <filename>assets/images/star_gr.png</filename>
+    <filename>assets/images/tag_add.png</filename>
+    <filename>assets/images/tag_add_gr.png</filename>
+    <filename>assets/images/tag_delete.png</filename>
+    <filename>assets/images/tick.png</filename>
+    <filename>assets/images/transparentpixel.gif</filename>
+    <filename>assets/images/watermark.png</filename>
+    <filename>assets/images/zoom.png</filename>
+    <filename>assets/images/zoom_gr.png</filename>
+    <filename>assets/images/smilies/blue/sm_bigeek.gif</filename>
+    <filename>assets/images/smilies/blue/sm_biggrin.gif</filename>
+    <filename>assets/images/smilies/blue/sm_bigrazz.gif</filename>
+    <filename>assets/images/smilies/blue/sm_cool.gif</filename>
+    <filename>assets/images/smilies/blue/sm_cry.gif</filename>
+    <filename>assets/images/smilies/blue/sm_dead.gif</filename>
+    <filename>assets/images/smilies/blue/sm_laugh.gif</filename>
+    <filename>assets/images/smilies/blue/sm_mad.gif</filename>
+    <filename>assets/images/smilies/blue/sm_no.gif</filename>
+    <filename>assets/images/smilies/blue/sm_none.gif</filename>
+    <filename>assets/images/smilies/blue/sm_rolleyes.gif</filename>
+    <filename>assets/images/smilies/blue/sm_sad.gif</filename>
+    <filename>assets/images/smilies/blue/sm_smile.gif</filename>
+    <filename>assets/images/smilies/blue/sm_smilewinkgrin.gif</filename>
+    <filename>assets/images/smilies/blue/sm_wink.gif</filename>
+    <filename>assets/images/smilies/blue/sm_yes.gif</filename>
+    <filename>assets/images/smilies/grey/sm_bigeek.gif</filename>
+    <filename>assets/images/smilies/grey/sm_biggrin.gif</filename>
+    <filename>assets/images/smilies/grey/sm_bigrazz.gif</filename>
+    <filename>assets/images/smilies/grey/sm_cool.gif</filename>
+    <filename>assets/images/smilies/grey/sm_cry.gif</filename>
+    <filename>assets/images/smilies/grey/sm_dead.gif</filename>
+    <filename>assets/images/smilies/grey/sm_laugh.gif</filename>
+    <filename>assets/images/smilies/grey/sm_mad.gif</filename>
+    <filename>assets/images/smilies/grey/sm_no.gif</filename>
+    <filename>assets/images/smilies/grey/sm_none.gif</filename>
+    <filename>assets/images/smilies/grey/sm_rolleyes.gif</filename>
+    <filename>assets/images/smilies/grey/sm_sad.gif</filename>
+    <filename>assets/images/smilies/grey/sm_smile.gif</filename>
+    <filename>assets/images/smilies/grey/sm_smilewinkgrin.gif</filename>
+    <filename>assets/images/smilies/grey/sm_wink.gif</filename>
+    <filename>assets/images/smilies/grey/sm_yes.gif</filename>
+    <filename>assets/images/smilies/orange/sm_bigeek.gif</filename>
+    <filename>assets/images/smilies/orange/sm_biggrin.gif</filename>
+    <filename>assets/images/smilies/orange/sm_bigrazz.gif</filename>
+    <filename>assets/images/smilies/orange/sm_cool.gif</filename>
+    <filename>assets/images/smilies/orange/sm_cry.gif</filename>
+    <filename>assets/images/smilies/orange/sm_dead.gif</filename>
+    <filename>assets/images/smilies/orange/sm_laugh.gif</filename>
+    <filename>assets/images/smilies/orange/sm_mad.gif</filename>
+    <filename>assets/images/smilies/orange/sm_no.gif</filename>
+    <filename>assets/images/smilies/orange/sm_none.gif</filename>
+    <filename>assets/images/smilies/orange/sm_rolleyes.gif</filename>
+    <filename>assets/images/smilies/orange/sm_sad.gif</filename>
+    <filename>assets/images/smilies/orange/sm_smile.gif</filename>
+    <filename>assets/images/smilies/orange/sm_smilewinkgrin.gif</filename>
+    <filename>assets/images/smilies/orange/sm_wink.gif</filename>
+    <filename>assets/images/smilies/orange/sm_yes.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_bigeek.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_biggrin.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_bigrazz.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_cool.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_cry.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_dead.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_laugh.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_mad.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_no.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_none.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_rolleyes.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_sad.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_smile.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_smilewinkgrin.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_wink.gif</filename>
+    <filename>assets/images/smilies/yellow/sm_yes.gif</filename>
+    <filename>assets/js/lightbox/images/blank.gif</filename>
+    <filename>assets/js/lightbox/images/close.gif</filename>
+    <filename>assets/js/lightbox/images/loading.gif</filename>
+    <filename>assets/js/lightbox/images/next.gif</filename>
+    <filename>assets/js/lightbox/images/prev.gif</filename>
+    <filename>assets/js/slimbox/images/closelabel.gif</filename>
+    <filename>assets/js/slimbox/images/loading.gif</filename>
+    <filename>assets/js/slimbox/images/nextlabel.gif</filename>
+    <filename>assets/js/slimbox/images/prevlabel.gif</filename>
+    <filename>assets/js/slimbox/images/transparent.gif</filename>
+    <filename>assets/js/thickbox3/images/loadingAnimation.gif</filename>
+  </images>
+  <install>
+    <queries>
+      <query>
+CREATE TABLE `#__joomgallery` (
+  `id` int(11) NOT NULL auto_increment,
+  `catid` int(11) NOT NULL default '0',
+  `imgtitle` text NOT NULL,
+  `imgauthor` varchar(50) default NULL,
+  `imgtext` text NOT NULL,
+  `imgdate` varchar(20) default NULL,
+  `imgcounter` int(11) NOT NULL default '0',
+  `imgvotes` int(11) NOT NULL default '0',
+  `imgvotesum` int(11) NOT NULL default '0',
+  `published` tinyint(1) NOT NULL default '0',
+  `imgfilename` varchar(100) NOT NULL default '',
+  `imgthumbname` varchar(100) NOT NULL default '',
+  `checked_out` int(11) NOT NULL default '0',
+  `owner` int(11) UNSIGNED NOT NULL default '0',
+  `approved` tinyint(1) NOT NULL default '0',
+  `useruploaded` tinyint(1) NOT NULL default '0',
+  `ordering` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`id`),
+  INDEX idx_catid (`catid`),
+  INDEX idx_owner (`owner`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_catg` (
+  `cid` int(11) NOT NULL auto_increment,
+  `name` varchar(255) NOT NULL default '',
+  `parent` int(11) NOT NULL default '0',
+  `description` text,
+  `ordering` int(11) NOT NULL default '0',
+  `access` tinyint(3) unsigned NOT NULL default '0',
+  `published` char(1) NOT NULL default '0',
+  `owner` int(11) default NULL,
+  `catimage` varchar(100),
+  `img_position` int(10) default '0',
+  `catpath` varchar(255) NOT NULL default '',
+  PRIMARY KEY  (`cid`),
+  INDEX idx_parent (`parent`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_comments` (
+  `cmtid` int(11) NOT NULL auto_increment,
+  `cmtpic` int(11) NOT NULL default '0',
+  `cmtip` varchar(15) NOT NULL default '',
+  `userid` int(11) UNSIGNED NOT NULL default '0',
+  `cmtname` varchar(50) NOT NULL default '',
+  `cmttext` text NOT NULL,
+  `cmtdate` varchar(20) default NULL,
+  `published` tinyint(1) NOT NULL default '0',
+  `approved` tinyint(1) NOT NULL default '1',
+  PRIMARY KEY  (`cmtid`),
+  INDEX idx_cmtpic (`cmtpic`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_countstop` (
+  `cspicid` int(11) NOT NULL default 0,
+  `csip` varchar(20) NOT NULL ,
+  `cssessionid` varchar(200) ,
+  `cstime` DATETIME,
+  PRIMARY KEY  (`cspicid`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_nameshields` (
+  `nid` int(11) NOT NULL auto_increment,
+  `npicid` int(11) NOT NULL default '0',
+  `nuserid` int(11) UNSIGNED NOT NULL default '0',
+  `nxvalue` int(11) NOT NULL default '0',
+  `nyvalue` int(11) NOT NULL default '0',
+  `nuserip` varchar(15) NOT NULL default '0',
+  `ndate` varchar(20) NOT NULL,
+  `nzindex` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`nid`),
+  INDEX idx_picid (`npicid`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_users` (
+  `uid` int(11) NOT NULL auto_increment,
+  `uuserid` int(11) NOT NULL default '0',
+  `piclist` text default NULL,
+  `layout` int(1) NOT NULL,
+  `time` datetime NOT NULL,
+  `zipname` varchar(70) NOT NULL,
+  PRIMARY KEY  (`uid`),
+  INDEX idx_uid (`uuserid`)
+) ENGINE=MyISAM ;
+      </query>
+      <query>
+CREATE TABLE `#__joomgallery_votes` (
+  `voteid` int(11) NOT NULL auto_increment,
+  `picid` int(11) NOT NULL default '0',
+  `userid` int(11) UNSIGNED NOT NULL default '0',
+  `userip` varchar(15) NOT NULL default '0',
+  `datevoted` varchar(20) NOT NULL,
+  `timevoted` varchar(20) NOT NULL,
+  `vote` int(11) NOT NULL default '0',
+  PRIMARY KEY  (`voteid`),
+  INDEX idx_picid (`picid`)
+) ENGINE=MyISAM ;
+      </query>
+    </queries>
+  </install>
+  <uninstall>
+    <queries>
+      <query>DELETE FROM `#__joomgallery`</query>
+      <query>DROP TABLE `#__joomgallery`</query>
+      <query>DELETE FROM `#__joomgallery_catg`</query>
+      <query>DROP TABLE `#__joomgallery_catg`</query>
+      <query>DELETE FROM `#__joomgallery_comments`</query>
+      <query>DROP TABLE `#__joomgallery_comments`</query>
+      <query>DELETE FROM `#__joomgallery_countstop`</query>
+      <query>DROP TABLE `#__joomgallery_countstop`</query>
+      <query>DELETE FROM `#__joomgallery_nameshields`</query>
+      <query>DROP TABLE `#__joomgallery_nameshields`</query>
+      <query>DELETE FROM `#__joomgallery_users`</query>
+      <query>DROP TABLE `#__joomgallery_users`</query>
+      <query>DELETE FROM `#__joomgallery_votes`</query>
+      <query>DROP TABLE `#__joomgallery_votes`</query>
+    </queries>
+  </uninstall>
+    <installfile>install.joomgallery.php</installfile>
+    <uninstallfile>uninstall.joomgallery.php</uninstallfile>
+  <administration>
+    <menu>JoomGallery</menu>
+    <submenu>
+      <menu act="categories">Category Manager</menu>
+      <menu act="pictures">Picture Manager</menu>
+      <menu act="comments">Comments Manager</menu>
+      <menu act="votes">Voting Manager</menu>
+      <menu act="upload">Upload Pictures</menu>
+      <menu act="batchupload">Batch Upload</menu>
+      <menu act="ftpupload">FTP Upload</menu>
+      <menu act="jupload">Java Upload</menu>
+      <menu act="configuration">Configuration Manager</menu>
+      <menu act="editcss">Customize CSS</menu>
+      <menu act="migrate">Migration from other galleries</menu>
+      <menu act="help">Help and Information</menu>
+    </submenu>
+    <files>
+      <filename>admin.joomgallery.html.php</filename>
+      <filename>admin.joomgallery.php</filename>
+      <filename>changelog.php</filename>
+      <filename>common.joomgallery.php</filename>
+      <filename>index.html</filename>
+      <filename>install.joomgallery.php</filename>
+      <filename>joomgallery.class.php</filename>
+      <filename>joomgallery.config.php</filename>
+      <filename>LICENSE.TXT</filename>
+      <filename>toolbar.joomgallery.html.php</filename>
+      <filename>toolbar.joomgallery.php</filename>
+      <filename>uninstall.joomgallery.php</filename>
+      <filename>adminclasses/index.html</filename>
+      <filename>adminclasses/admin.migratep2j.class.php</filename>
+      <filename>adminclasses/admin.upload.class.php</filename>
+      <filename>adminclasses/admin.tabs.class.php</filename>
+      <filename>adminexif/index.html</filename>
+      <filename>adminexif/admin.exifarray.php</filename>
+      <filename>adminiptc/index.html</filename>
+      <filename>adminiptc/admin.iptcarray.php</filename>
+      <filename>adminlanguage/index.html</filename>
+      <filename>adminlanguage/admin.english.php</filename>
+      <filename>assets/index.html</filename>
+      <filename>assets/images/index.html</filename>
+      <filename>assets/images/flags/index.html</filename>
+      <filename>assets/images/others/index.html</filename>
+      <filename>assets/java/index.html</filename>
+      <filename>assets/java/wjhk.jupload.jar</filename>
+      <filename>assets/js/admin.joomscript.js</filename>
+      <filename>assets/js/index.html</filename>
+      <filename>includes/index.html</filename>
+      <filename>includes/admin.categories.php</filename>
+      <filename>includes/admin.comments.php</filename>
+      <filename>includes/admin.configuration.php</filename>
+      <filename>includes/admin.cssedit.php</filename>
+      <filename>includes/admin.help.php</filename>
+      <filename>includes/admin.pictures.php</filename>
+      <filename>includes/admin.uploads.php</filename>
+      <filename>includes/admin.votes.php</filename>
+      <filename>includes/admin.migration.php</filename>
+      <filename>includes/html/index.html</filename>
+      <filename>includes/html/admin.categories.html.php</filename>
+      <filename>includes/html/admin.comments.html.php</filename>
+      <filename>includes/html/admin.configuration.html.php</filename>
+      <filename>includes/html/admin.cssedit.html.php</filename> 
+      <filename>includes/html/admin.help.html.php</filename>
+      <filename>includes/html/admin.pictures.html.php</filename>
+      <filename>includes/html/admin.uploads.html.php</filename>
+      <filename>includes/html/admin.votes.html.php</filename>
+      <filename>includes/html/admin.migration.html.php</filename>
+      <filename>temp/index.html</filename>
+    </files>
+    <images>
+    <filename>assets/images/batchupload.png</filename>
+    <filename>assets/images/categories.png</filename>
+    <filename>assets/images/comments.png</filename>
+    <filename>assets/images/config.png</filename>
+    <filename>assets/images/css.png</filename>
+    <filename>assets/images/ftpupload.png</filename>
+    <filename>assets/images/information.png</filename>
+    <filename>assets/images/jupload.png</filename>
+    <filename>assets/images/main.png</filename>
+    <filename>assets/images/main2.png</filename>
+    <filename>assets/images/migration.png</filename>
+    <filename>assets/images/pictures.png</filename>
+    <filename>assets/images/pictureupload.png</filename>
+    <filename>assets/images/votes.png</filename>
+    <filename>assets/images/flags/br.png</filename>
+    <filename>assets/images/flags/cn.png</filename>
+    <filename>assets/images/flags/de.png</filename>
+    <filename>assets/images/flags/dk.png</filename>
+    <filename>assets/images/flags/es.png</filename>
+    <filename>assets/images/flags/fi.png</filename>
+    <filename>assets/images/flags/fr.png</filename>
+    <filename>assets/images/flags/gb.png</filename>
+    <filename>assets/images/flags/hu.png</filename>
+    <filename>assets/images/flags/jp.png</filename>
+    <filename>assets/images/flags/nl.png</filename>
+    <filename>assets/images/flags/ru.png</filename>
+    <filename>assets/images/others/donate.gif</filename>
+    </images>
+</administration>
+</mosinstall>

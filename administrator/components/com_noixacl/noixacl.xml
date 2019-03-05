@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+  <name>noixACL</name>
+  <!-- The following elements are optional and free of formatting conttraints -->
+  <creationDate>January 2009</creationDate>
+  <author>joomila - NOIX</author>
+  <authorEmail>joomla@noix.com.br</authorEmail>
+  <authorUrl>http://www.noix.com.br</authorUrl>
+  <copyright>(C) 2009 All rights reserved.</copyright>
+  <license>GNU/GPL</license>
+  <!--  The version string is recorded in the components table -->
+  <version>1.5.9</version>
+  <!-- The description is optional and defaults to the name -->
+  <description><![CDATA[<strong>NOIX Control Access</strong>]]></description>
+  <!-- Custom Install Script to execute -->
+  <installfile>install.noixacl.php</installfile>
+  <!-- Custom Uninstall Script to execute -->
+  <uninstallfile>uninstall.noixacl.php</uninstallfile>
+  <!-- Install Database Section -->
+  <install>
+    <sql folder="admin">
+      <file driver="mysql" charset="utf8">install.noixacl.sql</file>
+    </sql>
+  </install>
+  <!-- Uninstall Database Section -->
+  <uninstall>
+    <sql folder="admin">
+      <file driver="mysql" charset="utf8">uninstall.noixacl.sql</file>
+    </sql>
+  </uninstall>
+ 
+  <administration>
+    <!-- Administration Menu Section -->
+    <menu link="option=com_noixacl&amp;controller=groups">noixACL</menu>
+    <submenu>
+      <!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+      <menu link="option=com_noixacl&amp;controller=groups">Manage Groups</menu>
+      <menu link="option=com_noixacl&amp;controller=aclusers">Manage Users</menu>
+      <menu link="option=com_noixacl&amp;controller=adapters">Adapters</menu>
+      <menu link="option=com_noixacl&amp;controller=noixacl">About</menu>
+    </submenu>
+    <!-- Administration Main File Copy Section -->
+    <!-- Note the folder attribute: This attribute describes the folder    to copy FROM in the package to install therefore files copied    in this section are copied from /admin/ in the package -->
+    <files folder="admin">
+      <filename>noixacl.php</filename>
+      <!-- install controllers -->
+      <filename>controllers/groups.php</filename>
+      <filename>controllers/aclusers.php</filename>
+      <filename>controllers/adapters.php</filename>
+      <filename>controllers/noixacl.php</filename>
+      <filename>controllers/index.html</filename>
+	  <!-- install libraries -->
+      <filename>libraries/html/checkbox.php</filename>
+      <filename>libraries/html/index.html</filename>
+      <filename>libraries/js/noixACL.js</filename>
+      <filename>libraries/js/index.html</filename>
+      <filename>libraries/installer/adapters/adapter.php</filename>
+      <filename>libraries/installer/adapters/index.html</filename>
+      <filename>libraries/installer/index.html</filename>
+      <filename>libraries/adapter.php</filename>
+      <filename>libraries/version.php</filename>
+      <filename>libraries/index.html</filename>
+      <!-- images -->
+      <filename>images/index.html</filename>
+      <filename>images/noixacl.gif</filename>
+      <filename>images/banner.jpg</filename>
+      <!-- assets -->
+      <filename>assets/mootree.gif</filename>
+      <filename>assets/index.html</filename>
+      <!-- install model - one for all -->
+      <filename>tables/rules.php</filename>
+      <filename>tables/adapters.php</filename>
+      <!-- install views -->
+	  <filename>views/index.html</filename>
+      <!-- adapters list view -->
+	  <filename>views/adapters/index.html</filename>
+	  <filename>views/adapters/view.html.php</filename>
+	  <filename>views/adapters/tmpl/default.php</filename>
+	  <filename>views/adapters/tmpl/index.html</filename>
+      <!-- group list view -->
+	  <filename>views/group/index.html</filename>
+      <filename>views/group/view.html.php</filename>
+	  <filename>views/group/tmpl/default.php</filename>
+      <filename>views/group/tmpl/default_adapters.php</filename>
+	  <filename>views/group/tmpl/index.html</filename>
+      <!-- groups list view -->
+	  <filename>views/groups/index.html</filename>
+      <filename>views/groups/view.html.php</filename>
+	  <filename>views/groups/tmpl/default.php</filename>
+	  <filename>views/groups/tmpl/index.html</filename>
+      <!-- user list view -->
+	  <filename>views/user/index.html</filename>
+      <filename>views/user/view.html.php</filename>
+	  <filename>views/user/tmpl/form.php</filename>
+	  <filename>views/user/tmpl/index.html</filename>
+      <!-- users list view -->
+	  <filename>views/users/index.html</filename>
+      <filename>views/users/view.html.php</filename>
+	  <filename>views/users/tmpl/default.php</filename>
+	  <filename>views/users/tmpl/index.html</filename>
+      <!-- users list view -->
+	  <filename>views/noixacl/index.html</filename>
+      <filename>views/noixacl/view.html.php</filename>
+	  <filename>views/noixacl/tmpl/default.php</filename>
+	  <filename>views/noixacl/tmpl/index.html</filename>
+      <!-- Adapters -->
+      <!-- Content Adapter -->
+      <filename>adapters/index.html</filename>
+      <filename>adapters/content/index.html</filename>
+      <!-- controler of adapter -->
+      <filename>adapters/content/content.php</filename>
+      <!-- plugin of adapter -->
+      <filename>adapters/content/plugin.php</filename>
+      <!-- controler of adapter -->
+      <filename>adapters/content/content.xml</filename>
+      <!-- xml of adapter -->
+      <filename>adapters/content/views/index.html</filename>
+      <!-- view of administrator application control of adapter -->
+      <filename>adapters/content/views/admin/index.html</filename>
+      <filename>adapters/content/views/admin/view.html.php</filename>
+      <filename>adapters/content/views/admin/tmpl/default.php</filename>
+      <filename>adapters/content/views/admin/tmpl/index.html</filename>
+      <!-- view of site application control adapter -->
+      <filename>adapters/content/views/site/index.html</filename>
+      <filename>adapters/content/views/site/view.html.php</filename>
+      <filename>adapters/content/views/site/tmpl/default.php</filename>
+      <filename>adapters/content/views/site/tmpl/index.html</filename>
+      <!-- Menu Adapter -->
+      <filename>adapters/menu/index.html</filename>
+      <!-- controler of adapter -->
+      <filename>adapters/menu/menu.php</filename>
+      <!-- plugin of adapter -->
+      <filename>adapters/menu/plugin.php</filename>
+      <!-- controler of adapter -->
+      <filename>adapters/menu/menu.xml</filename>
+      <!-- xml of adapter -->
+      <filename>adapters/menu/views/index.html</filename>
+      <!-- view of administrator application control of adapter -->
+      <filename>adapters/menu/views/admin/index.html</filename>
+      <filename>adapters/menu/views/admin/view.html.php</filename>
+      <filename>adapters/menu/views/admin/tmpl/default.php</filename>
+      <filename>adapters/menu/views/admin/tmpl/index.html</filename>
+      <!-- view of site application control adapter -->
+      <filename>adapters/menu/views/site/index.html</filename>
+      <filename>adapters/menu/views/site/view.html.php</filename>
+      <filename>adapters/menu/views/site/tmpl/default.php</filename>
+      <filename>adapters/menu/views/site/tmpl/index.html</filename>
+      <!-- Modules Adapter -->
+      <filename>adapters/modules/index.html</filename>
+      <!-- controler of adapter -->
+      <filename>adapters/modules/modules.php</filename>
+      <!-- plugin of adapter -->
+      <filename>adapters/modules/plugin.php</filename>
+      <!-- xml of adapter -->
+      <filename>adapters/modules/modules.xml</filename>
+      <filename>adapters/modules/views/index.html</filename>
+      <!-- view of site application control adapter -->
+      <filename>adapters/modules/views/site/index.html</filename>
+      <filename>adapters/modules/views/site/view.html.php</filename>
+      <filename>adapters/modules/views/site/tmpl/default.php</filename>
+      <filename>adapters/modules/views/site/tmpl/index.html</filename>
+      <!-- sql files -->
+      <filename>install.noixacl.sql</filename>
+      <filename>uninstall.noixacl.sql</filename>
+    </files>
+    <!-- Administration Language File Copy Section -->
+    <languages folder="admin">
+      <language tag="en-GB">en-GB.com_noixacl.ini</language>
+      <language tag="en-GB">en-GB.com_noixacl.menu.ini</language>
+    </languages>
+  </administration>
+</install>

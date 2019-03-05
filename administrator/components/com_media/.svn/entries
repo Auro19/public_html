@@ -1,0 +1,106 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/administrator/components/com_media
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+assets
+dir
+
+helpers
+dir
+
+models
+dir
+
+config.xml
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+ba534442c41894c18c418e7df6ac1ead
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+images
+dir
+
+media.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+e9a371869916e5497556b210b82ad0ed
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+controllers
+dir
+
+controller.php
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+bd2f48e08a365e91acaf280433786eaf
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+views
+dir
+
+media.xml
+file
+
+
+
+
+2009-03-24T18:12:29.000000Z
+b07b92045425c91471126dee6aacc39b
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

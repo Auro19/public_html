@@ -1,0 +1,33 @@
+/**
+ * Joomgallery CSS Style 
+ * - Specials (TOPXX) view
+ *
+ * Please adjust the CSS to your needs in the file joom_local.css 
+ * in this directory. You can either create it yourself, or 
+ * rename joom_local.css.README.
+ *
+ * - Toplistenansicht
+ *
+ * Bitte nehmen Sie Änderungen in der Datei joom_local.css in diesem 
+ * Verzeichnis vor. Sie können diese Datei erstellen oder die 
+ * joom_local.css.README umbenennen
+ **/
+
+/* Container and Text under top list entries */
+.jg_topelement .jg_topelem_txt {
+  margin:0px;
+  padding:0px;
+}
+
+.jg_topelem_txt ul{
+  padding: 1.1em;  
+}
+
+.jg_topelem_txt li {
+  background-image:none;
+  list-style-type:none;
+  list-style-image:none;
+  margin:0;
+  padding:0;
+}
+

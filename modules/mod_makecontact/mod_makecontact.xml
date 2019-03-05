@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Make Contact</name>
+	<author>Joomla! Bamboo</author>
+	<creationDate>April 2007</creationDate>
+	<copyright>Copyleft.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This is a simple email form for you to load into a module rather than using the Core Joomla Contact module. Just enter the email address and message title in the backend (as well as your success and error message) and publish the module and you have a very simple contact form.</description>
+	<files>
+		<filename module="mod_makecontact">mod_makecontact.php</filename>
+		<filename>mod_makecontact.xml</filename>
+			</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="introduction" type="text" default="" label="Introduction Text" description="Enter a brief introduction to appear before the form." size="60"/>
+
+			<param name="from_email" type="text" default="" label="Email destination" description="Enter a valid email where the form will be sent to." size="30"/>
+		<param name="from_subject" type="text" default="" label="Email subject" description="Enter a subject for the email being sent." size="50"/>	
+		<param name="thanks" type="text" default="" label="Thankyou Message" description="Enter a message to be displayed after a successful email has been sent." size="60"/>
+		<param name="error" type="text" default="" label="Error Message" description="Enter a message to be displayed if the details are incomplete." size="60"/>
+		
+	</params>
+</mosinstall>

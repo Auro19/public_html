@@ -1,0 +1,6 @@
+New ticket #(%TICKETID%) from (%UNAME%) ((%UEMAIL%)),
+
+(%ITEMLINE%)
+(%MESSAGE%)
+
+(%TICKETURL%)

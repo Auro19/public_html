@@ -1,0 +1,112 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/plugins/editors/tinymce/jscripts/tiny_mce/plugins/searchreplace
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+editor_plugin.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+090aa061896ad035a62306410d85dca1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+jscripts
+dir
+
+replace.htm
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+70651c85c53085056abae25dd877a63c
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+langs
+dir
+
+images
+dir
+
+editor_plugin_src.js
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+3e30a8f8678d637e5ccb82c9c65f7162
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+css
+dir
+
+searchreplace.htm
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+cd84d5a18fcf2d6f4215bf7252f879f8
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+search.htm
+file
+
+
+
+
+2009-03-24T18:12:34.000000Z
+f68211f2015945cd2d0a55df570d3e2d
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

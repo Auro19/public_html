@@ -1,0 +1,121 @@
+<script language="javascript" type="text/javascript">
+    /**
+     * Submit the admin form
+     */
+    function submitform(pressbutton){
+        document.adminForm.task.value=pressbutton;
+        try {
+            document.adminForm.onsubmit();
+        }
+        catch(e){}
+        document.adminForm.submit();
+    }
+    function submitbutton(pressbutton) {
+        var form = document.adminForm;
+        if (pressbutton == 'cancel') {
+            submitform( pressbutton );
+            return;
+        }
+    
+        {jxtvalue=geteditorcontents}
+        
+        // Stupid fck editor
+        var thecontent = '';
+        if (window.FCKeditorAPI) {
+            thecontent = FCKeditorAPI.GetInstance('content').GetHTML();
+        } else {
+            thecontent = form.content.value;
+        }
+    
+        // do field validation
+        var reg_email = new RegExp('^([a-zA-Z0-9\\-\\.\\_]+)'+
+                                   '(\\@)'+
+                                   '([a-zA-Z0-9\\-\\.]+)'+
+                                   '(\\.)'+
+                                   '([a-zA-Z]{2,6})$');
+        var reg_url = /^(http|https):\\/\\/([A-Z0-9][A-Z0-9_\\-]*(?:\\.[A-Z0-9][A-Z0-9_\\-]*)+):?(\\d+)?\\/?/i;
+        // do field validation
+        if (form.title.value == ""){
+            alert( "{jxtlang=_JX_NOTITLE}" );
+        } else if (thecontent == ""){
+            alert( "{jxtlang=_JX_NOCONTENT}" );
+        } else if ((form.email.value != "") && reg_email.test(form.email.value) == false ){
+            alert( "{jxtlang=_JX_ERR_EMAILINVALID}" );
+        } else if ((form.url.value != "") && reg_url.test(form.url.value) == false ){
+            alert( "{jxtlang=_JX_ERR_URLINVALID}" );
+        } else {
+            submitform( pressbutton );
+        }
+    }
+</script>
+<form action="index.php" method="POST" name="adminForm" enctype="multipart/form-data">
+    <table cellpadding="5" cellspacing="0" border="0" width="100%" class="adminform">
+	  <tr>
+	    <td class="contentheading" width="100%" colspan="2">{jxtlang=_JX_ENTERITEMINFO}</td>
+	  </tr>
+      <tr>
+        <td width="20%" align="right">{jxtlang=_JX_USERNAME}</td>
+          <td width="60%">{jxtshowif=username}<strong>{jxtvalue=username}</strong>{/jxtshowif}{jxtshowifnot=username}<input class="inputbox" type="text" name="authoralias" size="40" maxlength="255" value="{jxtvalue=authoralias}" />{/jxtshowifnot}
+        </td>
+      </tr>
+      <tr>
+        <td width="20%" align="right">{jxtlang=_JX_ENTER_TITLE}</td>
+          <td width="60%"><input class="inputbox" type="text" name="title" size="40" maxlength="255" value="{jxtvalue=title}" />
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" align="right">{jxtlang=_JX_ENTER_COMMENT}</td>
+        <td>{jxtvalue=editorarea}</td>
+      </tr>
+      <tr>
+        <td align="right">{jxtlang=_JX_ENTER_EMAIL}</td>
+        <td><input class="inputbox" type="text" name="email" size="40" maxlength="100" value="{jxtvalue=email}" />
+          <br /><input type="checkbox" name="attrib_hideemail" class="inputbox" value="1"{jxtshowif=attrib_hideemail} checked='checked'{/jxtshowif} /> {jxtlang=_JX_HIDEEMAIL}
+        </td>
+      </tr>
+      <tr>
+        <td align="right">{jxtlang=_JX_ENTER_URL}</td>
+        <td><input class="inputbox" type="text" name="url" size="40" maxlength="100" value="{jxtvalue=url}" />
+          <br /><input type="checkbox" name="attrib_hideurl" class="inputbox" value="1"{jxtshowif=attrib_hideurl} checked='checked'{/jxtshowif}  /> {jxtlang=_JX_HIDEURL}
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="5"></td>
+      </tr>
+{jxtshowif=config_usecaptcha}
+      <tr>
+        <td align="right">{jxtlang=_JX_CAPTCHA_IMAGE}</td>
+        <td>
+          {jxtlang=_JX_CAPTCHA_IMAGE_DESC}<br />
+          {jxtvalue=captcha_display}<br />
+          <input type="text" name="private_key" size="30" class="inputbox" /><br />
+          <span style="color:red; font-weight:bold;">{jxtvalue=incorrectcaptcha}</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="5"></td>
+      </tr>
+{/jxtshowif}
+    </table>
+
+  <input type="hidden" name="option" value="{jxtvalue=option}" />
+  <input type="hidden" name="Itemid" value="{jxtvalue=Itemid}" />
+  <input type="hidden" name="id" value="{jxtvalue=id}" />
+  <input type="hidden" name="{jxtvalue=token}" value="1" />
+  <input type="hidden" name="task" value="" />
+{jxtshowif=previewbtn}
+  <input type="button" name="previewbtn" class="button" value="{jxtlang=_JX_PREVIEW_ITEM}" onclick="submitbutton( 'preview' );" />
+{/jxtshowif}
+{jxtshowif=savebtn}
+  <input type="button" name="savebtn" class="button" value="{jxtlang=_JX_SAVE_ITEM}" onclick="submitbutton( 'save' );" />
+{/jxtshowif}
+  <input type="button" name="cancelbtn" class="button" value="{jxtlang=_JX_CANCEL_ITEM}" onclick="submitbutton( 'cancel' );" />
+</form>
+<br />
+{jxtshowif=guestbooklink}
+    <table cellpadding="5" cellspacing="0" border="0" width="100%" class="adminform">
+      <tr>
+        <td colspan="2"><a href="{jxtvalue=guestbooklink}">{jxtlang=_JX_SHOWGUESTBOOK}</a></td>
+      </tr>
+    </table>
+{/jxtshowif}

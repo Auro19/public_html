@@ -1,0 +1,1 @@
+cfgref=/home/miguel/public_html/TTX/ttxcfg.cgi

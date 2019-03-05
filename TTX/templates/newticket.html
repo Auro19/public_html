@@ -1,0 +1,144 @@
+<script language="javascript"><!--
+numberoftimes = 0;
+        function onlyonce() {
+        numberoftimes += 1;
+        if (numberoftimes > 1) {
+                var themessage = "[%Please be patient. Submission is in progress...%]";
+            alert(themessage);
+            return false;
+        } else {
+                return true;
+        }
+}
+// -->
+</script>
+<script language="JavaScript"><!--
+function preview(){
+hwstring="scrollbars=yes,width=600,height=500,resizable=yes,toolbar=no,menubar=no";
+var newwin = window.open('', 'winpreview', hwstring);
+newwin.focus();
+document.forms['formpreview'].msg.value = document.forms['newticket'].problem.value;
+document.forms['formpreview'].submit();
+return false;
+}
+//--></script>
+<script language="JavaScript"><!--
+var caretPos = null;
+
+function trackme(fld) {
+  if (typeof(fld.createTextRange) != 'undefined') {
+    caretPos = document.selection.createRange().duplicate();
+  }
+}
+function markup(bbopen, bbclose, fld) {
+  // IE
+  if (caretPos != null && fld.createTextRange) {
+    var range = caretPos;
+    var wasempty = range.text.length == 0 ? true : false;
+    range.text = bbopen + range.text + bbclose;
+    if (wasempty) {
+      range.moveStart('character', -bbopen.length);
+      range.moveEnd('character', -bbclose.length);
+      range.select();
+    } else {
+      fld.focus(range);
+    }
+  } else if (typeof(fld.selectionStart) != "undefined") {
+    var savescroll = fld.scrollTop;
+    var start = fld.selectionStart;
+    var end = fld.selectionEnd;
+    var txt = fld.value.substring(start, end);
+    fld.value = fld.value.substr(0, start) + bbopen + txt + bbclose + fld.value.substr(end);
+    var pos;
+    if (txt.length == 0) {
+      pos = start + bbopen.length;
+    } else {
+      pos = start + bbopen.length + txt.length + bbclose.length;
+    }
+    fld.selectionStart = pos;
+    fld.selectionEnd = pos;
+    fld.focus();
+    fld.scrollTop = savescroll;
+  }
+}
+//--></script>
+
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0 bgcolor="(%CONFIG_COLOR-NEWTICKET-BACKGROUND%)">
+  <tr>
+    <td align=center><br class=tiny>
+<form method=post action="(%ENV_SCRIPT_NAME%)" name=newticket enctype="multipart/form-data" onsubmit="return onlyonce()">
+<input type=hidden name=cmd value=newticket>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=do value=1>
+<input type=hidden name=tid value="(%INPUT_tid%)">
+<input type=hidden name=form value="(%INPUT_form%)">
+      <table cellspacing=0 cellpadding=3>
+      <tr>
+        <td align=right class=lbl>[%Name%]<font color=red><sup>*</sup></font></td>
+        <td align=left><input type=text size=25 name=name value="(%INPUT_name%)"></td>
+      </tr>
+      <tr>
+        <td align=right class=lbl>[%Email%]<font color=red><sup>*</sup></font></td>
+        <td align=left><input type=text size=25 name=email value="(%INPUT_email%)"></td>
+      </tr>
+      (%CUSTOMVARS%)
+      (%ITEMSELSTD%)
+      (%OPERSELSTD%)
+      (%GROUPSELSTD%)
+      <tr>
+        <td align=right class=lbl>[%Subject%]<font color=red><sup>*</sup></font></td>
+        <td align=left><input type=text size=40 name=subject value="(%INPUT_subject%)"></td>
+      </tr>
+      (%KIDFORM%)
+      <tr>
+        <td colspan=2 align=center>
+           <table cellspacing=0 cellpadding=0>
+              <tr>
+                <td align=left>
+                  <span class=lbl>[%Problem%]</span>&nbsp;&nbsp;&nbsp;<a href=#teditor tabindex="-1" onClick="return preview()">[%preview%]</a><br class=tiny>
+                       <input alt="Bold" title="Bold" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: bold; font-family: Times, serif;" value=B
+                       onmousedown="markup('[b]', '[/b]', document.forms.newticket.problem); return false;" onclick="return false;"><input
+                       alt="Italic" title="Italic" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-style: italic;  font-family: Times, serif;"
+                       value=I onclick="markup('[i]', '[/i]', document.forms.newticket.problem); return false;"><input
+                       alt="Underline" title="Underline" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; text-decoration: underline; font-family: Times, serif;"
+                       value=U onclick="markup('[u]', '[/u]', document.forms.newticket.problem); return false;"><input
+                       alt="Code" title="Code" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="#" onclick="markup('[code]', '[/code]', document.forms.newticket.problem); return false;"><input
+                       alt="Small" title="Small" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="s" onclick="markup('[small]', '[/small]', document.forms.newticket.problem); return false;"><input
+                       alt="Hyperlink" title="Hyperlink" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 33px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="url" onclick="markup('[url http://www.example.com]', '[/url]', document.forms.newticket.problem); return false;"><input
+                       alt="Image" title="Image" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 33px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="img" onclick="markup('[img http://www.example.com/picture.jpg]', '', document.forms.newticket.problem); return false;"><br>
+                  <textarea name=problem wrap=virtual cols=50 rows=10 onselect="trackme(this);" onclick="trackme(this);" onkeyup="trackme(this);" onchange="trackme(this);">(%INPUT_problem%)</textarea>
+                </td>
+              </tr>
+           </table>
+        </td>
+      </tr>
+      <tr><td colspan=2 align=left>(%FILEFORMS%)</td></tr>
+      <tr>
+        <td align=left>(%INTERNALCHECKBOX%)</td>
+        <td align=right><input type=submit value="[%Submit%]">(%RESETBTN%)<br><br class=tiny>
+        </td>
+      </tr>
+</form>
+      </table>
+    </td>
+  </tr>
+</table>
+<form method="post" action="(%ENV_SCRIPT_NAME%)" id="formpreview" target="winpreview" >
+<input type=hidden name=cmd value=preview>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=key value="(%INPUT_key%)">
+<input type=hidden name=msg>
+</form>

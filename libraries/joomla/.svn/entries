@@ -1,0 +1,163 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/libraries/joomla
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+event
+dir
+
+mail
+dir
+
+language
+dir
+
+session
+dir
+
+filesystem
+dir
+
+filter
+dir
+
+methods.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+cde986ab75447bb0aa3f5229c8c914fd
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+error
+dir
+
+config.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+bef1a40756c2a5092092ba154632de3a
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+factory.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+569844619d6ac6a3390275becb9b12b1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+installer
+dir
+
+plugin
+dir
+
+import.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+9c2f2b8c19b152e32e761f5fed95996b
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+cache
+dir
+
+application
+dir
+
+database
+dir
+
+environment
+dir
+
+html
+dir
+
+registry
+dir
+
+base
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+template
+dir
+
+utilities
+dir
+
+version.php
+file
+
+
+
+
+2009-03-24T18:12:47.000000Z
+cf760a52ece512c14c4a71df51e957a9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+document
+dir
+
+client
+dir
+
+user
+dir
+

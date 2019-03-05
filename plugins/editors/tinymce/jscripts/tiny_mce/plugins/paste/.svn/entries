@@ -1,0 +1,112 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/plugins/editors/tinymce/jscripts/tiny_mce/plugins/paste
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+editor_plugin.js
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+bf30cc0882b81bf1bf1beab3285115b4
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+pasteword.htm
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+c5e287e22909f9945c1bf65ceb7e66aa
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+jscripts
+dir
+
+langs
+dir
+
+images
+dir
+
+editor_plugin_src.js
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+4fdb8304b0c9172e477e2f0e8ef55ba0
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+css
+dir
+
+pastetext.htm
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+4895645731e0148b7e730eff6b78a4e0
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+blank.htm
+file
+
+
+
+
+2009-03-24T18:12:35.000000Z
+c071fad481334f6b06d4bb55bc76c2fe
+2009-03-24T18:11:49.566580Z
+2
+miguel
+

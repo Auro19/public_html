@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template"
+><name>red_template_15</name>
+<author>design-joomla.pl</author>
+<copyright>DJ PROJEKTY</copyright>
+<license>GNU/GPL</license>
+<authorEmail>miya@design-joomla.eu</authorEmail>
+<authorUrl>http://design-joomla.eu</authorUrl>
+<version>1.5</version>
+<description>RED TEMPLATE</description>
+<creationDate>October 2007</creationDate>
+<files>
+<filename>css/clearing.css</filename>
+<filename>css/horizontal.css</filename>
+<filename>css/template_css.css</filename>
+<filename>css/template_ie.css</filename>
+<filename>images/bg.jpg</filename>
+<filename>images/bg2.jpg</filename>
+<filename>images/contact.gif</filename>
+<filename>images/container_b.gif</filename>
+<filename>images/container_in.gif</filename>
+<filename>images/container_t.gif</filename>
+<filename>images/emailbutton.png</filename>
+<filename>images/h3.gif</filename>
+<filename>images/head_l.jpg</filename>
+<filename>images/head_r.jpg</filename>
+<filename>images/home.gif</filename>
+<filename>images/horiz_l.png</filename>
+<filename>images/horiz_l_h.png</filename>
+<filename>images/horiz_r.png</filename>
+<filename>images/horiz_r_h.png</filename>
+<filename>images/indent1.png</filename>
+<filename>images/indent2.png</filename>
+<filename>images/logo.png</filename>
+<filename>images/mainmenu.gif</filename>
+<filename>images/mainmenu_h.gif</filename>
+<filename>images/pdf_button.png</filename>
+<filename>images/printbutton.png</filename>
+<filename>images/search_but.gif</filename>
+<filename>images/search_input.gif</filename>
+<filename>images/sitemap.gif</filename>
+<filename>images/submenu.png</filename>
+<filename>images/topmenu_bg.png</filename>
+<filename>js/animation.js</filename>
+<filename>js/cssmenus.js</filename>
+<filename>index.php</filename>
+<filename>menu.php</filename>
+<filename>templateDetails.xml</filename>
+<filename>template_thumbnail.png</filename>
+</files>
+<params></params>
+</install>

@@ -1,0 +1,211 @@
+
+
+<html>
+<head><title> Facultad de Ingeniería. Lista</title>
+
+
+<script languaje="javaScript">
+
+window.history.forward(+1);
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+<table width="200" border="0">
+    <tr>
+    <td colspan="8"><font size="+1" color="#000033"><center><b>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</b><center></font></td>
+    
+  </tr>
+  
+  <tr>
+     <td colspan="8"><font size="+1" color="#000033"><center><b>FACULTAD DE INGENIERÍA</b><center></font></td>
+  </tr>
+  
+   <tr>
+     <td colspan="8"><font size="+1" color="#000033"><center><b>USECAD</b><center></font></td>
+  </tr>
+  
+ <tr>
+    <td colspan="9">&nbsp;</td>
+  </tr>
+
+
+
+
+
+
+
+ <tr>
+    <td colspan="5">
+	 <strong><span class="Estilo3">PROFESOR :  <font color='#B22222'>  TERRONES FONSECA SALVADOR ING. </font>     </span></strong>
+	</td>
+    
+
+	<td colspan="2"> <strong><span class="Estilo3">NÚMERO DE PROFESOR :  <font color='#B22222'> 2 </font>     </span></strong>
+	</td>
+    
+	
+	<td colspan="2">
+	<strong><span class="Estilo3">TIPO :  <font color='#B22222'> L </font>     </span></strong>
+	</td>
+   
+  </tr>
+  
+  <tr>
+    <td colspan="9">&nbsp;</td>
+  </tr>
+
+<tr>
+       <td colspan="1"><div align="center"><strong><span class="Estilo3">GRUPO : &nbsp; 15</span></strong></div></td>
+	    <td colspan="2"><div align="center"><strong><span class="Estilo3">CLAVE : &nbsp; 4549</span></strong></div></td>
+  </tr>
+<tr>
+    <td colspan="6"><div align="left"><strong><span class="Estilo3">ASIGNATURA : &nbsp; LAB. TEORIA ELECTROMAGNETICA</span></strong></div></td>
+   
+  
+  </tr>
+  
+  <tr>
+    <td colspan="9">&nbsp;</td>
+  </tr>
+  
+  
+  <tr >
+   
+    <td colspan="1"><div align="center"><strong><span class="Estilo3">SALÓN</span></strong></div></td>
+	<td colspan="2"><div align="center"><strong><span class="Estilo3">INICIA</span></strong></div></td>
+	<td colspan="2"><div align="center"><strong><span class="Estilo3">TERMINA</span></strong></div></td>
+	
+
+    </tr>
+
+    <tr >
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">Q303</span></FONT></strong></div></td>
+    <td colspan="2"><div align="center"><strong><span class="Estilo3">1315</span></strong></div></td>
+	<td colspan="2"><div align="center"><strong><span class="Estilo3">1515</span></strong></div></td>
+	
+
+    </tr>
+  
+  
+  
+  <tr>
+    <td colspan="9">&nbsp;</td>
+  </tr>
+
+
+<tr>
+   <td colspan="1"><div align="center"><strong><font color='#B22222'><span class="Estilo3"> LUNES </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#FF00FF'><span class="Estilo3"> MARTES </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#B22222'><span class="Estilo3">MIÉRCOLES</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#FF00FF'><span class="Estilo3">JUEVES</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#B22222'><span class="Estilo3">VIERNES</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#FF00FF'><span class="Estilo3">SÁBADO</span></font></strong></div></td>
+
+  </tr>
+  
+  <tr>
+  <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3"> </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3"> </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3"> </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3"> </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3"> </span></font></strong></div></td>
+    <td colspan="1"><div align="center"><CENTER><strong><font color='#000000'><span class="Estilo3">*</span></font></strong></div></td>
+ 
+  </tr>
+  
+  <tr>
+    <td colspan="9">&nbsp;</td>
+  </tr>
+  
+  <tr>
+  <td colspan="1"><div align='center'><strong><span class='Estilo3'><font color="#FF0000">NO.</font></span></strong></div></td>
+  <td colspan="1"><div align='center'><strong><span class='Estilo3'><font color="#FF0000">CUENTA</font></span></strong></div></td>
+  <td colspan="5"><div align='left'><strong><span class='Estilo3'><font color="#FF0000"> ALUMNO </font></span></strong></div></td>
+   <td colspan="1"><div align='center'><strong><span class='Estilo3'><font color="#FF0000"> CARRERA </font></span></strong></div></td>
+  </tr>
+
+
+
+  
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">1</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">410065789</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">ARAGON CRUZ ODUAD VIRGILIO</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">2</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">307063016</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">BARBOSA MARQUEZ MIGUEL</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">3</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">307281074</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">OLIVER DOMINGUEZ IVAN</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">4</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">410000645</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">RIOS CORTES CARLOS ALEJANDRO</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">5</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">305688563</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">ROJAS SIFUENTES JOSE ANTONIO</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">6</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">305214621</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">ROMERO AGUILAR ABEL IVAN</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+
+ <tr>
+  <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">7</span></font></strong></div></td>
+    <td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">304168923</span></font></strong></div></td>
+    <td colspan="5"><div align="left"><strong><font color='#000000'><span class="Estilo3">VENEGAS MARTINEZ JAVIER</span></font></strong></div></td>
+	<td colspan="1"><div align="center"><strong><font color='#000000'><span class="Estilo3">109</span></font></strong></div></td>
+  </tr>
+
+
+
+</p></table></Table>
+</body>
+</html>
+

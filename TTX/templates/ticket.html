@@ -1,0 +1,231 @@
+<script language="javascript"><!--
+numberoftimes = 0;
+        function onlyonce() {
+        numberoftimes += 1;
+        if (numberoftimes > 1) {
+                var themessage = "[%Please be patient. Submission is in progress...%]";
+            alert(themessage);
+            return false;
+        } else {
+                return true;
+        }
+}
+// -->
+</script>
+<script language="JavaScript"><!--
+function msgedit(TID, MID){ hwstring="scrollbars=yes,width=600,height=450,resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=msgedit&tid=" + TID + "&mid=" + MID + "&sid=(%INPUT_sid%)&style=(%INPUT_style%)", "TTXMsgEditor", hwstring); }
+//--></script>
+<script language="JavaScript"><!--
+function msgdel(TID, MID){
+ if (confirm("[%Please confirm message deletion%]")) {
+   msg = document.newticket.problem.value;
+   window.location.href = "(%ENV_SCRIPT_NAME%)?cmd=msgdel&sid=(%INPUT_sid%)&tid="+ TID + "&mid=" + MID + "&style=(%INPUT_style%)&problem="+escape(msg);
+ }
+}
+//--></script>
+<script language="JavaScript"><!--
+function ticked(ID){ hwstring="scrollbars=yes,width=450,height=(%TICKEDHEIGHT%),resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=ticketed&tid=" + ID + "&sid=(%INPUT_sid%)&style=(%INPUT_style%)&isticket=1", "TicketEditor", hwstring); }
+//--></script>
+<script language="JavaScript"><!--
+function showitem(ID){ hwstring="scrollbars=yes,width=650,height=350,resizable=yes,toolbar=no,menubar=no"; var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=showitem&id=" + ID + "&sid=(%INPUT_sid%)&style=(%INPUT_style%)&isticket=1", "ItemInfo", hwstring); return false; }
+//--></script>
+<script language="JavaScript"><!--
+function confirmdel()
+{
+ return confirm("[%Please confirm ticket removal%]");
+}
+//--></script>
+<script language="JavaScript"><!--
+function answerlib(){
+hwstring="scrollbars=yes,width=700,height=360,resizable=yes,toolbar=no,menubar=no";
+var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=answerlib&sid=(%INPUT_sid%)&style=(%INPUT_style%)", 'TTXAnswerLib', hwstring);
+newwin.focus();
+return false;
+}
+//--></script>
+<script language="JavaScript"><!--
+function preview(){
+hwstring="scrollbars=yes,width=600,height=500,resizable=yes,toolbar=no,menubar=no";
+var newwin = window.open('', 'winpreview', hwstring);
+newwin.focus();
+document.forms['formpreview'].msg.value = document.forms['newticket'].problem.value;
+document.forms['formpreview'].submit();
+return false;
+}
+//--></script>
+<script language="JavaScript"><!--
+function markuphelp(){
+hwstring="scrollbars=yes,width=650,height=300,resizable=yes,toolbar=no,menubar=no";
+var newwin = window.open("(%ENV_SCRIPT_NAME%)?cmd=markuphelp", 'TTXQuickHelp', hwstring);
+return false;
+}
+//--></script>
+<script language="JavaScript"><!--
+var caretPos = null;
+
+function trackme(fld) {
+  if (typeof(fld.createTextRange) != 'undefined') {
+    caretPos = document.selection.createRange().duplicate();
+  }
+}
+function markup(bbopen, bbclose, fld) {
+  // IE
+  if (caretPos != null && fld.createTextRange) {
+    var range = caretPos;
+    var wasempty = range.text.length == 0 ? true : false;
+    range.text = bbopen + range.text + bbclose;
+    if (wasempty) {
+      range.moveStart('character', -bbopen.length);
+      range.moveEnd('character', -bbclose.length);
+      range.select();
+    } else {
+      fld.focus(range);
+    }
+  } else if (typeof(fld.selectionStart) != "undefined") {
+    var savescroll = fld.scrollTop;
+    var start = fld.selectionStart;
+    var end = fld.selectionEnd;
+    var txt = fld.value.substring(start, end);
+    fld.value = fld.value.substr(0, start) + bbopen + txt + bbclose + fld.value.substr(end);
+    var pos;
+    if (txt.length == 0) {
+      pos = start + bbopen.length;
+    } else {
+      pos = start + bbopen.length + txt.length + bbclose.length;
+    }
+    fld.selectionStart = pos;
+    fld.selectionEnd = pos;
+    fld.focus();
+    fld.scrollTop = savescroll;
+  }
+}
+//--></script>
+
+
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0 bgcolor="(%CONFIG_COLOR-TICKET-BACKGROUND%)" style="padding-left: 5px; padding-right: 5px">
+<form method=post action="(%ENV_SCRIPT_NAME%)" name=newticket id=newticket enctype="multipart/form-data" onsubmit="return onlyonce()">
+<input type=hidden name=cmd value=ticket>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=do value=1>
+<input type=hidden name=tid value="(%INPUT_tid%)">
+<input type=hidden name=key value="(%INPUT_key%)">
+<input type=hidden name=lname value="(%INPUT_lname%)">
+<input type=hidden name=emailkey value="(%INPUT_emailkey%)">
+        <tr>
+                <td colspan=6 class=tiny>&nbsp</td>
+        </tr>
+        <tr>
+          <td colspan=6 align=right class=sm>
+            <a target=_blank href="(%ENV_SCRIPT_NAME%)?cmd=annotate&sid=(%INPUT_sid%)&key=(%INPUT_key%)&style=(%INPUT_style%)">[%Annotate%]</a>,&nbsp;&nbsp;
+            <a target=_blank href="(%ENV_SCRIPT_NAME%)?cmd=print&sid=(%INPUT_sid%)&key=(%INPUT_key%)&style=(%INPUT_style%)">[%Print%]</a>&nbsp;&nbsp;
+          </td>
+        </tr>
+        (%INVENTORYROW%)
+        <tr>
+                <td align=left class=lbl>[%Subject%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKEDOPEN%)(%TICKET_subject%)(%TICKEDCLOSE%)</td>
+                <td align=left class=lbl>[%(%CONFIG_GRPSELLBL%)%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_GROUP%)</td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Status%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left width=90%>[%(%TICKET_status%)%]</td>
+                <td align=left class=lbl>[%Operator%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_oper%)</td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Created%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_open%)</td>
+                <td align=left class=lbl>[%Customer%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left><nobr>(%TICKET_name%) (<a href="mailto:(%TICKET_email%)">(%TICKET_email%)</a>)</nobr></td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Solved%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_closed%)</td>
+                <td align=left class=lbl><nobr>[%Access key%]</nobr></td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_key%)</td>
+        </tr>
+        <tr>
+                <td colspan=6 class=tiny>&nbsp</td>
+        </tr>
+</table>
+(%TTXCFED%)
+<br class=tiny>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0>
+(%MESSAGES%)
+        <tr>
+          <td colspan=2 class=tiny>&nbsp</td>
+        </tr>
+        <tr>
+          <td colspan=2>
+            <table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0>
+              <tr>
+                <td valign=top align=left bgcolor="(%CONFIG_COLOR-TICKET-EDITOR%)" style="padding-left: 5px">
+                        <br><span class=lbl>[%New status%]</span><br class=tiny>
+                        (%NEWSTATUS%)
+                </td>
+                <td valign=top align=left>
+                  <table width="100%" cellspacing=0 cellpadding=0>
+                    <tr>
+                      <td valign=top align=left bgcolor="(%CONFIG_COLOR-TICKET-EDITOR%)" style="padding-left: 15px"><br><span class=lbl>&nbsp;[%Message%]</span>(%ANSWERLIB%)(%PREVIEW%)
+                        &nbsp;&nbsp;<a href=# onClick="return markuphelp()" tabindex="-1">[%Markup help%]</a><br class=tiny>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align=left valign=top bgcolor="(%CONFIG_COLOR-TICKET-EDITOR%)" style="padding-left: 15px">
+                       <input alt="Bold" title="Bold" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: bold; font-family: Times, serif;" value=B
+                       onmousedown="markup('[b]', '[/b]', document.forms.newticket.problem); return false;" onclick="return false;"><input
+                       alt="Italic" title="Italic" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-style: italic;  font-family: Times, serif;"
+                       value=I onclick="markup('[i]', '[/i]', document.forms.newticket.problem); return false;"><input
+                       alt="Underline" title="Underline" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; text-decoration: underline; font-family: Times, serif;"
+                       value=U onclick="markup('[u]', '[/u]', document.forms.newticket.problem); return false;"><input
+                       alt="Code" title="Code" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="#" onclick="markup('[code]', '[/code]', document.forms.newticket.problem); return false;"><input
+                       alt="Small" title="Small" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 23px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="s" onclick="markup('[small]', '[/small]', document.forms.newticket.problem); return false;"><input
+                       alt="Hyperlink" title="Hyperlink" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 33px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="url" onclick="markup('[url http://www.example.com]', '[/url]', document.forms.newticket.problem); return false;"><input
+                       alt="Image" title="Image" tabindex="-1" type=submit
+                       style="margin: 3px; font-size: small; width: 33px; height: 23px; font-weight: normal; font-family: Times, serif;"
+                       value="img" onclick="markup('[img http://www.example.com/picture.jpg]', '', document.forms.newticket.problem); return false;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align=left valign=top bgcolor="(%CONFIG_COLOR-TICKET-EDITOR%)" style="padding-left: 15px">
+                        <textarea name=problem id=problem wrap=virtual cols=60 rows=10 onselect="trackme(this);" onclick="trackme(this);" onkeyup="trackme(this);" onchange="trackme(this);">(%INPUT_problem%)</textarea><br class=tiny>
+                        (%FILEFORMS%)<br class=tiny>(%TRACKTIME%)
+                        <input type=submit value="[%Update%]">
+                        <input type=submit name=cancel value="[%No changes%]">
+                        (%DELTICKET%)<br><br class=tiny>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        </form>
+</table>
+<form method="post" action="(%ENV_SCRIPT_NAME%)" id="formpreview" target="winpreview" >
+<input type=hidden name=cmd value=preview>
+<input type=hidden name=style value="(%INPUT_style%)">
+<input type=hidden name=sid value="(%INPUT_sid%)">
+<input type=hidden name=key value="(%INPUT_key%)">
+<input type=hidden name=msg>
+</form>

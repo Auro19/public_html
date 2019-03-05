@@ -1,0 +1,94 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/administrator/components/com_installer
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+models
+dir
+
+helper.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+c93061a4a7a2de6327d249803cb276b9
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+controller.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+655fdf62c38fb309952881f6bfbdb595
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+admin.installer.php
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+33d5152356e6af714d287ebd0d8b2b4a
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+installer.xml
+file
+
+
+
+
+2009-03-24T18:12:28.000000Z
+0551605a3ba1658e9c5180ae69e856e7
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+views
+dir
+

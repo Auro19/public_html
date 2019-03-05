@@ -1,0 +1,153 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/templates/ja_purity
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+templateDetails.xml
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+c92c38fd180ffa73a2069a4f00d70218
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+params.ini
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+f046efa0e0d0f6c614da3dd36af4e856
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+template_thumbnail.png
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+590bd55b7ef05e92c8fd33c26a8885ab
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+
+styles
+dir
+
+html
+dir
+
+images
+dir
+
+css
+dir
+
+component.php
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+1814fe7ecea304e1d7c2e7e19bd0f31a
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+1c7b413c3fa39d0fed40556d2658ac73
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+ja_vars.php
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+de2185e37841b89ea6f2ffef12f74d45
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+js
+dir
+
+ja_templatetools.php
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+078890a0ddda9a314f8adc46b77ff156
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+index.php
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+b41e3b6c36a6fffb216ec7c95000ccf6
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+favicon.ico
+file
+
+
+
+
+2009-03-24T18:12:41.000000Z
+63b982eddd64d44233baa25066db6bc1
+2009-03-24T18:11:49.566580Z
+2
+miguel
+has-props
+

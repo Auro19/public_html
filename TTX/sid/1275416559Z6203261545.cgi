@@ -1,0 +1,10 @@
+expires=1275452637
+helpdesk.qoffset=0
+helpdesk.qsort=updated
+helpdesk.qsortorder=D
+helpdesk.qwindow=20
+imgurl=.
+login=miguel
+ticketdb=/tickets.cgi
+ticketid=/ticketid.txt
+userdb=/users.cgi

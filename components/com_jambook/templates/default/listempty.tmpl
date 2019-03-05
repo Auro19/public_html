@@ -1,0 +1,24 @@
+<table width="100%" cellpadding="4" cellspacing="0" border="0" align="center" class="contentpane">
+  <tr>
+    <td><span class="contentheading">{jxtvalue=title}</span></td>
+  </tr>
+  <tr>
+    <td valign="top" class="contentdescription">
+      <p>{jxtvalue=description}
+	 {jxtshowif=searchlinkempty}</p><p>{jxtvalue=searchlinkempty}{/jxtshowif}
+	  {jxtshowif=postitemlink} - <a class='jx_functionlink' href='{jxtvalue=postitemlink}'>{jxtvalue=postitem}</a>{/jxtshowif}</p>
+	<p>{jxtvalue=searchlink}</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p>{jxtlang=_JX_NOITEMS}</p></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="10"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><a href="javascript:window.history.go(-1);">{jxtlang=_JX_BACK}</a></td>
+  </tr>
+</table>
+<br />
+<small><a href="http://www.jxdevelopment.com/">Powered by Jambook by Olle Johansson from JX Development</a></small>

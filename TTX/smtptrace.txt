@@ -1,0 +1,602 @@
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x85a689c)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x85a689c)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x85a689c)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x85a689c)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a689c)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a689c)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x85a689c)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x85a689c)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 33) line 2.
+BEGIN failed--compilation aborted at (eval 33) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Net::SMTP=GLOB(0x85a689c)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a689c)<<< 250 ok
+Net::SMTP=GLOB(0x85a689c)>>> RCPT TO:<m_alanis035@yahoo.com.mx>
+Net::SMTP=GLOB(0x85a689c)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x85a689c)>>> DATA
+Net::SMTP=GLOB(0x85a689c)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> To: m_alanis035@yahoo.com.mx
+Net::SMTP=GLOB(0x85a689c)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a689c)>>> Subject: Ticket 3, monoono
+Net::SMTP=GLOB(0x85a689c)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a689c)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a689c)>>>  boundary="------------47904513423292781338"
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338
+Net::SMTP=GLOB(0x85a689c)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a689c)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> Dear Miguel Alanis
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> Thank you for contacting LADAI Help Desk. This message is to confirm that w=
+Net::SMTP=GLOB(0x85a689c)>>> e received a service request with tracking # 3 from you.
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> jpoojoojj
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> You can view and update your service request here:
+Net::SMTP=GLOB(0x85a689c)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dticket&key=3D3Z192243=
+Net::SMTP=GLOB(0x85a689c)>>> 0898585874791&respondername=3DMiguel+Alanis Ticket 3=20
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> ACCESS KEY: 3Z1922430898585874791
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> Sincerely,
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> LADAI Help Desk
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338
+Net::SMTP=GLOB(0x85a689c)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a689c)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a689c)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a689c)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a689c)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a689c)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CkRlYXIgTWlndWVsIEFsYW5p
+Net::SMTP=GLOB(0x85a689c)>>> czxiciAvPgo8YnIgLz4KVGhhbmsgeW91IGZvciBjb250YWN0aW5nIExBREFJ
+Net::SMTP=GLOB(0x85a689c)>>> IEhlbHAgRGVzay4gVGhpcyBtZXNzYWdlIGlzIHRvIGNvbmZpcm0gdGhhdCB3
+Net::SMTP=GLOB(0x85a689c)>>> ZSByZWNlaXZlZCBhIHNlcnZpY2UgcmVxdWVzdCB3aXRoIHRyYWNraW5nICMg
+Net::SMTP=GLOB(0x85a689c)>>> MyBmcm9tIHlvdS48YnIgLz4KPGJyIC8+Cmpwb29qb29qajxiciAvPgo8YnIg
+Net::SMTP=GLOB(0x85a689c)>>> Lz4KWW91IGNhbiB2aWV3IGFuZCB1cGRhdGUgeW91ciBzZXJ2aWNlIHJlcXVl
+Net::SMTP=GLOB(0x85a689c)>>> c3QgaGVyZTo8YnIgLz4KPGEgaHJlZj0iaHR0cDovL21pZ3VlbC5sYWRhaS50
+Net::SMTP=GLOB(0x85a689c)>>> ZWxlY29tLnVuYW0ubXgvVFRYL3R0eC5jZ2k/Y21kPXRpY2tldCZrZXk9M1ox
+Net::SMTP=GLOB(0x85a689c)>>> OTIyNDMwODk4NTg1ODc0NzkxJnJlc3BvbmRlcm5hbWU9TWlndWVsK0FsYW5p
+Net::SMTP=GLOB(0x85a689c)>>> cyIgdGFyZ2V0PV9ibGFuaz48Yj5UaWNrZXQgMzwvYj48L2E+PGJyIC8+Cjxi
+Net::SMTP=GLOB(0x85a689c)>>> ciAvPgpBQ0NFU1MgS0VZOiAzWjE5MjI0MzA4OTg1ODU4NzQ3OTE8YnIgLz4K
+Net::SMTP=GLOB(0x85a689c)>>> PGJyIC8+ClNpbmNlcmVseSw8YnIgLz4KPGJyIC8+CkxBREFJIEhlbHAgRGVz
+Net::SMTP=GLOB(0x85a689c)>>> azxiciAvPgoKPC9ib2R5Pgo8L2h0bWw+Cg==
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338--
+Net::SMTP=GLOB(0x85a689c)>>> .
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> DATA
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a689c)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a689c)>>> Subject: Ticket 3 (16-1922), monoono
+Net::SMTP=GLOB(0x85a689c)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a689c)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a689c)>>>  boundary="------------47904513423292781338"
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338
+Net::SMTP=GLOB(0x85a689c)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a689c)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> New ticket #3 from Miguel Alanis (m_alanis035@yahoo.com.mx),
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> jpoojoojj
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk&tk=3D3Z19224=
+Net::SMTP=GLOB(0x85a689c)>>> 30898585874791 Ticket 3=20
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338
+Net::SMTP=GLOB(0x85a689c)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a689c)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a689c)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a689c)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a689c)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a689c)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Ck5ldyB0aWNrZXQgIzMgZnJv
+Net::SMTP=GLOB(0x85a689c)>>> bSBNaWd1ZWwgQWxhbmlzICg8YSBocmVmPSJtYWlsdG86bV9hbGFuaXMwMzVA
+Net::SMTP=GLOB(0x85a689c)>>> eWFob28uY29tLm14Ij5tX2FsYW5pczAzNUB5YWhvby5jb20ubXg8L2E+KSw8
+Net::SMTP=GLOB(0x85a689c)>>> YnIgLz4KPGJyIC8+CjxiciAvPgpqcG9vam9vamo8YnIgLz4KPGJyIC8+Cjxh
+Net::SMTP=GLOB(0x85a689c)>>> IGhyZWY9Imh0dHA6Ly9taWd1ZWwubGFkYWkudGVsZWNvbS51bmFtLm14L1RU
+Net::SMTP=GLOB(0x85a689c)>>> WC90dHguY2dpP2NtZD1oZWxwZGVzayZ0az0zWjE5MjI0MzA4OTg1ODU4NzQ3
+Net::SMTP=GLOB(0x85a689c)>>> OTEiIHRhcmdldD1fYmxhbms+PGI+VGlja2V0IDM8L2I+PC9hPjxiciAvPgoK
+Net::SMTP=GLOB(0x85a689c)>>> PC9ib2R5Pgo8L2h0bWw+Cg==
+Net::SMTP=GLOB(0x85a689c)>>> 
+Net::SMTP=GLOB(0x85a689c)>>> --------------47904513423292781338--
+Net::SMTP=GLOB(0x85a689c)>>> .
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a689c)>>> QUIT
+Net::SMTP=GLOB(0x85a689c)<<< 502 unimplemented (#5.5.1)
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x85a68a4)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x85a68a4)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x85a68a4)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x85a68a4)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a68a4)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a68a4)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x85a68a4)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x85a68a4)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 33) line 2.
+BEGIN failed--compilation aborted at (eval 33) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Can't authenticate:  at /home/miguel/public_html/TTX/TTXMail.pm line 298.
+Net::SMTP=GLOB(0x85a68a4)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a68a4)<<< 250 ok
+Net::SMTP=GLOB(0x85a68a4)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a68a4)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x85a68a4)>>> DATA
+Net::SMTP=GLOB(0x85a68a4)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a68a4)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a68a4)>>> Subject: Ticket 4, Tema
+Net::SMTP=GLOB(0x85a68a4)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a68a4)>>>  boundary="------------69925088365367669994"
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994
+Net::SMTP=GLOB(0x85a68a4)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> Dear Miguel Alanis
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> Thank you for contacting LADAI Help Desk. This message is to confirm that w=
+Net::SMTP=GLOB(0x85a68a4)>>> e received a service request with tracking # 4 from you.
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> jola
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> You can view and update your service request here:
+Net::SMTP=GLOB(0x85a68a4)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dticket&key=3D4Z215835=
+Net::SMTP=GLOB(0x85a68a4)>>> 9725602914744&respondername=3DMiguel+Alanis Ticket 4=20
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> ACCESS KEY: 4Z2158359725602914744
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> Sincerely,
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> LADAI Help Desk
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994
+Net::SMTP=GLOB(0x85a68a4)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a68a4)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a68a4)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a68a4)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a68a4)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CkRlYXIgTWlndWVsIEFsYW5p
+Net::SMTP=GLOB(0x85a68a4)>>> czxiciAvPgo8YnIgLz4KVGhhbmsgeW91IGZvciBjb250YWN0aW5nIExBREFJ
+Net::SMTP=GLOB(0x85a68a4)>>> IEhlbHAgRGVzay4gVGhpcyBtZXNzYWdlIGlzIHRvIGNvbmZpcm0gdGhhdCB3
+Net::SMTP=GLOB(0x85a68a4)>>> ZSByZWNlaXZlZCBhIHNlcnZpY2UgcmVxdWVzdCB3aXRoIHRyYWNraW5nICMg
+Net::SMTP=GLOB(0x85a68a4)>>> NCBmcm9tIHlvdS48YnIgLz4KPGJyIC8+CmpvbGE8YnIgLz4KPGJyIC8+Cllv
+Net::SMTP=GLOB(0x85a68a4)>>> dSBjYW4gdmlldyBhbmQgdXBkYXRlIHlvdXIgc2VydmljZSByZXF1ZXN0IGhl
+Net::SMTP=GLOB(0x85a68a4)>>> cmU6PGJyIC8+CjxhIGhyZWY9Imh0dHA6Ly9taWd1ZWwubGFkYWkudGVsZWNv
+Net::SMTP=GLOB(0x85a68a4)>>> bS51bmFtLm14L1RUWC90dHguY2dpP2NtZD10aWNrZXQma2V5PTRaMjE1ODM1
+Net::SMTP=GLOB(0x85a68a4)>>> OTcyNTYwMjkxNDc0NCZyZXNwb25kZXJuYW1lPU1pZ3VlbCtBbGFuaXMiIHRh
+Net::SMTP=GLOB(0x85a68a4)>>> cmdldD1fYmxhbms+PGI+VGlja2V0IDQ8L2I+PC9hPjxiciAvPgo8YnIgLz4K
+Net::SMTP=GLOB(0x85a68a4)>>> QUNDRVNTIEtFWTogNFoyMTU4MzU5NzI1NjAyOTE0NzQ0PGJyIC8+CjxiciAv
+Net::SMTP=GLOB(0x85a68a4)>>> PgpTaW5jZXJlbHksPGJyIC8+CjxiciAvPgpMQURBSSBIZWxwIERlc2s8YnIg
+Net::SMTP=GLOB(0x85a68a4)>>> Lz4KCjwvYm9keT4KPC9odG1sPgo=
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994--
+Net::SMTP=GLOB(0x85a68a4)>>> .
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> DATA
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a68a4)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a68a4)>>> Subject: Ticket 4 (16-2158), Tema
+Net::SMTP=GLOB(0x85a68a4)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a68a4)>>>  boundary="------------69925088365367669994"
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994
+Net::SMTP=GLOB(0x85a68a4)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> New ticket #4 from Miguel Alanis (miguel_aam@hotmail.com),
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> jola
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk&tk=3D4Z21583=
+Net::SMTP=GLOB(0x85a68a4)>>> 59725602914744 Ticket 4=20
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994
+Net::SMTP=GLOB(0x85a68a4)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a68a4)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a68a4)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a68a4)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a68a4)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a68a4)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Ck5ldyB0aWNrZXQgIzQgZnJv
+Net::SMTP=GLOB(0x85a68a4)>>> bSBNaWd1ZWwgQWxhbmlzICg8YSBocmVmPSJtYWlsdG86bWlndWVsX2FhbUBo
+Net::SMTP=GLOB(0x85a68a4)>>> b3RtYWlsLmNvbSI+bWlndWVsX2FhbUBob3RtYWlsLmNvbTwvYT4pLDxiciAv
+Net::SMTP=GLOB(0x85a68a4)>>> Pgo8YnIgLz4KPGJyIC8+CmpvbGE8YnIgLz4KPGJyIC8+CjxhIGhyZWY9Imh0
+Net::SMTP=GLOB(0x85a68a4)>>> dHA6Ly9taWd1ZWwubGFkYWkudGVsZWNvbS51bmFtLm14L1RUWC90dHguY2dp
+Net::SMTP=GLOB(0x85a68a4)>>> P2NtZD1oZWxwZGVzayZ0az00WjIxNTgzNTk3MjU2MDI5MTQ3NDQiIHRhcmdl
+Net::SMTP=GLOB(0x85a68a4)>>> dD1fYmxhbms+PGI+VGlja2V0IDQ8L2I+PC9hPjxiciAvPgoKPC9ib2R5Pgo8
+Net::SMTP=GLOB(0x85a68a4)>>> L2h0bWw+Cg==
+Net::SMTP=GLOB(0x85a68a4)>>> 
+Net::SMTP=GLOB(0x85a68a4)>>> --------------69925088365367669994--
+Net::SMTP=GLOB(0x85a68a4)>>> .
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a68a4)>>> QUIT
+Net::SMTP=GLOB(0x85a68a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x85a6934)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x85a6934)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x85a6934)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x85a6934)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a6934)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a6934)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x85a6934)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x85a6934)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 33) line 2.
+BEGIN failed--compilation aborted at (eval 33) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Net::SMTP=GLOB(0x85a6934)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a6934)<<< 250 ok
+Net::SMTP=GLOB(0x85a6934)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a6934)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x85a6934)>>> DATA
+Net::SMTP=GLOB(0x85a6934)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a6934)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a6934)>>> Subject: Ticket 5, mmmm
+Net::SMTP=GLOB(0x85a6934)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a6934)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a6934)>>>  boundary="------------28970195594170008197"
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197
+Net::SMTP=GLOB(0x85a6934)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a6934)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> Dear Miguel Alanis
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> Thank you for contacting LADAI Help Desk. This message is to confirm that w=
+Net::SMTP=GLOB(0x85a6934)>>> e received a service request with tracking # 5 from you.
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> hola
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> You can view and update your service request here:
+Net::SMTP=GLOB(0x85a6934)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dticket&key=3D5Z613755=
+Net::SMTP=GLOB(0x85a6934)>>> 965503946812&respondername=3DMiguel+Alanis Ticket 5=20
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> ACCESS KEY: 5Z613755965503946812
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> Sincerely,
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> LADAI Help Desk
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197
+Net::SMTP=GLOB(0x85a6934)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a6934)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a6934)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a6934)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a6934)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a6934)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CkRlYXIgTWlndWVsIEFsYW5p
+Net::SMTP=GLOB(0x85a6934)>>> czxiciAvPgo8YnIgLz4KVGhhbmsgeW91IGZvciBjb250YWN0aW5nIExBREFJ
+Net::SMTP=GLOB(0x85a6934)>>> IEhlbHAgRGVzay4gVGhpcyBtZXNzYWdlIGlzIHRvIGNvbmZpcm0gdGhhdCB3
+Net::SMTP=GLOB(0x85a6934)>>> ZSByZWNlaXZlZCBhIHNlcnZpY2UgcmVxdWVzdCB3aXRoIHRyYWNraW5nICMg
+Net::SMTP=GLOB(0x85a6934)>>> NSBmcm9tIHlvdS48YnIgLz4KPGJyIC8+CmhvbGE8YnIgLz4KPGJyIC8+Cllv
+Net::SMTP=GLOB(0x85a6934)>>> dSBjYW4gdmlldyBhbmQgdXBkYXRlIHlvdXIgc2VydmljZSByZXF1ZXN0IGhl
+Net::SMTP=GLOB(0x85a6934)>>> cmU6PGJyIC8+CjxhIGhyZWY9Imh0dHA6Ly9taWd1ZWwubGFkYWkudGVsZWNv
+Net::SMTP=GLOB(0x85a6934)>>> bS51bmFtLm14L1RUWC90dHguY2dpP2NtZD10aWNrZXQma2V5PTVaNjEzNzU1
+Net::SMTP=GLOB(0x85a6934)>>> OTY1NTAzOTQ2ODEyJnJlc3BvbmRlcm5hbWU9TWlndWVsK0FsYW5pcyIgdGFy
+Net::SMTP=GLOB(0x85a6934)>>> Z2V0PV9ibGFuaz48Yj5UaWNrZXQgNTwvYj48L2E+PGJyIC8+CjxiciAvPgpB
+Net::SMTP=GLOB(0x85a6934)>>> Q0NFU1MgS0VZOiA1WjYxMzc1NTk2NTUwMzk0NjgxMjxiciAvPgo8YnIgLz4K
+Net::SMTP=GLOB(0x85a6934)>>> U2luY2VyZWx5LDxiciAvPgo8YnIgLz4KTEFEQUkgSGVscCBEZXNrPGJyIC8+
+Net::SMTP=GLOB(0x85a6934)>>> Cgo8L2JvZHk+CjwvaHRtbD4K
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197--
+Net::SMTP=GLOB(0x85a6934)>>> .
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> DATA
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a6934)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a6934)>>> Subject: Ticket 5 (16-6137), mmmm
+Net::SMTP=GLOB(0x85a6934)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a6934)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a6934)>>>  boundary="------------28970195594170008197"
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197
+Net::SMTP=GLOB(0x85a6934)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a6934)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> New ticket #5 from Miguel Alanis (miguel_aam@hotmail.com),
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> hola
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk&tk=3D5Z61375=
+Net::SMTP=GLOB(0x85a6934)>>> 5965503946812 Ticket 5=20
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197
+Net::SMTP=GLOB(0x85a6934)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a6934)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a6934)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a6934)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a6934)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a6934)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Ck5ldyB0aWNrZXQgIzUgZnJv
+Net::SMTP=GLOB(0x85a6934)>>> bSBNaWd1ZWwgQWxhbmlzICg8YSBocmVmPSJtYWlsdG86bWlndWVsX2FhbUBo
+Net::SMTP=GLOB(0x85a6934)>>> b3RtYWlsLmNvbSI+bWlndWVsX2FhbUBob3RtYWlsLmNvbTwvYT4pLDxiciAv
+Net::SMTP=GLOB(0x85a6934)>>> Pgo8YnIgLz4KPGJyIC8+CmhvbGE8YnIgLz4KPGJyIC8+CjxhIGhyZWY9Imh0
+Net::SMTP=GLOB(0x85a6934)>>> dHA6Ly9taWd1ZWwubGFkYWkudGVsZWNvbS51bmFtLm14L1RUWC90dHguY2dp
+Net::SMTP=GLOB(0x85a6934)>>> P2NtZD1oZWxwZGVzayZ0az01WjYxMzc1NTk2NTUwMzk0NjgxMiIgdGFyZ2V0
+Net::SMTP=GLOB(0x85a6934)>>> PV9ibGFuaz48Yj5UaWNrZXQgNTwvYj48L2E+PGJyIC8+Cgo8L2JvZHk+Cjwv
+Net::SMTP=GLOB(0x85a6934)>>> aHRtbD4K
+Net::SMTP=GLOB(0x85a6934)>>> 
+Net::SMTP=GLOB(0x85a6934)>>> --------------28970195594170008197--
+Net::SMTP=GLOB(0x85a6934)>>> .
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a6934)>>> QUIT
+Net::SMTP=GLOB(0x85a6934)<<< 502 unimplemented (#5.5.1)
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x859aeb8)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x859aeb8)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x859aeb8)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x859aeb8)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x859aeb8)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x859aeb8)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x859aeb8)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x859aeb8)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 19) line 2.
+BEGIN failed--compilation aborted at (eval 19) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Net::SMTP=GLOB(0x859aeb8)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x859aeb8)<<< 250 ok
+Net::SMTP=GLOB(0x859aeb8)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x859aeb8)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x859aeb8)>>> DATA
+Net::SMTP=GLOB(0x859aeb8)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x859aeb8)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x859aeb8)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x859aeb8)>>> Subject: Ticket transfer notice
+Net::SMTP=GLOB(0x859aeb8)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x859aeb8)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x859aeb8)>>>  boundary="------------93978495886798380136"
+Net::SMTP=GLOB(0x859aeb8)>>> 
+Net::SMTP=GLOB(0x859aeb8)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x859aeb8)>>> --------------93978495886798380136
+Net::SMTP=GLOB(0x859aeb8)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x859aeb8)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x859aeb8)>>> 
+Net::SMTP=GLOB(0x859aeb8)>>> Ticket ID: 5
+Net::SMTP=GLOB(0x859aeb8)>>> Subject: mmmm
+Net::SMTP=GLOB(0x859aeb8)>>> Transferred by: Miguel Alanis (miguel)=20
+Net::SMTP=GLOB(0x859aeb8)>>> Access link: http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk=
+Net::SMTP=GLOB(0x859aeb8)>>> &tk=3D5Z613755965503946812 Ticket 5=20
+Net::SMTP=GLOB(0x859aeb8)>>> --------------93978495886798380136
+Net::SMTP=GLOB(0x859aeb8)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x859aeb8)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x859aeb8)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x859aeb8)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x859aeb8)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x859aeb8)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CjxiPlRpY2tldCBJRDo8L2I+
+Net::SMTP=GLOB(0x859aeb8)>>> IDU8YnIgLz4KPGI+U3ViamVjdDo8L2I+IG1tbW08YnIgLz4KPGI+VHJhbnNm
+Net::SMTP=GLOB(0x859aeb8)>>> ZXJyZWQgYnk6PC9iPiBNaWd1ZWwgQWxhbmlzIChtaWd1ZWwpIDxiciAvPgo8
+Net::SMTP=GLOB(0x859aeb8)>>> Yj5BY2Nlc3MgbGluazo8L2I+IDxhIGhyZWY9Imh0dHA6Ly9taWd1ZWwubGFk
+Net::SMTP=GLOB(0x859aeb8)>>> YWkudGVsZWNvbS51bmFtLm14L1RUWC90dHguY2dpP2NtZD1oZWxwZGVzayZ0
+Net::SMTP=GLOB(0x859aeb8)>>> az01WjYxMzc1NTk2NTUwMzk0NjgxMiIgdGFyZ2V0PV9ibGFuaz5UaWNrZXQg
+Net::SMTP=GLOB(0x859aeb8)>>> NTwvYT48YnIgLz4KPGJyIC8+Cgo8L2JvZHk+CjwvaHRtbD4K
+Net::SMTP=GLOB(0x859aeb8)>>> 
+Net::SMTP=GLOB(0x859aeb8)>>> --------------93978495886798380136--
+Net::SMTP=GLOB(0x859aeb8)>>> .
+Net::SMTP=GLOB(0x859aeb8)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x859aeb8)>>> QUIT
+Net::SMTP=GLOB(0x859aeb8)<<< 502 unimplemented (#5.5.1)
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x85a69c4)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x85a69c4)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x85a69c4)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x85a69c4)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a69c4)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x85a69c4)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x85a69c4)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x85a69c4)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 33) line 2.
+BEGIN failed--compilation aborted at (eval 33) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Net::SMTP=GLOB(0x85a69c4)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a69c4)<<< 250 ok
+Net::SMTP=GLOB(0x85a69c4)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a69c4)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x85a69c4)>>> DATA
+Net::SMTP=GLOB(0x85a69c4)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a69c4)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a69c4)>>> Subject: Ticket 6, Problema al descargar...
+Net::SMTP=GLOB(0x85a69c4)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a69c4)>>>  boundary="------------52370468802721706515"
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515
+Net::SMTP=GLOB(0x85a69c4)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> Dear Miguel Alanis
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> Thank you for contacting LADAI Help Desk. This message is to confirm that w=
+Net::SMTP=GLOB(0x85a69c4)>>> e received a service request with tracking # 6 from you.
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> MO
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> You can view and update your service request here:
+Net::SMTP=GLOB(0x85a69c4)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dticket&key=3D6Z270496=
+Net::SMTP=GLOB(0x85a69c4)>>> 9914816469229&respondername=3DMiguel+Alanis Ticket 6=20
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> ACCESS KEY: 6Z2704969914816469229
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> Sincerely,
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> LADAI Help Desk
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515
+Net::SMTP=GLOB(0x85a69c4)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a69c4)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a69c4)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a69c4)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a69c4)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CkRlYXIgTWlndWVsIEFsYW5p
+Net::SMTP=GLOB(0x85a69c4)>>> czxiciAvPgo8YnIgLz4KVGhhbmsgeW91IGZvciBjb250YWN0aW5nIExBREFJ
+Net::SMTP=GLOB(0x85a69c4)>>> IEhlbHAgRGVzay4gVGhpcyBtZXNzYWdlIGlzIHRvIGNvbmZpcm0gdGhhdCB3
+Net::SMTP=GLOB(0x85a69c4)>>> ZSByZWNlaXZlZCBhIHNlcnZpY2UgcmVxdWVzdCB3aXRoIHRyYWNraW5nICMg
+Net::SMTP=GLOB(0x85a69c4)>>> NiBmcm9tIHlvdS48YnIgLz4KPGJyIC8+Ck1PPGJyIC8+CjxiciAvPgpZb3Ug
+Net::SMTP=GLOB(0x85a69c4)>>> Y2FuIHZpZXcgYW5kIHVwZGF0ZSB5b3VyIHNlcnZpY2UgcmVxdWVzdCBoZXJl
+Net::SMTP=GLOB(0x85a69c4)>>> OjxiciAvPgo8YSBocmVmPSJodHRwOi8vbWlndWVsLmxhZGFpLnRlbGVjb20u
+Net::SMTP=GLOB(0x85a69c4)>>> dW5hbS5teC9UVFgvdHR4LmNnaT9jbWQ9dGlja2V0JmtleT02WjI3MDQ5Njk5
+Net::SMTP=GLOB(0x85a69c4)>>> MTQ4MTY0NjkyMjkmcmVzcG9uZGVybmFtZT1NaWd1ZWwrQWxhbmlzIiB0YXJn
+Net::SMTP=GLOB(0x85a69c4)>>> ZXQ9X2JsYW5rPjxiPlRpY2tldCA2PC9iPjwvYT48YnIgLz4KPGJyIC8+CkFD
+Net::SMTP=GLOB(0x85a69c4)>>> Q0VTUyBLRVk6IDZaMjcwNDk2OTkxNDgxNjQ2OTIyOTxiciAvPgo8YnIgLz4K
+Net::SMTP=GLOB(0x85a69c4)>>> U2luY2VyZWx5LDxiciAvPgo8YnIgLz4KTEFEQUkgSGVscCBEZXNrPGJyIC8+
+Net::SMTP=GLOB(0x85a69c4)>>> Cgo8L2JvZHk+CjwvaHRtbD4K
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515--
+Net::SMTP=GLOB(0x85a69c4)>>> .
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> DATA
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x85a69c4)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x85a69c4)>>> Subject: Ticket 6 (16-2704), Problema al descargar...
+Net::SMTP=GLOB(0x85a69c4)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x85a69c4)>>>  boundary="------------52370468802721706515"
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515
+Net::SMTP=GLOB(0x85a69c4)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> New ticket #6 from Miguel Alanis (miguel_aam@hotmail.com),
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> MO
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk&tk=3D6Z27049=
+Net::SMTP=GLOB(0x85a69c4)>>> 69914816469229 Ticket 6=20
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515
+Net::SMTP=GLOB(0x85a69c4)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x85a69c4)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x85a69c4)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x85a69c4)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x85a69c4)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x85a69c4)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+Ck5ldyB0aWNrZXQgIzYgZnJv
+Net::SMTP=GLOB(0x85a69c4)>>> bSBNaWd1ZWwgQWxhbmlzICg8YSBocmVmPSJtYWlsdG86bWlndWVsX2FhbUBo
+Net::SMTP=GLOB(0x85a69c4)>>> b3RtYWlsLmNvbSI+bWlndWVsX2FhbUBob3RtYWlsLmNvbTwvYT4pLDxiciAv
+Net::SMTP=GLOB(0x85a69c4)>>> Pgo8YnIgLz4KPGJyIC8+Ck1PPGJyIC8+CjxiciAvPgo8YSBocmVmPSJodHRw
+Net::SMTP=GLOB(0x85a69c4)>>> Oi8vbWlndWVsLmxhZGFpLnRlbGVjb20udW5hbS5teC9UVFgvdHR4LmNnaT9j
+Net::SMTP=GLOB(0x85a69c4)>>> bWQ9aGVscGRlc2smdGs9NloyNzA0OTY5OTE0ODE2NDY5MjI5IiB0YXJnZXQ9
+Net::SMTP=GLOB(0x85a69c4)>>> X2JsYW5rPjxiPlRpY2tldCA2PC9iPjwvYT48YnIgLz4KCjwvYm9keT4KPC9o
+Net::SMTP=GLOB(0x85a69c4)>>> dG1sPgo=
+Net::SMTP=GLOB(0x85a69c4)>>> 
+Net::SMTP=GLOB(0x85a69c4)>>> --------------52370468802721706515--
+Net::SMTP=GLOB(0x85a69c4)>>> .
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x85a69c4)>>> QUIT
+Net::SMTP=GLOB(0x85a69c4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP>>> Net::SMTP(2.29)
+Net::SMTP>>>   Net::Cmd(2.26)
+Net::SMTP>>>     Exporter(5.58)
+Net::SMTP>>>   IO::Socket::INET(1.29)
+Net::SMTP>>>     IO::Socket(1.29)
+Net::SMTP>>>       IO::Handle(1.25)
+Net::SMTP=GLOB(0x859b2a4)<<< 220 ngwise.com ESMTP
+Net::SMTP=GLOB(0x859b2a4)>>> EHLO localhost.localdomain
+Net::SMTP=GLOB(0x859b2a4)<<< 250-ngwise.com
+Net::SMTP=GLOB(0x859b2a4)<<< 250-AUTH=LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x859b2a4)<<< 250-AUTH LOGIN CRAM-MD5 PLAIN
+Net::SMTP=GLOB(0x859b2a4)<<< 250-STARTTLS
+Net::SMTP=GLOB(0x859b2a4)<<< 250-PIPELINING
+Net::SMTP=GLOB(0x859b2a4)<<< 250 8BITMIME
+Can't locate Authen/SASL.pm in @INC (@INC contains: /home/miguel/public_html/TTX /etc/perl /usr/local/lib/perl/5.8.8 /usr/local/share/perl/5.8.8 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.8 /usr/share/perl/5.8 /usr/local/lib/site_perl .) at (eval 19) line 2.
+BEGIN failed--compilation aborted at (eval 19) line 2.
+No SASL at /home/miguel/public_html/TTX/TTXMail.pm line 261.
+Trying Net::POP3 at /home/miguel/public_html/TTX/TTXMail.pm line 287.
+Net::SMTP=GLOB(0x859b2a4)>>> MAIL FROM:<anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x859b2a4)<<< 250 ok
+Net::SMTP=GLOB(0x859b2a4)>>> RCPT TO:<miguel_aam@hotmail.com>
+Net::SMTP=GLOB(0x859b2a4)<<< 553 sorry, that domain isn't in my list of allowed rcpthosts (#5.7.1)
+Net::SMTP=GLOB(0x859b2a4)>>> DATA
+Net::SMTP=GLOB(0x859b2a4)<<< 503 RCPT first (#5.5.1)
+Net::SMTP=GLOB(0x859b2a4)>>> To: miguel_aam@hotmail.com
+Net::SMTP=GLOB(0x859b2a4)>>> From: "LADAI" <anamelessdeath@gmail.com>
+Net::SMTP=GLOB(0x859b2a4)>>> Subject: Ticket transfer notice
+Net::SMTP=GLOB(0x859b2a4)>>> MIME-Version: 1.0
+Net::SMTP=GLOB(0x859b2a4)>>> Content-Type: multipart/alternative;
+Net::SMTP=GLOB(0x859b2a4)>>>  boundary="------------56001692572896050695"
+Net::SMTP=GLOB(0x859b2a4)>>> 
+Net::SMTP=GLOB(0x859b2a4)>>> This is a multi-part message in MIME format
+Net::SMTP=GLOB(0x859b2a4)>>> --------------56001692572896050695
+Net::SMTP=GLOB(0x859b2a4)>>> Content-type: text/plain; charset="windows-1252"
+Net::SMTP=GLOB(0x859b2a4)>>> Content-Transfer-Encoding: quoted-printable
+Net::SMTP=GLOB(0x859b2a4)>>> 
+Net::SMTP=GLOB(0x859b2a4)>>> Ticket ID: 6
+Net::SMTP=GLOB(0x859b2a4)>>> Subject: Problema al descargar...
+Net::SMTP=GLOB(0x859b2a4)>>> Transferred by: Miguel Alanis (miguel)=20
+Net::SMTP=GLOB(0x859b2a4)>>> Access link: http://miguel.ladai.telecom.unam.mx/TTX/ttx.cgi?cmd=3Dhelpdesk=
+Net::SMTP=GLOB(0x859b2a4)>>> &tk=3D6Z2704969914816469229 Ticket 6=20
+Net::SMTP=GLOB(0x859b2a4)>>> --------------56001692572896050695
+Net::SMTP=GLOB(0x859b2a4)>>> Content-type: text/html; charset="windows-1252"
+Net::SMTP=GLOB(0x859b2a4)>>> Content-Transfer-Encoding: base64
+Net::SMTP=GLOB(0x859b2a4)>>> PGh0bWw+CjxoZWFkPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgouZHVtbXkg
+Net::SMTP=GLOB(0x859b2a4)>>> e30KYm9keSwgdGQge2ZvbnQtZmFtaWx5OiB2ZXJkYW5hLGFyaWFsLGhlbHZl
+Net::SMTP=GLOB(0x859b2a4)>>> dGljYSxzYW5zLXNlcmlmO2ZvbnQtc2l6ZTogMTBwdDtjb2xvcjogIzAwMDAw
+Net::SMTP=GLOB(0x859b2a4)>>> MDt9Cjwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CjxiPlRpY2tldCBJRDo8L2I+
+Net::SMTP=GLOB(0x859b2a4)>>> IDY8YnIgLz4KPGI+U3ViamVjdDo8L2I+IFByb2JsZW1hIGFsIGRlc2Nhcmdh
+Net::SMTP=GLOB(0x859b2a4)>>> ci4uLjxiciAvPgo8Yj5UcmFuc2ZlcnJlZCBieTo8L2I+IE1pZ3VlbCBBbGFu
+Net::SMTP=GLOB(0x859b2a4)>>> aXMgKG1pZ3VlbCkgPGJyIC8+CjxiPkFjY2VzcyBsaW5rOjwvYj4gPGEgaHJl
+Net::SMTP=GLOB(0x859b2a4)>>> Zj0iaHR0cDovL21pZ3VlbC5sYWRhaS50ZWxlY29tLnVuYW0ubXgvVFRYL3R0
+Net::SMTP=GLOB(0x859b2a4)>>> eC5jZ2k/Y21kPWhlbHBkZXNrJnRrPTZaMjcwNDk2OTkxNDgxNjQ2OTIyOSIg
+Net::SMTP=GLOB(0x859b2a4)>>> dGFyZ2V0PV9ibGFuaz5UaWNrZXQgNjwvYT48YnIgLz4KPGJyIC8+Cgo8L2Jv
+Net::SMTP=GLOB(0x859b2a4)>>> ZHk+CjwvaHRtbD4K
+Net::SMTP=GLOB(0x859b2a4)>>> 
+Net::SMTP=GLOB(0x859b2a4)>>> --------------56001692572896050695--
+Net::SMTP=GLOB(0x859b2a4)>>> .
+Net::SMTP=GLOB(0x859b2a4)<<< 502 unimplemented (#5.5.1)
+Net::SMTP=GLOB(0x859b2a4)>>> QUIT
+Net::SMTP=GLOB(0x859b2a4)<<< 502 unimplemented (#5.5.1)

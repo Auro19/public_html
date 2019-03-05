@@ -1,0 +1,78 @@
+lib.inc.php
+Replacing function set_html_tag()
+Comment out lines 533 - 536
+At the end of line 536 hit return to make a new line on 537(moving the current code on 536 one line down).
+/******************************** Paste contents below this line **************************************/
+function set_html_tag() {
+  global $dir_tag, $langua, $skin;
+ // Altered by Mark Coudriet for Floating Menus
+  if (strpos($skin,'_-')==true) {
+	$header_type = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"><html lang=\"$langua\" $dir_tag>\n";
+  }
+  else {
+ 	$header_type = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"><html lang=\"$langua\" $dir_tag>\n"; 
+  }
+	return $header_type;
+}
+// End
+/******************************** End of Paste ******************************************************/
+
+Replacing function set_body_tag()
+Now around line 560 Comment out lines 557 - 569
+At the end of line 569 hit return to make a new line on 570(moving the current code on 569 one line down).
+/******************************** Paste contents below this line **************************************/
+function set_body_tag() {
+  global $onload, $bgcolor3, $skin, $startstring, $endstring, $rts_36, $directory, $choose_one, $path_pre;
+  $body = "<body bgcolor=\"".$bgcolor3."\" ";
+  if ($onload) {
+    $body .= " onLoad = \""; 
+    foreach ($onload as $load) { $body .= $load; }
+    $body .= "\"";
+  }
+  $body.=">\n";
+   // Altered by Mark Coudriet for Floating Menus
+  //$requested = getenv('REQUEST_URI');
+  //$requested = $GLOBALS['PHP_SELF'];
+  $gh = $GLOBALS['REQUEST_URI'];
+  $requested .= strpos($GLOBALS['PHP_SELF'],'o.php');
+  $requested .= strpos($GLOBALS['PHP_SELF'],'calendar_control.php');
+  $requested .= strpos($GLOBALS['REQUEST_URI'],'chat.php?mode=input');
+  $requested .= strpos($GLOBALS['REQUEST_URI'],'admin.php?framenr=l');
+  $requested .= strpos($GLOBALS['PHP_SELF'],'index.php');
+  if ($requested != true && strpos($skin,'_-')==true) {
+	    include_once ($path_pre."layout/".$skin."/includes/bodytag.inc.php");
+	    //echo $path_pre."layout/".$skin."/includes/bodytag.inc.php";
+		}
+  return $body;   
+}
+/******************************** End of Paste ******************************************************/
+
+
+
+cm_lib.inc.php
+Comment out lines 175 - 182
+At the end of line 182 hit return to make a new line on 183(moving the current code on 183 one line down).
+
+/******************************** Paste contents below this line **************************************/
+// Define default HTML header, footer and tabs coding.
+ // Altered by Mark Coudriet for Floating Menus
+  if (strpos($skin,'_-')==true) {
+	$cm_html_header = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"><html lang=\"$langua\" $dir_tag>\n";
+  }
+  else {
+ 	$cm_html_header = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"><html lang=\"$langua\" $dir_tag>\n"; 
+  }
+ // End
+$cm_html_header .= "<head>\n<title>{$cm_text["contentmanagement"]}</title>
+  <link rel=stylesheet type=\"text/css\" href=\"$css_style\">
+  <meta name=\"Generator\" content=\"$cm_mod_id\">\n";
+if ($cm_enable_pngfix) $cm_html_header .= "<link rel=stylesheet type=\"text/css\" href=\"$css_pngfix\">\n";
+$cm_html_header .= "$lang_cfg\n</head>\n
+<body bgcolor=\"$bgcolor3\" leftmargin=\"20\" topmargin=\"20\" rightmargin=\"20\" bottommargin=\"20\">\n";
+  
+ // Added by Mark Coudriet for Floating Menus
+  if (strpos($skin,'_-')==true) { 	
+	    include_once ($path_pre."layout/".$skin."/includes/bodytag.inc.php");
+  }  
+ // End
+/******************************** End of Paste ******************************************************/

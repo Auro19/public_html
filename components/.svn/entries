@@ -1,0 +1,73 @@
+8
+
+dir
+3
+file:///home/miguel/svn/miguel/trunk/components
+file:///home/miguel/svn/miguel
+
+
+
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+18238fb7-c00d-4cff-935f-4562a381b68e
+
+com_newsfeeds
+dir
+
+com_mailto
+dir
+
+com_search
+dir
+
+com_poll
+dir
+
+com_banners
+dir
+
+com_content
+dir
+
+com_contact
+dir
+
+index.html
+file
+
+
+
+
+2009-03-24T18:12:38.000000Z
+dd5d02cc750d2855cf6f6c5bf5bea587
+2009-03-24T18:11:49.566580Z
+2
+miguel
+
+com_user
+dir
+
+com_weblinks
+dir
+
+com_media
+dir
+
+com_wrapper
+dir
+

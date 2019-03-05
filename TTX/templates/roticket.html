@@ -1,0 +1,44 @@
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0 bgcolor="#C6D7CF" style="padding-left: 5px; padding-right: 5px">
+<!--        <tr>
+                <td align=right colspan=6 class=sm><a href="(%ENV_SCRIPT_NAME%)?cmd=annotate&sid=(%INPUT_sid%)&key=(%INPUT_key%)" target="_blank">printable version</a></td>
+        </tr> -->
+        <tr>
+                <td align=left class=lbl>[%Subject%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKEDOPEN%)(%TICKET_subject%)(%TICKEDCLOSE%)</td>
+                <td align=left class=lbl>[%Group%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_GROUP%)</td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Status%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left width=90%>(%TICKET_status%)</td>
+                <td align=left class=lbl>[%Operator%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_oper%)</td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Created%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_open%)</td>
+                <td align=left class=lbl>[%Customer%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left><nobr>(%TICKET_name%) (<a href="mailto:(%TICKET_email%)">(%TICKET_email%)</a>)</nobr></td>
+        </tr>
+        <tr>
+                <td align=left class=lbl>[%Solved%]</td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_closed%)</td>
+                <td align=left class=lbl><nobr>[%Access key%]</nobr></td>
+                <td>&nbsp;&nbsp;</td>
+                <td align=left>(%TICKET_key%)</td>
+        </tr>
+        <tr>
+                <td colspan=6 class=tiny>&nbsp;</td>
+        </tr>
+</table>
+<br class=tiny>
+<table width=(%HTMLBASEWIDTH%) cellspacing=0 cellpadding=0>
+(%MESSAGES%)
+</table>

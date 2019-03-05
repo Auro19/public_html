@@ -1,0 +1,10 @@
+.scMenuTTable { background-color: #FFFFFF; border-collapse: collapse }
+.scMenuIframe { background-color: #FFFFFF; width: 100%; height: 100% }
+.scMenuTHeader { background-color: #C2D0A4; border-style: none; border-width: 0; border-collapse: collapse }
+.scMenuTHeaderFont { color: #000; font-family: Arial, sans-serif; font-size: 14px; text-decoration: none }
+.scMenuTFooter { background-color: #C2D0A4; border-color: #9FAE8B; border-style: solid; border-width: 1px; border-collapse: collapse }
+.scMenuTFooterFont { color: #000; font-family: Arial, sans-serif; font-size: 13px; text-decoration: none }
+.scMenuTItems { font-family: Arial, Arial, sans-serif; font-size: 11px; color: #000; font-style: normal; text-decoration: none; white-space: nowrap }
+.scMenuTItem { font-family: Arial; color: #000; font-style: normal; text-decoration: none; white-space: nowrap }
+.scMenuTItemDisabled { color: #C0C0C0 }
+.scMenuTSubItemDisabled { color: #C0C0C0 }

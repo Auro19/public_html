@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<link rel="stylesheet" href="help.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>help.attend_events :: Configuration Options</title>
+	</head>
+	<body class="contentpane">
+	
+
+	
+	<h2>Configuration Options
+				<a href="#" onclick="javascript:window.print(); return false" title="Print">
+				    <img src="../../../../images/M_images/printButton.png" alt="Print" align="right" name="image" border="0" />
+				</a>
+   </h2>
+			
+
+<p>The Configuration Options page controls how Attend Events integrates with other Joomla components (see <b>Integration with Other Components</b>), and provides options for customizing the registration process for your specific needs (see <b>Registration Control</b>).  Formatting options are also available (see <b>Date and Time Formatting</b> and <b>Front-End Control</b>).  Finally, a default set of registration fields can be configured, which will be loaded for any new sessions (see <b>Fields</b>).</p>
+
+<h3>Integration with Other Components</h3><p>Attend Events can be configured to access data stored in the Events and Community Builder components.  If these components are not installed on your system, the option to integrate will be disabled (as well as their associated options).  For proper operation, you should click the "Apply" button when changing either component's integration state.  Since a session and its associated event share a significant amount of common information, options have been provided to limit how much data from the Events component should be displayed on a session's page.</p>
+
+<h3>Registration Control</h3>
+<dl>
+<dt>Allow Registrations From</dt>
+<dd>The ability to register for a session may be restricted based on a user's access level.  This value selected here determines the value for the "Global" option on a session's details page.</dd>
+<dt>Allow Individual Registrations Only</dt>
+<dd>If this boxed is checked, the built-in registration field "Number of Registrations" will not be shown and its value will be set to one (1).</dd>
+<dt>Allow Full processing</dt>
+<dd>This option determines whether Attend Events should monitor the capacity of sessions for which the "Maximum Number of Registrations" has been set.  If this ability is enabled, a session's status will be changed to "Full" when there are no more spaces available, and user's will no longer be able to register for the session.</dd>
+<dt>Allow registered user cancellation</dt>
+<dd>This feature controls whether registered users of the site may cancel their registration.</dd>
+</dl>
+
+
+<h3>Front-End Control</h3><p>These options control how the contents of Attend Events appears in the front end.</p>
+<dl>
+<dt>Start Listing Sessions</dt>
+<dd>Determines what date/time condition must be met for a session to be listed in the front-end.  Depending on the specific settings, a session may be listed outside of its registration period.  Under these circumstances, the users will be presented with an error message when they try to register.</dd>
+<dt>Stop Listing Sessions</dt>
+<dd>Determines what date/time condition must be met for a session to be no longer listed in the front-end.  Depending on the specific settings, a session may be listed outside of its registration period.  Under these circumstances, the users will be presented with an error message when they try to register.</dd>
+<dt>List sessions that are full</dt>
+<dd>If disabled, sessions which are full will not be listed in the front-end automatically.</dd>
+<dt>List sessions regardless of availability</dt>
+<dd>If disabled, only sessions for which the user is capable of registering for will be listed.</dd>
+<dt>Show user number registrations</dt>
+<dd>If enabled, the remaining and total capacity of each session will be displayed when listed.</dd>
+<dt>Display Footer in front-end</dt>
+<dd>If enabled, the Attend Events name and version will be displayed at the bottom of all front-end pages.</dd>
+<dt>Display link to Google Maps</dt>
+<dd>If enabled, the session's venue will be linked to Google Maps, using the venue's location information as a search query.</dd>
+<dt>Display List of "Already Registered" users</dt>
+<dd>If enabled, a list of users who have already registered for the session will be displayed after the registration form.  In addition, a comment field will be added at the end of the registration form, so that users can leave a message to be displayed in this list.</dd>
+</dl>
+
+<h3>Fields</h3><p>Attend Events has three built-in registration fields: <i>Name</i>, <i>Email Address</i> and <i>Number of People</i>.  Any additional information that needs to be collected at registration must be accomplished by creating additional registration fields in the <i>Fields</i> tab of a session's details page.  For set-ups where additional fields are required frequently, a default set of additional registration fields can be specified here.  To add additional fields, click the "New Field" icon in the top left hand corner.  To delete fields, click the red "X" at the left side of the row.  Similarly, the order in which fields are displayed can be changed by clicking the blue up and down arrows on each row (these arrows are only visible when re-ordering is possible!).  For each field, you must provide a name and select a type from the drop down menu.  The list of "Type Specific Parameters" will change depending on the field type you selected.  For convenience, the options can be collapsed by clicking the expand/collapse button in the top left corner of each type specific option grouping.</p>
+<dl>
+<dt>Required</dt>
+<dd>If <i>true</i>, the user must fill-in this field before the registration form can be submitted.</dd>
+<dt>Default</dt>
+<dd>A default value that will appear in the field when the registration form is displayed to the user.</dd>
+<dt>Associated Community Builder Field</dt>
+<dd>If this field of a user's Community Builder profile contains an acceptable value, it is used instead of the form's default.<b>Only available when integrated with the Community Builder component.</b></dd>
+<dt>Tooltip</dt>
+<dd>The text of a tooltip which can be displayed beside the field in the front end.  Leaving this blank means no tooltip will be displayed.</dd>
+<dt>Size</dt>
+<dd>The visible size of the text field.</dd>
+<dt>Maximum Length</dt>
+<dd>The total number of characters that the text field can contain.</dd>
+<dt>Rows/Cols</dt>
+<dd>Specifies the textarea field size, or controls the appearance of the table in which the options of a radio type will be displayed (only columns can be specified -- rows are automatically adjusted, depending on your column specification).</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<div class="modifydate">Last Updated ( Thursday, 08 December 2005 )</div>
+
+			
+			
+
+    <span class="article_seperator">&nbsp;</span>
+    <div align="center" style="margin-top: 30px; margin-bottom: 30px;">
+        <a href='javascript:window.close();'>Close Window</a>
+    </div>
+    </body>
+    </html>
+	

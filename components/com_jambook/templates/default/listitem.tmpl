@@ -1,0 +1,19 @@
+        <tr class="{jxtvalue=tabclass}">
+          <td align="left" valign="top" width="20%">
+            <p><strong>{jxtvalue=author}</strong><br />
+            {jxtvalue=_created_formatted}
+            {jxtshowif=isadmin}<br />{jxtvalue=fromip}{/jxtshowif}</p>
+          </td>
+          <td rowspan="2" align="left" valign="top" style="margin-left: 5px;">
+            <p><strong>{jxtvalue=title}</strong><br />
+            {jxtvalue=content}</p>
+          </td>
+        </tr>
+        <tr class="{jxtvalue=tabclass}">
+          <td align="left" valign="bottom" style="margin-top: 1px;">
+            {jxtshowif=email}{jxtvalue=_email_link}{/jxtshowif}
+            {jxtshowif=url}<a href="{jxtvalue=url}"><img src="includes/js/ThemeOffice/home.png" border="0" alt="{jxtlang=_JX_URL}" title="{jxtlang=_JX_URL}" /></a>{/jxtshowif}
+            {jxtshowif=ownitemactionlink_edit}<a href="{jxtvalue=ownitemactionlink_edit}"><img src="includes/js/ThemeOffice/edit.png" border="0" alt="{jxtlang=_JX_EDIT_ITEM}" title="{jxtlang=_JX_EDIT_ITEM}" /></a>
+            <a href="{jxtvalue=ownitemactionlink_delete}"><img src="includes/js/ThemeOffice/trash.png" border="0" alt="{jxtlang=_JX_DELETE_ITEM}" title="{jxtlang=_JX_DELETE_ITEM}" /></a>{/jxtshowif}
+          </td>
+        </tr>
